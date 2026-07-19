@@ -37,6 +37,11 @@ root, no mod loader, no PC required.**
 Requirements: **Android 8+**, **arm64-v8a** device (most phones from ~2018 on).
 Full steps: **[docs/INSTALL.md](docs/INSTALL.md)**.
 
+> **Already playing another version and want to keep your progress?** Switching
+> builds needs a one-time uninstall (different signing key), but you can **back up and
+> restore your save** — see **[docs/MIGRATION.md](docs/MIGRATION.md)**. (Future English
+> updates keep your save automatically.)
+
 ---
 
 ## ✨ What's translated
