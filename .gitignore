@@ -1,0 +1,48 @@
+# --- Never commit binaries / game content / secrets ---
+# APKs (distribute via GitHub Releases, not git)
+*.apk
+*.idsig
+
+# Signing keys / keystores (must never be published)
+*.keystore
+*.jks
+*.pem
+*.p12
+*.pk8
+debug.keystore
+
+# Original game & PC translation (belong to their creators — not redistributed here)
+pvzrh*.apk
+PvZ_Fusion_Translator/
+Game Files/
+*.unity3d
+global-metadata*.dat
+resources.resource
+
+# Copyrighted fonts (e.g. Microsoft Arial) — do NOT redistribute
+translations/fonts/
+*.ttf
+*.otf
+*.ttc
+
+# Toolchain binaries (users download their own)
+tools/platform-tools/
+*.jar
+
+# Build/work artifacts
+work/
+output/
+build/
+*.log
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

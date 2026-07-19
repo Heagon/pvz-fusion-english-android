@@ -1,0 +1,56 @@
+{
+  "212": {
+    "name": "Jack-in-the-Box",
+    "introduce": "<color=#3D1400>Surprise, scare, panic. The Jack-in-the-Box Zombie couldn't tell them apart, and so this dreadful box was born.</color>",
+    "info": "Can fuse with certain plants, letting them create or defend against Jack-in-the-Box explosions.\n\n<color=#3D1400>Toughness: </color><color=red>1000</color>\n<color=#3D1400>Trait: </color><color=red>Low</color>\n<color=#3D1400>Feature: </color><color=red>Can be placed (planted) on the ground like a normal plant</color>\n<color=#3D1400>Fusable plants: </color><color=red>Magnet Pumpkin, Magnet Starfruit, Magnet Doom-shroom</color>",
+    "cost": ""
+  },
+  "213": {
+    "name": "Miner's Pickaxe",
+    "introduce": "<color=#3D1400>This iron pickaxe comes from a Miner Zombie whose digging permit was denied. Oh, the honest brainless fellow, while all his peers dug without a license.</color>",
+    "info": "Can fuse with certain plants, letting them block miners from digging or attacking from underground.\n\n<color=#3D1400>Toughness: </color><color=red>1000</color>\n<color=#3D1400>Trait: </color><color=red>Low</color>\n<color=#3D1400>Feature: </color><color=red>Can be placed (planted) on the ground like a normal plant</color>\n<color=#3D1400>Fusable plants: </color><color=red>Magnet Pumpkin, Magnet Starfruit</color>",
+    "cost": ""
+  },
+  "214": {
+    "name": "Spacetime Shard",
+    "introduce": "<color=#3D1400>No, better not try to touch it lightly. Though it looks tiny, like every other black hole it has an event horizon.</color>",
+    "info": "Can fuse with certain plants, granting them the power of “Teleport”.\n\n<color=#3D1400>Toughness: </color><color=red>1000</color>\n<color=#3D1400>Trait: </color><color=red>Low</color>\n<color=#3D1400>Feature: </color><color=red>Can be placed (planted) on the ground like a normal plant</color>\n<color=#3D1400>Fusable plants: </color><color=red>Peashooter, Wall-nut, Magnet Kernel-pult, Magnet Melon-pult, Magnet Doom-shroom</color>",
+    "cost": ""
+  },
+  "215": {
+    "name": "Mechanical Shard",
+    "introduce": "<color=#3D1400>The reason this shard fell off intact and usable by plants is simply that it was never installed properly. That is also the main reason Mechanical Bowling Balls scrap so easily.</color>",
+    "info": "Can fuse with Wall-nut, letting it take damage for surrounding plants.\n\n<color=#3D1400>Toughness: </color><color=red>1000</color>\n<color=#3D1400>Trait: </color><color=red>Low</color>\n<color=#3D1400>Feature: </color><color=red>Can be placed (planted) on the ground like a normal plant</color>",
+    "cost": ""
+  },
+  "216": {
+    "name": "Super Mechanical Shard",
+    "introduce": "<color=#3D1400>Though this new-material mechanical shard is greatly improved in every way, its sales stayed poor, as rivals kept spreading rumors that it was made of plastic. The problem was only solved once Gfish Corp declared it was made of brains.</color>",
+    "info": "Can fuse with Wall-nut, granting it a huge amount of HP and letting it take damage for surrounding plants.\n\n<color=#3D1400>Toughness: </color><color=red>1000</color>\n<color=#3D1400>Trait: </color><color=red>Low</color>\n<color=#3D1400>Feature: </color><color=red>Can be placed (planted) on the ground like a normal plant</color>",
+    "cost": ""
+  },
+  "310": {
+    "name": "Ultimate Mechanical Wall-nut",
+    "introduce": "<color=#3D1400>The Ultimate Mechanical Wall-nut is the kind of plant you can recognize from across the whole lawn. Rumor says he was once modified by Dr. Edgar, though he doesn't seem to remember it. Also, with the help of a crowd of Wall-nuts, his energy-recycling company has officially gone public, ticker symbol NUTS.</color>",
+    "info": "His massive body takes damage for the entire field, and when plants heal, he feeds off it too.\n\n<color=#3D1400>Requirement: </color><color=red>Mystery Mode</color>\n<color=#3D1400>Toughness: </color><color=red>64000, damage capped at 1000</color>\n<color=#3D1400>Traits: </color><color=red>Giant, Tall</color>\n<color=#3D1400>Feature ① </color><color=red>Immune to crushing and knockback</color>\n<color=#3D1400>② </color><color=red>HP can exceed Toughness</color>\n<color=#3D1400>③ </color><color=red>Takes damage for all plants on the field</color>\n<color=#3D1400>④ </color><color=red>When other kinds of plants heal, he heals himself an equal amount; healing provided by non-solid plants is ×10</color>",
+    "cost": ""
+  },
+  "1443": {
+    "name": "Magic Snow Pea",
+    "introduce": "<color=#3D1400>“Magic hat, ready. Special anti-frost glasses, ready. Oh, the toothbrush and the arm to hold it aren't ready yet, but at least the teeth are ready.” Even amid tense pre-battle prep, the Magic Snow Pea still finds a moment to tell itself a bad joke to ease the nerves.</color>",
+    "info": "Fires “bouncing” Extreme-Ice peas.\n\n<color=#3D1400>Damage: </color><color=red>40/1.5s</color>\n<color=#3D1400>Feature: </color><color=red>Fired Extreme-Ice peas can bounce up to 4 times on hit. On hit they apply Cold level 1, grant 20 Freeze value, and deal ×4 damage to frozen zombies</color>\n<color=#3D1400>Fusion recipe: </color><color=red>Snow Pea + Extreme-Ice Pea</color>\n<color=#3D1400>Odyssey Mode only: </color><color=red>After gaining the [Mana Upgrade] modifier, it adds mana armament, raising </color>card quality",
+    "cost": ""
+  },
+  "5001": {
+    "name": "Ultimate Magic Snow Pea",
+    "introduce": "<color=#3D1400>Of the Ultimate Magic Snow Pea we know very little, only that she is a great mage with many followers. Of the bullets she crafts we also know little; only a few zombie scholars have studied them deeply. Their conclusion was that those sharp acute-angle turns utterly defy the known laws of physics.</color>",
+    "info": "Fires “bouncing” Extreme-Ice peas.\n<color=blue>Advanced form of Magic Snow Pea</color>\n\n<color=#3D1400>Requirement: </color><color=red>Odyssey Mode modifier draw</color>\n<color=#3D1400>Fusion recipe: </color><color=red>Snow Pea + Extreme-Ice Pea</color>\n<color=#3D1400>Damage: </color><color=red>40/1.5s</color>\n<color=#3D1400>Feature ① </color><color=red>Based on its mana level, it adds armament and empowers the Extreme-Ice peas\nLevel 1: damage ×6, bounces 6 times\nLevel 2: damage ×10, bounces 8 times</color>\n<color=#3D1400>② </color><color=red>Extreme-Ice peas: apply Cold level 1, grant 20 Freeze value, deal ×4 damage to frozen zombies</color>\n<color=#3D1400>Modifier 1: </color><color=red>Peerless: each bounce grants the bullet an extra +10% damage\nAt mana level 2, bounce count ×3</color>\n<color=#3D1400>Modifier 2: </color><color=red>Brilliant: bullets prioritize bouncing to the highest-HP BOSS zombies\nAt mana level 2, zombies hit by the bullet take +10% damage</color>",
+    "cost": ""
+  },
+  "5002": {
+    "name": "Ender Pumpkin Box",
+    "introduce": "<color=#3D1400>“Don't put an Ender Pumpkin Box inside an Ender Pumpkin Box; it may cause some unexpected nesting paradoxes or spacetime anomalies.” The Ender Pumpkin Boxes always say this. Really, they just want to avoid the nausea it causes.</color>",
+    "info": "Automatically stores nearby cards, and can share that storage from any location.\n\n<color=#3D1400>Requirement: </color><color=red>Odyssey Mode</color>\n<color=#3D1400>Fusion recipe: </color><color=red>Pumpkin Box + Hyper-Spacetime Wall-nut</color>\n<color=#3D1400>Toughness: </color><color=red>16000, damage capped at 1000</color>\n<color=#3D1400>Feature ① </color><color=red>Immune to crushing and knockback</color>\n<color=#3D1400>② </color><color=red>Has the Pumpkin Box's features</color>\n<color=#3D1400>③ </color><color=red>Auto-stores plant cards within a 3.7-tile radius; while stored they gain a shield of 1/16 their toughness, lost when withdrawn</color>\n<color=#3D1400>④ </color><color=red>All Ender Pumpkin Boxes link a shared storage space. The storage space exists independently</color>\n<color=#3D1400>⑤ </color><color=red>When appearing in Super Random Mode, it randomly stores one Ultimate-series plant</color>\n<color=#3D1400>Modifier 1: </color><color=red>Automation Upgrade: can store iron drops as cards, prioritizing use on the lowest-HP Super Mechanical Wall-nut</color>\n<color=#3D1400>Modifier 2: </color><color=red>Stacking Upgrade: doubles the stack limit of a single slot</color>",
+    "cost": ""
+  }
+}
