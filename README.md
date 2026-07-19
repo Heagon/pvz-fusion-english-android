@@ -13,6 +13,16 @@ root, no mod loader, no PC required.**
 
 ---
 
+## 📸 Screenshots
+
+| Main menu | Almanac |
+|---|---|
+| ![Main menu](docs/screenshots/main-menu.png) | ![Almanac](docs/screenshots/almanac.png) |
+| **Mechanics** | **Modifiers** |
+| ![Mechanics](docs/screenshots/mechanics.png) | ![Modifiers](docs/screenshots/modifiers.png) |
+
+---
+
 ## 📥 Download & Install
 
 1. Go to the **[Releases](../../releases)** page and download the latest
