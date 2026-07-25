@@ -17,12 +17,27 @@ import struct
 import re
 import json
 import sys
+import unicodedata
 
 MOD = r"./PvZ_Fusion_Translator"
 EN = MOD + r"/Localization/English"
 TRANS = r"./translations"
 CJK = re.compile(r'[一-鿿㐀-䶿]')
 BUFF_SIZE = 12  # shrink long modifier/buff descriptions to match almanac descriptions
+
+
+def deaccent(s):
+    """Accented Latin letters -> plain ASCII (the CN font renders them as a box). CJK/symbols kept."""
+    if not isinstance(s, str):
+        return s
+    out = []
+    for ch in s:
+        if 0xC0 <= ord(ch) <= 0x24F and unicodedata.category(ch).startswith("L"):
+            base = "".join(c for c in unicodedata.normalize("NFKD", ch) if ord(c) < 128)
+            out.append(base if base else ch)
+        else:
+            out.append(ch)
+    return "".join(out)
 
 HUD = {
     "难度：{0}": "Diff: {0}", "章节难度：{0}": "Ch.Diff: {0}", "难度阶数：{0}": "Diff Tier: {0}",
@@ -41,7 +56,7 @@ HUD = {
     "获得新植物：": "New Plant: ", "开局阳光归零": "Zero Start Sun",
     "游戏失败": "Game Over", "上传失败": "Upload Failed", "关卡不存在": "Level not found",
     "关卡信息错误": "Bad Level Info", "关卡数据为空！": "Empty Level!",
-    "花园植物": "Garden", "融合植物": "Fusion", "彩卡植物": "Rainbow", "普通植物": "Common",
+    "花园植物": "Garden", "融合植物": "Fusion", "彩卡植物": "Special", "普通植物": "Common",
     "关闭僵尸显血": "Hide Zombie HP", "关闭植物显血": "Hide Plant HP",
     "禁用转场动画": "Disable Cutscene", "音游开始！": "Music Start!",
     "主菜单": "Main Menu", "查看草坪": "View Lawn", "切换手套": "Toggle Glove",
@@ -63,7 +78,7 @@ def build_dict():
 
     def add(cn, en):
         if isinstance(cn, str) and isinstance(en, str) and en and cn != en and CJK.search(cn):
-            d.setdefault(cn, en)
+            d.setdefault(cn, deaccent(en))
 
     ts = LJ(f"{EN}/Strings/translation_strings.json") or {}
     for k, v in ts.items():

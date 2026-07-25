@@ -1,8 +1,6 @@
 {
   "_comment": "Highest-priority overrides applied AFTER the mod dict + supplement, in both the bundle and metadata patchers. Use for: fixing button overflow (shorter text) and strings the mod translated too long/ambiguously.",
-
   "返回菜单": "Back",
-
   "全部词条": "All",
   "普通词条": "Common",
   "弱究词条": "Common",
@@ -19,10 +17,14 @@
   "究极词条": "Odyssey",
   "旅行词条": "Odyssey",
   "深渊词条": "Abyss",
-
   "机制图鉴": "Mechanics",
   "词条图鉴": "Modifiers",
-
   "查看词条": "View Modifiers",
-  "查看已有词条": "Owned Modifiers"
+  "查看已有词条": "Owned Modifiers",
+  "彩卡植物": "Special",
+  "查看拼图\n": "View Puzzle\n",
+  "查看危机": "View Crisis",
+  "刷新({0})": "Reroll ({0})",
+  "刷新({0})(+{1})": "Reroll ({0})(+{1})",
+  "陆地军团擅长把小推车作为额外的战斗力\n他们相信火力至上\n1、与小推车相邻的植物伤害+100%\n2、小推车有独特的攻击力和升级": "The Land Legion turns Lawnmowers into extra firepower.\n1. Plants next to lawnmowers: +100% damage\n2. Lawnmowers gain unique attacks and upgrades"
 }

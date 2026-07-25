@@ -23,6 +23,7 @@ import glob
 import json
 import struct
 import zipfile
+import unicodedata
 import UnityPy
 from PIL import Image
 
@@ -62,6 +63,21 @@ def LJ(p):
         return None
 
 
+def deaccent(s):
+    """Accented Latin letters (a-circumflex, e-acute, n-tilde, ...) -> plain ASCII, since
+    the game's CN font has no glyph for them (renders a box). Symbols (x, degree) and CJK kept."""
+    if not isinstance(s, str):
+        return s
+    out = []
+    for ch in s:
+        if 0xC0 <= ord(ch) <= 0x24F and unicodedata.category(ch).startswith("L"):
+            base = "".join(c for c in unicodedata.normalize("NFKD", ch) if ord(c) < 128)
+            out.append(base if base else ch)
+        else:
+            out.append(ch)
+    return "".join(out)
+
+
 def strip_size(text):
     return SIZE_TAG.sub("", text) if isinstance(text, str) else text
 
@@ -80,7 +96,7 @@ def build_master():
 
     def add(cn, en):
         if isinstance(cn, str) and isinstance(en, str) and en and cn != en and CJK.search(cn):
-            d.setdefault(cn, en)
+            d.setdefault(cn, deaccent(en))
 
     ts = LJ(f"{EN}/Strings/translation_strings.json") or {}
     for k, v in ts.items():
@@ -156,7 +172,7 @@ def merge_array(cn_text, en_json, arr_key, id_key, fields):
             continue
         for f in fields:
             if f in s:
-                e[f] = size_wrap(s[f]) if f in ("introduce", "info") else strip_size(s[f])
+                e[f] = deaccent(size_wrap(s[f]) if f in ("introduce", "info") else strip_size(s[f]))
         tr += 1
     return json.dumps(cn, ensure_ascii=False), tr, kept
 
@@ -169,7 +185,7 @@ def merge_details(cn_text, en_map, titles=None, types=None):
     for e in cn.get("details", []):
         t = e.get("title")
         if t in en_map:
-            e["text"] = size_wrap(en_map[t])
+            e["text"] = deaccent(size_wrap(en_map[t]))
             tr += 1
         else:
             kept += 1
