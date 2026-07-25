@@ -21,7 +21,7 @@ the finished APK from Releases.
 | File | Purpose |
 |---|---|
 | `repack.py` | Rebuild an APK from the original, replacing entries, keeping 4-byte alignment; strips old signatures for re-signing. |
-| `build_apk.py` | Assemble the final APK: swap in the patched bundle + metadata **and bump `build-guid`** so over-the-top updates (`install -r`) refresh the English text without a save-wiping clean install. |
+| `build_apk.py` | Assemble the final APK: swap in the patched bundle + metadata **and bump `unity_app_guid`** so over-the-top updates (`install -r`) refresh the English text without a save-wiping clean install. |
 | `patch_bundle_v2.py` | Main asset patcher: almanac merge (+ font-size wrap + the 9 extra plants), UI string splice into MonoBehaviours, English texture swap. Run with `--textures` for the full build. |
 | `patch_metadata_v2.py` | Rebuild-based IL2CPP `global-metadata.dat` string-literal patcher (allows English of any length): HUD, buffs/modifiers, messages. |
 | `patch_metadata.py` | Older safe in-place metadata patcher (only same-or-shorter English). Kept for reference. |
@@ -36,17 +36,19 @@ python patch_bundle_v2.py --textures        # -> work/data.unity3d.v2
 # 2) translate the code string-literals
 python patch_metadata_v2.py global-metadata.orig.dat global-metadata.v2.dat
 
-# 3) assemble the APK (swaps in bundle + metadata AND bumps build-guid), then sign
+# 3) assemble the APK (swaps in bundle + metadata AND bumps unity_app_guid), then sign
 python build_apk.py                          # -> unsigned.apk
 java -jar uber-apk-signer.jar -a unsigned.apk --skipZipAlign -o out/
 
-# 4) install over the top — keeps the save; the new build-guid makes the game
+# 4) install over the top — keeps the save; the new unity_app_guid makes the game
 #    re-extract the English metadata by itself on next launch
 adb install -r out/unsigned-signed.apk
 ```
 
-Note: because `build_apk.py` changes `build-guid` each release, `adb install -r`
-now refreshes the code-string translations **without** a clean install — so player
-saves survive updates. `data.unity3d` is read straight from the APK, so asset/texture
-changes always apply on `install -r` too. (Sign with the **same key** every release;
-a key change is the one thing that still forces a save-wiping uninstall.)
+Note: because `build_apk.py` changes `unity_app_guid` each release, `adb install -r`
+now refreshes the code-string translations **without** a clean install — the game
+extracts `global-metadata.dat` to `files/il2cpp/` and re-extracts it whenever the APK's
+`unity_app_guid` differs from the cached `il2cpp/unity.ver`, so player saves survive
+updates (verified on device). `data.unity3d` is read straight from the APK, so
+asset/texture changes always apply on `install -r` too. (Sign with the **same key**
+every release; a key change is the one thing that still forces a save-wiping uninstall.)

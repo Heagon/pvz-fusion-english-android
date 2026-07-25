@@ -23,8 +23,8 @@ Just install the new APK over the old one. **Your save is kept.** No PC needed.
   (Android installs it over the existing app). Launch — progress and the new English text
   are both there.
 - Every build from this repo is signed with the **same key**, so Android allows the
-  in-place update; and the APK carries a fresh **build-guid**, which makes the game refresh
-  its English code-strings on the next launch — **no uninstall, no cleared save.**
+  in-place update; and the APK carries a fresh internal id (`unity_app_guid`), which makes the
+  game refresh its English code-strings on the next launch — **no uninstall, no cleared save.**
 
 > Don't tap "uninstall" out of habit. In-place update = save kept. Uninstall = save gone.
 
@@ -71,8 +71,9 @@ adb push playerData.json /sdcard/Android/data/com.LanPiaoPiao.PlantsVsZombiesRH/
 ## FAQ
 
 - **Do I need to clear the `il2cpp` cache anymore?** No. Older notes said metadata only
-  updated after a clean install; the build now changes its `build-guid` each release, so the
-  game re-extracts the English metadata by itself on the next launch after an in-place update.
+  updated after a clean install; the build now changes an internal id (`unity_app_guid`) each
+  release, so the game re-extracts the English metadata by itself on the next launch after an
+  in-place update. (Verified on Android 13: install over the top → save kept and text updated.)
 - **Will my coins/levels survive?** Yes — they're all in `playerData.json`, which an
   in-place update never touches. (Verified on Android 13.)
 - **Is there a cloud save?** No. Keep a copy of `playerData.json` somewhere safe if it matters
