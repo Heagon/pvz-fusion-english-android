@@ -113,6 +113,9 @@ def build_dict():
     for k, v in dt.get("types", {}).items():
         add(k, v)
     d.update(HUD)
+    for k, v in (LJ(f"{TRANS}/overrides.json") or {}).items():
+        if not k.startswith("_"):
+            d[k] = v                 # highest-priority overrides (overflow fixes etc.)
     return d
 
 

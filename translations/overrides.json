@@ -1,0 +1,28 @@
+{
+  "_comment": "Highest-priority overrides applied AFTER the mod dict + supplement, in both the bundle and metadata patchers. Use for: fixing button overflow (shorter text) and strings the mod translated too long/ambiguously.",
+
+  "返回菜单": "Back",
+
+  "全部词条": "All",
+  "普通词条": "Common",
+  "弱究词条": "Common",
+  "基础词条": "Common",
+  "强究词条": "Epic",
+  "通用词条": "General",
+  "随机词条": "Gacha",
+  "诅咒词条": "Curse",
+  "进化词条": "Evolved",
+  "连携词条": "Synergy",
+  "小小词条": "Pet",
+  "诸神词条": "Gods",
+  "僵尸词条": "Zombie",
+  "究极词条": "Odyssey",
+  "旅行词条": "Odyssey",
+  "深渊词条": "Abyss",
+
+  "机制图鉴": "Mechanics",
+  "词条图鉴": "Modifiers",
+
+  "查看词条": "View Modifiers",
+  "查看已有词条": "Owned Modifiers"
+}

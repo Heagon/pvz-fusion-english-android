@@ -130,6 +130,17 @@ def build_master():
     nine = LJ(f"{TRANS}/nine_plants_en.json") or {}
     for st, p in nine.items():
         pass  # names handled in almanac merge; nothing to add to text dict
+    # changelog popup body (one big MonoBehaviour framed string, shown every launch).
+    # Key = the game's EXACT 3.8.1 Chinese (translations/changelog_cn.txt) since the mod's
+    # 3.8 Dumps/changelog.txt differs; value = the team's official English changelog.
+    cl_cn = os.path.join(TRANS, "changelog_cn.txt")
+    cl_en = os.path.join(EN, "Strings", "changelog.txt")
+    if os.path.exists(cl_cn) and os.path.exists(cl_en):
+        with open(cl_cn, encoding="utf-8") as f:
+            cn_cl = f.read()
+        with open(cl_en, encoding="utf-8") as f:
+            en_cl = f.read()
+        add(cn_cl, en_cl)
     return d
 
 
@@ -223,6 +234,10 @@ def main():
     master["切换手套"] = "Toggle Glove"
     master["机制图鉴"] = "Mechanics"   # was "Mechanics Almanac" -> overflowed
     master["词条图鉴"] = "Modifiers"   # was "Modifier Almanac" -> overflowed
+    # highest-priority overrides (category shortenings, button-overflow fixes, etc.)
+    for k, v in (LJ(f"{TRANS}/overrides.json") or {}).items():
+        if not k.startswith("_"):
+            master[k] = v
     print("master dict:", len(master))
     dict_pats = [(struct.pack('<i', len(k.encode())) + k.encode(), v.encode(), len(k.encode()))
                  for k, v in master.items()]
