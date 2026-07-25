@@ -21,6 +21,7 @@ import re
 import sys
 import glob
 import json
+import math
 import struct
 import zipfile
 import unicodedata
@@ -185,7 +186,13 @@ def merge_details(cn_text, en_map, titles=None, types=None):
     for e in cn.get("details", []):
         t = e.get("title")
         if t in en_map:
-            e["text"] = deaccent(size_wrap(en_map[t]))
+            # Mechanics almanac: bigger text for readability, but the panel does not scroll,
+            # so size each entry adaptively by length (short -> up to 130%, long -> ~90% to
+            # stay fully visible). Calibrated so the longest stock entry fills the panel.
+            raw = en_map[t]
+            vis = len(re.sub(r"<[^>]+>", "", raw)) or 1
+            sz = min(130, round(2941 / math.sqrt(vis)))
+            e["text"] = deaccent(f"<size={sz}%>{strip_size(raw)}</size>")
             tr += 1
         else:
             kept += 1
