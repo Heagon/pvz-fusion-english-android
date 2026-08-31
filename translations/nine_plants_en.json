@@ -52,5 +52,65 @@
     "introduce": "<color=#3D1400>“Don't put an Ender Pumpkin Box inside an Ender Pumpkin Box; it may cause some unexpected nesting paradoxes or spacetime anomalies.” The Ender Pumpkin Boxes always say this. Really, they just want to avoid the nausea it causes.</color>",
     "info": "Automatically stores nearby cards, and can share that storage from any location.\n\n<color=#3D1400>Requirement: </color><color=red>Odyssey Mode</color>\n<color=#3D1400>Fusion recipe: </color><color=red>Pumpkin Box + Hyper-Spacetime Wall-nut</color>\n<color=#3D1400>Toughness: </color><color=red>16000, damage capped at 1000</color>\n<color=#3D1400>Feature ① </color><color=red>Immune to crushing and knockback</color>\n<color=#3D1400>② </color><color=red>Has the Pumpkin Box's features</color>\n<color=#3D1400>③ </color><color=red>Auto-stores plant cards within a 3.7-tile radius; while stored they gain a shield of 1/16 their toughness, lost when withdrawn</color>\n<color=#3D1400>④ </color><color=red>All Ender Pumpkin Boxes link a shared storage space. The storage space exists independently</color>\n<color=#3D1400>⑤ </color><color=red>When appearing in Super Random Mode, it randomly stores one Ultimate-series plant</color>\n<color=#3D1400>Modifier 1: </color><color=red>Automation Upgrade: can store iron drops as cards, prioritizing use on the lowest-HP Super Mechanical Wall-nut</color>\n<color=#3D1400>Modifier 2: </color><color=red>Stacking Upgrade: doubles the stack limit of a single slot</color>",
     "cost": ""
+  },
+  "1444": {
+    "name": "Ender Pumpkin"
+  },
+  "1445": {
+    "name": "Super Gatling Fume-shroom"
+  },
+  "1446": {
+    "name": "Marigold-shroom"
+  },
+  "1447": {
+    "name": "Marigold Giant-shroom"
+  },
+  "1448": {
+    "name": "Sniper Scaredy-shroom"
+  },
+  "1449": {
+    "name": "Silver Hypno-shroom"
+  },
+  "1450": {
+    "name": "Golden Hypno-shroom"
+  },
+  "1451": {
+    "name": "Cherry Mini-shroom"
+  },
+  "1452": {
+    "name": "Chomper Scaredy-shroom"
+  },
+  "1453": {
+    "name": "Umbrella Fume-shroom"
+  },
+  "1454": {
+    "name": "Doom Flower Pot"
+  },
+  "1455": {
+    "name": "Doom Umbrella Leaf"
+  },
+  "1456": {
+    "name": "Sea Chomper"
+  },
+  "1457": {
+    "name": "Ice Starfruit"
+  },
+  "1458": {
+    "name": "Chomper Fume-shroom"
+  },
+  "1459": {
+    "name": "Munch-shroom"
+  },
+  "1460": {
+    "name": "Sea-shroom Flower Pot"
+  },
+  "1461": {
+    "name": "Garlic Starfruit"
+  },
+  "5003": {
+    "name": "Ultimate Avarice Herb"
+  },
+  "5004": {
+    "name": "Ultimate Firnace"
   }
 }

@@ -275,6 +275,12 @@ def main():
     for st, p in nine.items():
         if int(st) not in have:
             lawn_en["plants"].append({"seedType": int(st), **p})
+    # inject my translations for zombies the mod omitted (e.g. new 3.9 zombies)
+    nine_z = LJ(f"{TRANS}/nine_zombies_en.json") or {}
+    havez = {z["theZombieType"] for z in zomb_en["zombies"]}
+    for zt, z in nine_z.items():
+        if int(zt) not in havez:
+            zomb_en["zombies"].append({"theZombieType": int(zt), **z})
     detail_titles = LJ(f"{TRANS}/detail_titles_en.json") or {"titles": {}, "types": {}}
     tex_map = build_tex_map() if WITH_TEXTURES else {}
     tex_cache = {}
