@@ -1,7 +1,7 @@
-# Plants vs. Zombies: Fusion 3.8.1 — English (Android)
+# Plants vs. Zombies: Fusion 3.9 — English (Android)
 
 An **unofficial English build for Android** of *Plants vs. Zombies: Fusion*
-(植物大战僵尸融合版) v3.8.1, made by statically applying the community English
+(植物大战僵尸融合版) v3.9, made by statically applying the community English
 translation to the game's Android APK so it runs in English on a phone — **no
 root, no mod loader, no PC required.**
 
@@ -26,7 +26,7 @@ root, no mod loader, no PC required.**
 ## 📥 Download & Install
 
 1. Go to the **[Releases](../../releases)** page and download the latest
-   `PvZ-Fusion-3.8.1-English.apk`.
+   `PvZ-Fusion-3.9-English.apk`.
 2. On your Android phone, allow **"Install unknown apps"** for your browser/file
    manager (Settings → Apps → your browser → Install unknown apps).
 3. **If you already have any version of this game installed, uninstall it first**

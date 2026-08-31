@@ -18,16 +18,15 @@ import re
 import json
 import sys
 import unicodedata
+from config import MOD, EN, TRANS
 
-MOD = r"./PvZ_Fusion_Translator"
-EN = MOD + r"/Localization/English"
-TRANS = r"./translations"
 CJK = re.compile(r'[一-鿿㐀-䶿]')
 BUFF_SIZE = 12  # shrink long modifier/buff descriptions to match almanac descriptions
 
 
 def deaccent(s):
-    """Accented Latin letters -> plain ASCII (the CN font renders them as a box). CJK/symbols kept."""
+    """Accented Latin letters (a-circumflex, e-acute, n-tilde, ...) -> plain ASCII, since
+    the game font has no glyph for them (renders a box). Symbols (x, degree) and CJK kept."""
     if not isinstance(s, str):
         return s
     out = []
@@ -112,7 +111,9 @@ def build_dict():
                 add(cbuff["name"], ebuff.get("name") or cbuff["name"])
             if cbuff.get("desc"):
                 en_full = ((ebuff.get("name") + ": ") if ebuff.get("name") else "") + (ebuff.get("desc") or "")
-                add(cbuff["desc"], f"<size={BUFF_SIZE}>{en_full}</size>")
+                # keep the game's default (readable) size; buff boxes are large / scrollable.
+                # (previously wrapped in <size=12> which made them tiny in the in-game picker)
+                add(cbuff["desc"], en_full)
     # tips
     for f in ("tips_fs", "tips_iz"):
         cnt, ent = LJ(f"{MOD}/Dumps/{f}.json") or {}, LJ(f"{EN}/Strings/{f}.json") or {}

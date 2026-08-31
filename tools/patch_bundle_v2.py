@@ -26,13 +26,9 @@ import struct
 import zipfile
 import unicodedata
 import UnityPy
+from config import APK, MOD, EN, TRANS, OUT
 from PIL import Image
 
-APK = r"./pvzrh3.8.1.apk"
-MOD = r"./PvZ_Fusion_Translator"
-EN = MOD + r"/Localization/English"
-TRANS = r"./translations"
-OUT = r"./work/data.unity3d.v2"
 
 WITH_TEXTURES = "--textures" in sys.argv
 CJK = re.compile(r'[一-鿿㐀-䶿豈-﫿]')
@@ -65,13 +61,16 @@ def LJ(p):
 
 
 def deaccent(s):
-    """Accented Latin letters (a-circumflex, e-acute, n-tilde, ...) -> plain ASCII, since
-    the game's CN font has no glyph for them (renders a box). Symbols (x, degree) and CJK kept."""
+    """Replace accented Latin letters (a-circumflex, e-acute, n-tilde, ...) with their
+    plain ASCII base, because the game's Chinese font has no glyphs for them and renders
+    them as a missing-glyph box. Only Latin letters in U+00C0..U+024F are touched --
+    symbols (x, degree, middle dot) and CJK are left exactly as-is."""
     if not isinstance(s, str):
         return s
     out = []
     for ch in s:
-        if 0xC0 <= ord(ch) <= 0x24F and unicodedata.category(ch).startswith("L"):
+        o = ord(ch)
+        if 0xC0 <= o <= 0x24F and unicodedata.category(ch).startswith("L"):
             base = "".join(c for c in unicodedata.normalize("NFKD", ch) if ord(c) < 128)
             out.append(base if base else ch)
         else:
@@ -148,8 +147,9 @@ def build_master():
     for st, p in nine.items():
         pass  # names handled in almanac merge; nothing to add to text dict
     # changelog popup body (one big MonoBehaviour framed string, shown every launch).
-    # Key = the game's EXACT 3.8.1 Chinese (translations/changelog_cn.txt) since the mod's
-    # 3.8 Dumps/changelog.txt differs; value = the team's official English changelog.
+    # Key = the game's EXACT 3.8.1 Chinese (translations/changelog_cn.txt, extracted from
+    # MB 188915 -- the mod's 3.8 Dumps/changelog.txt differs so can't be the key).
+    # Value = the translation team's official English changelog. Length-safe splice.
     cl_cn = os.path.join(TRANS, "changelog_cn.txt")
     cl_en = os.path.join(EN, "Strings", "changelog.txt")
     if os.path.exists(cl_cn) and os.path.exists(cl_en):
@@ -186,9 +186,11 @@ def merge_details(cn_text, en_map, titles=None, types=None):
     for e in cn.get("details", []):
         t = e.get("title")
         if t in en_map:
-            # Mechanics almanac: bigger text for readability, but the panel does not scroll,
-            # so size each entry adaptively by length (short -> up to 130%, long -> ~90% to
-            # stay fully visible). Calibrated so the longest stock entry fills the panel.
+            # Mechanics almanac: make text bigger for readability, but the content panel
+            # does not scroll, so size each entry ADAPTIVELY by its length -> short entries
+            # get large (up to 130%), long ones shrink just enough to stay fully visible.
+            # Calibrated so the longest stock entry (~1068 visible chars) lands at ~90%,
+            # which fills the panel; anything shorter is proportionally bigger, capped 130%.
             raw = en_map[t]
             vis = len(re.sub(r"<[^>]+>", "", raw)) or 1
             sz = min(130, round(2941 / math.sqrt(vis)))
@@ -257,10 +259,9 @@ def main():
     master["切换手套"] = "Toggle Glove"
     master["机制图鉴"] = "Mechanics"   # was "Mechanics Almanac" -> overflowed
     master["词条图鉴"] = "Modifiers"   # was "Modifier Almanac" -> overflowed
-    # highest-priority overrides (category shortenings, button-overflow fixes, etc.)
     for k, v in (LJ(f"{TRANS}/overrides.json") or {}).items():
         if not k.startswith("_"):
-            master[k] = v
+            master[k] = v            # highest-priority overrides (overflow fixes etc.)
     print("master dict:", len(master))
     dict_pats = [(struct.pack('<i', len(k.encode())) + k.encode(), v.encode(), len(k.encode()))
                  for k, v in master.items()]
