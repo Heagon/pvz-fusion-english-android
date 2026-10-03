@@ -1,0 +1,2 @@
+# exact game bytes (CRLF) = dictionary key; never normalize line endings
+translations/changelog_cn.txt -text

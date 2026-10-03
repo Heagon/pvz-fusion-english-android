@@ -153,7 +153,7 @@ def build_master():
     cl_cn = os.path.join(TRANS, "changelog_cn.txt")
     cl_en = os.path.join(EN, "Strings", "changelog.txt")
     if os.path.exists(cl_cn) and os.path.exists(cl_en):
-        with open(cl_cn, encoding="utf-8") as f:
+        with open(cl_cn, encoding="utf-8", newline="") as f:  # keep CRLF: exact game bytes
             cn_cl = f.read()
         with open(cl_en, encoding="utf-8") as f:
             en_cl = f.read()
