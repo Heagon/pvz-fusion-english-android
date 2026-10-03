@@ -24,6 +24,8 @@ the finished APK from Releases.
 | `build_apk.py` | Assemble the final APK: swap in the patched bundle + metadata **and bump `unity_app_guid`** so over-the-top updates (`install -r`) refresh the English text without a save-wiping clean install. |
 | `patch_bundle_v2.py` | Main asset patcher: almanac merge (+ font-size wrap + the 9 extra plants), UI string splice into MonoBehaviours, English texture swap. Run with `--textures` for the full build. |
 | `patch_metadata_v2.py` | Rebuild-based IL2CPP `global-metadata.dat` string-literal patcher (allows English of any length): HUD, buffs/modifiers, messages. |
+| `scan_leftover_cjk.py` | Audit: lists every Chinese string still left in the patched bundle + metadata (`work/leftover/*.json`); its gaps were translated into `translations/leftover_en.json`. |
+| `test_patch_helpers.py` | Self-check for the regex / on-screen-text helpers (`python test_patch_helpers.py` prints `ok`). |
 | `patch_metadata.py` | Older safe in-place metadata patcher (only same-or-shorter English). Kept for reference. |
 | `patch_bundle_full.py`, `patch_bundle_phase1.py`, `patch_bundle_spike.py` | Earlier iterations, kept for history. |
 | `build.sh` | Repack + sign helper. |

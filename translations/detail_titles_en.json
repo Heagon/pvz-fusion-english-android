@@ -6,7 +6,10 @@
     "植物体系": "Plant Systems",
     "僵尸机制": "Zombie Mechanics",
     "环境机制": "Environment",
-    "模式": "Modes"
+    "模式": "Modes",
+    "关卡机制": "Level Mechanics",
+    "杂项": "Misc",
+    "植物机制": "Plant Mechanics"
   },
   "titles": {
     "玩法-融合": "Gameplay - Fusion",
@@ -46,6 +49,32 @@
     "旅行生存模式": "Odyssey Survival Mode",
     "旅行：炼狱难度": "Odyssey: Inferno Difficulty",
     "旅行：诅咒难度": "Odyssey: Curse Difficulty",
-    "胆小菇之梦": "Puff-shroom's Dream"
+    "胆小菇之梦": "Puff-shroom's Dream",
+    "低矮、高大、巨型植物": "Plant Mechanics - Plant Sizes",
+    "僵尸机制-BOSS及领袖": "Zombie Mechanics - Boss & Mini-boss",
+    "僵尸机制-临界值": "Zombie Mechanics - Critical Threshold",
+    "僵尸机制-护甲": "Zombie Mechanics - DR Value",
+    "僵尸机制-碾压": "Zombie Mechanics - Crushing",
+    "僵尸机制-防具": "Zombie Mechanics - Zombie Armor Types",
+    "可密植、坚实、金属植物": "Plant Mechanics - Plant Properties",
+    "基本机制-僵尸身位": "Base Mechanics - Zombie Positions",
+    "基本机制-关卡难度": "Base Mechanics - Level Difficulties",
+    "基本机制-植物占位": "Base Mechanics - Plant Positions",
+    "杂项-卡牌解锁I": "Misc - Plant Unlock I",
+    "杂项-卡牌解锁II": "Misc - Plant Unlock II",
+    "杂项-配方解锁": "Misc - Recipe Unlock",
+    "植物机制-中毒状态": "Plant System - Poison",
+    "植物机制-传送状态": "Plant System - Chronoshift",
+    "植物机制-余烬状态": "Plant System - Irradiation",
+    "植物机制-光照等级": "Plant System - Lumos",
+    "植物机制-寒冷与冻结状态": "Plant System - Ice",
+    "植物机制-护盾": "Plant Mechanics - Shield",
+    "植物机制-水草值": "Plant System - Tangle",
+    "植物机制-磁力系统": "Plant System - Magnetic",
+    "植物机制-红温状态": "Plant System - Fire",
+    "环境机制-雪原白天": "Environmental Mechanics - Snow Day",
+    "环境机制-雪原黑夜": "Environmental Mechanics - Snow Night",
+    "生存模式": "Survival Mode",
+    "生存模式无尽：诅咒挑战": "Survival Mode Endless: Evil Plants"
   }
 }

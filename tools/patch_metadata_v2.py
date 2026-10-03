@@ -19,8 +19,11 @@ import json
 import sys
 import unicodedata
 from config import MOD, EN, TRANS
+from patch_bundle_v2 import load_regexes, regex_tr
 
 CJK = re.compile(r'[一-鿿㐀-䶿]')
+PH = re.compile(r"\{\d+(?::[^}]*)?\}")
+LOG = re.compile(r"\s*\[[A-Za-z_][\w.]*\]")   # "[ShopManager] ..." debug logs, never shown
 BUFF_SIZE = 12  # shrink long modifier/buff descriptions to match almanac descriptions
 
 
@@ -123,6 +126,10 @@ def build_dict():
     # supplement (my own translations) + detail titles/types + 9-plant names
     for k, v in (LJ(f"{TRANS}/supplement.json") or {}).items():
         add(k, v)
+    # leftover_en: strings still Chinese after all of the above (scan_leftover_cjk.py audit)
+    for k, v in (LJ(f"{TRANS}/leftover_en.json") or {}).items():
+        if not k.startswith("_"):
+            add(k, v)
     dt = LJ(f"{TRANS}/detail_titles_en.json") or {}
     for k, v in dt.get("titles", {}).items():
         add(k, v)
@@ -146,12 +153,24 @@ def main(inp, outp):
 
     tr = build_dict()
     tr_b = {k.encode(): v.encode() for k, v in tr.items()}
+    regexes = load_regexes()
+
+    def regex_b(cn_b):
+        """Official runtime regexes for literals the dict missed (e.g. '攻击力：{0}').
+        Only if the result keeps the exact {n} placeholder set and drops all Chinese."""
+        s = cn_b.decode("utf-8", "replace")
+        if not CJK.search(s) or LOG.match(s):
+            return None
+        en = regex_tr(s, regexes, tr)
+        if en is None or CJK.search(en) or sorted(PH.findall(en)) != sorted(PH.findall(s)):
+            return None
+        return deaccent(en).encode()
 
     # rebuild stringLiteralData
     nlit = pairs[0][1] // 8
     new_blob = bytearray()
     remap = {}          # (orig_dataIndex, length) -> (new_dataIndex, new_length)
-    done = 0
+    done = rx_done = 0
     for i in range(nlit):
         length, di = struct.unpack_from("<II", gm, slOff + i * 8)
         key = (di, length)
@@ -160,6 +179,9 @@ def main(inp, outp):
         else:
             cn_b = bytes(gm[sldOff + di: sldOff + di + length])
             en_b = tr_b.get(cn_b)
+            if en_b is None:
+                en_b = regex_b(cn_b)
+                rx_done += en_b is not None
             out_b = en_b if en_b is not None else cn_b
             ndi = len(new_blob)
             nlen = len(out_b)
@@ -190,7 +212,7 @@ def main(inp, outp):
 
     with open(outp, "wb") as f:
         f.write(out)
-    print(f"translated {done} literals; sldData {sldSize} -> {new_size} (delta {delta:+}); "
+    print(f"translated {done} literals ({rx_done} via regex); sldData {sldSize} -> {new_size} (delta {delta:+}); "
           f"filesize {len(gm)} -> {len(out)}; wrote {outp}")
 
 

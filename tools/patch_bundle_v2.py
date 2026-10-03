@@ -206,9 +206,12 @@ def merge_details(cn_text, en_map, titles=None, types=None):
 
 
 # ---------------- dict apply to TextAsset json values ----------------
+SKIP_KEYS = {"id", "arguments"}  # logic keys (e.g. "Other:幸运:0", "Synergy_魅惑僵尸"), never shown
+
+
 def translate_values(obj, d, stat):
     if isinstance(obj, dict):
-        return {k: translate_values(v, d, stat) for k, v in obj.items()}
+        return {k: (v if k in SKIP_KEYS else translate_values(v, d, stat)) for k, v in obj.items()}
     if isinstance(obj, list):
         return [translate_values(x, d, stat) for x in obj]
     if isinstance(obj, str) and obj in d:
@@ -244,6 +247,75 @@ def splice_object(data, dict_pats):
     return bytes(buf), len(matches)
 
 
+# ---------------- display-only pass (TMP/Text components) ----------------
+# Text that only exists in on-screen components. Translated ONLY inside these classes,
+# never in data/tile/skeleton assets whose names may be lookup keys.
+DISPLAY_CLASSES = {"TextMeshProUGUI", "TextMeshPro", "Text", "TMP_InputField", "TalentNode"}
+GROUP_REF = re.compile(r"\{(\d+)\}")
+
+
+def load_regexes():
+    """The translation team's runtime regexes (translation_regexs.json, .NET syntax)."""
+    out = []
+    for k, v in (LJ(f"{EN}/Strings/translation_regexs.json") or {}).items():
+        if k.startswith("---") or not isinstance(v, str):
+            continue
+        try:
+            out.append((re.compile(re.sub(r"\(\?<(\w+)>", r"(?P<\1>", k)), v))
+        except re.error:
+            pass
+    return out
+
+
+def regex_tr(s, regexes, d):
+    """Whole-string regex translation. A pattern must cover the full text, except
+    '^prefix\\s+' patterns whose template is the complete translation of that text.
+    Captured groups are translated via the dict; give up if any stays Chinese."""
+    for rx, tpl in regexes:
+        m = rx.match(s)
+        if not m or (m.end() != len(s) and not rx.pattern.endswith(r"\s+")):
+            continue
+        groups = [d.get(g, g) if g else "" for g in m.groups()]
+        if any(CJK.search(g) for g in groups) or tpl.count("\n") > s.count("\n"):
+            continue  # untranslatable group, or a template for a bigger multi-line text
+        return GROUP_REF.sub(lambda r: groups[int(r.group(1))] if int(r.group(1)) < len(groups) else r.group(0), tpl)
+    return None
+
+
+def script_class(o):
+    try:
+        return o.read(check_read=False).m_Script.read().m_ClassName
+    except Exception:
+        return ""
+
+
+def display_pass(data, lookup):
+    """Translate every complete framed CJK string in a display component via lookup(s)."""
+    edits, i, n = [], 0, len(data)
+    while i + 4 <= n:
+        ln = struct.unpack_from("<i", data, i)[0]
+        end = i + 4 + ln
+        pad = (4 - end % 4) % 4
+        if 2 < ln < 20000 and end + pad <= n and data[end:end + pad] == b"\x00" * pad:
+            try:
+                s = data[i + 4:end].decode("utf-8")
+            except UnicodeDecodeError:
+                s = None
+            if s and CJK.search(s):
+                en = lookup(s)
+                if en:
+                    edits.append((i, end + pad, en.encode()))
+                i = end + pad
+                continue
+        i += 4
+    if not edits:
+        return data, 0
+    buf = bytearray(data)
+    for a, b, en_b in reversed(edits):
+        buf[a:b] = struct.pack('<i', len(en_b)) + en_b + b"\x00" * ((4 - (a + 4 + len(en_b)) % 4) % 4)
+    return bytes(buf), len(edits)
+
+
 def build_tex_map():
     m = {}
     for p in glob.glob(f"{EN}/Textures/**/*.png", recursive=True) + glob.glob(f"{EN}/Sprites/**/*.png", recursive=True):
@@ -265,6 +337,14 @@ def main():
     print("master dict:", len(master))
     dict_pats = [(struct.pack('<i', len(k.encode())) + k.encode(), v.encode(), len(k.encode()))
                  for k, v in master.items()]
+    # leftover_en.json: text still Chinese after the dict above (audited with
+    # scan_leftover_cjk.py). Used for TextAsset values + display components only.
+    full = {**{k: deaccent(v) for k, v in (LJ(f"{TRANS}/leftover_en.json") or {}).items()
+               if not k.startswith("_")}, **master}
+    regexes = load_regexes()
+
+    def display_lookup(s):
+        return full.get(s) or regex_tr(s, regexes, full)
 
     lawn_en = LJ(f"{EN}/Almanac/LawnStringsTranslate.json")
     zomb_en = LJ(f"{EN}/Almanac/ZombieStringsTranslate.json")
@@ -301,7 +381,7 @@ def main():
     alm = {}
     ta_val = [0]
     ta_hit = 0
-    ui_objs = ui_sites = 0
+    ui_objs = ui_sites = disp_sites = 0
     tex_n = 0
     font_n = 0
     for o in env.objects:
@@ -351,14 +431,15 @@ def main():
                 d.save()
             else:
                 if CJK.search(s):
+                    bom = "﻿" if s.startswith("﻿") else ""  # level JSONs + Goods carry a BOM
                     try:
-                        j = json.loads(s)
+                        j = json.loads(s[len(bom):])
                     except Exception:
                         continue
                     st = [0]
-                    j2 = translate_values(j, master, st)
+                    j2 = translate_values(j, full, st)
                     if st[0]:
-                        d.m_Script = json.dumps(j2, ensure_ascii=False)
+                        d.m_Script = bom + json.dumps(j2, ensure_ascii=False)
                         d.save()
                         ta_hit += 1
                         ta_val[0] += st[0]
@@ -368,6 +449,10 @@ def main():
                and b'\xe8' not in data and b'\xe9' not in data:
                 continue  # no common CJK lead byte -> skip
             new, n = splice_object(data, dict_pats)
+            if script_class(o) in DISPLAY_CLASSES:
+                new, n2 = display_pass(new, display_lookup)
+                disp_sites += n2
+                n += n2
             if n:
                 o.set_raw_data(new)
                 ui_objs += 1
@@ -376,7 +461,7 @@ def main():
     print("almanac:", alm)
     print(f"fonts replaced: {font_n}")
     print(f"TextAsset value-translations: {ta_val[0]} values in {ta_hit} assets")
-    print(f"MonoBehaviour splice: objects={ui_objs} sites={ui_sites}")
+    print(f"MonoBehaviour splice: objects={ui_objs} sites={ui_sites} (display pass: {disp_sites})")
     if WITH_TEXTURES:
         print(f"textures replaced: {tex_n}")
 
