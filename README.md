@@ -1,21 +1,52 @@
-# Plants vs. Zombies: Fusion 4.0.5.2 — English (Android)
+# Plants vs. Zombies: Fusion (Android) — English & Tiếng Việt
 
-An **unofficial English build for Android** of *Plants vs. Zombies: Fusion*
-(植物大战僵尸融合版) v4.0.5.2, made by statically applying the community English
-translation to the game's Android APK so it runs in English on a phone — **no
-root, no mod loader, no PC required.**
+An **unofficial Android localization project** for *Plants vs. Zombies: Fusion* (植物大战僵尸融合版), made by statically applying community translations to the original Android APK — **no root, no PC, no runtime mod loader required.**
 
-> ⚠️ **Fan-made & non-commercial.** This is a fan project. It is **not** affiliated
-> with, endorsed by, or connected to the original game's developer, the translation
-> team, EA, or PopCap. All game content and the English translation belong to their
-> respective creators — see **[Credits & Sources](#-credits--sources)**. Please
-> support the original creators and get the translation from their official channels.
+Currently offering both **English** and **Vietnamese (Tiếng Việt)** builds for:
+- **v4.0.5.2 (Stable Release)**
+- **v4.1 Preview (Half-Translated / Đang dịch dở)**
 
-> ⚡ **Latest Preview: v4.1 (Half-Translated / Work-in-Progress):**
-> An experimental pre-release build `PvZ-Fusion-4.1-English-HalfTranslate.apk` based on game v4.1 is now available on the **[Releases](../../releases)** page.
-> - **Translation Status:** Partial / Half-Translated (Đang dịch dở).
-> - **What is translated:** Almanac (742/742 plants, 238/238 zombies, 48/48 mechanics entries), 48 English UI textures, v4.1 changelog popup, and the new Travel Roguelike/AutoChess points, gear, and investment buffs.
-> - **What may remain untranslated:** Deep level creator nodes, custom community minigames, and newly introduced 4.1 dialogues while the community translation team is actively finalizing the full 4.1 translation.
+> ⚠️ **Fan-made & non-commercial.** This is a fan project. It is **not** affiliated with, endorsed by, or connected to the original game's developer, the translation teams, EA, or PopCap. All game content and translations belong to their respective creators — see **[Credits & Sources](#-credits--sources)**.
+
+---
+
+## 📥 Releases & Downloads
+
+All builds are signed with the project's official release keystore and verified with Android Signature Scheme v1, v2, and v3. Save files are preserved across updates (`unity_app_guid` dynamic bump).
+
+### 🌟 v4.0.5.2 (Latest Stable)
+👉 **[View Release v4.0.5.2](../../releases/tag/v4.0.5.2)** | **[Bản riêng Tiếng Việt v4.0.5.2-vi](../../releases/tag/v4.0.5.2-vi)**
+
+| Language | APK File | Size | SHA-256 Checksum |
+| :--- | :--- | :--- | :--- |
+| 🇬🇧 **English** | [`PvZ-Fusion-4.0.5.2-English.apk`](../../releases/download/v4.0.5.2/PvZ-Fusion-4.0.5.2-English.apk) | 599.5 MB | `aba29a346a6ecca587ce748b18568a12cfdbc4c990246d4ff35f7a4add4fb99c` |
+| 🇻🇳 **Tiếng Việt** | [`PvZ-Fusion-4.0.5.2-Vietnamese.apk`](../../releases/download/v4.0.5.2/PvZ-Fusion-4.0.5.2-Vietnamese.apk) | 597.5 MB | `57d17659fff4147bd2f88458fe98f8c1f8065ed60a073fdc1fbd7fcba55039d5` |
+
+---
+
+### ⚡ v4.1 Preview (Half-Translated / Đang dịch dở)
+👉 **[View Release v4.1-half-translate](../../releases/tag/v4.1-half-translate)** | **[Bản riêng Tiếng Việt v4.1-vi-half-translate](../../releases/tag/v4.1-vi-half-translate)**
+
+> [!WARNING]
+> **Half-Translate / Đang dịch dở:** Bản thử nghiệm sớm cho PvZ Fusion 4.1. Các nội dung mới (AutoChess Thám hiểm Tiến Hóa, thực vật Tối Thượng mới, bùa chú) đang được dịch tiếp tục từ tiếng Trung; các chuỗi chưa hoàn thiện sẽ tạm hiển thị tiếng Anh/bản dịch nháp để đảm bảo game không bị lỗi.
+
+| Language | APK File | Size | SHA-256 Checksum |
+| :--- | :--- | :--- | :--- |
+| 🇬🇧 **English** | [`PvZ-Fusion-4.1-English-HalfTranslate.apk`](../../releases/download/v4.1-half-translate/PvZ-Fusion-4.1-English-HalfTranslate.apk) | 628.6 MB | `f9fd984f1647a442756a5021cdcddaa2bcf8fe9db8785a0ce9581e6768a865b2` |
+| 🇻🇳 **Tiếng Việt** | [`PvZ-Fusion-4.1-Vietnamese-HalfTranslate.apk`](../../releases/download/v4.1-half-translate/PvZ-Fusion-4.1-Vietnamese-HalfTranslate.apk) | 626.7 MB | `83fad03cf196195727c6eaf540f299be9f2133cc41e778016c99dd420d0b6dd6` |
+
+---
+
+## 🇻🇳 Thông tin bản Tiếng Việt (Vietnamese Details)
+
+- **Hỗ trợ 100% tiếng Việt có dấu:** Hệ thống tự động cấu hình font dự phòng `LiberationSans` trong asset bundle `data.unity3d`, giúp toàn bộ các ký tự có dấu (`ừ, ỡ, ệ, ằ, ú, ắ, â, ĩ, ô, ễ...`) hiển thị sắc nét, không bị lỗi mất ký tự hay ô vuông `[]`.
+- **Việt hóa Sách Bách Khoa (Almanac):**
+  - Đầy đủ 720/720 thực vật (bản 4.0.5.2) và 742/742 thực vật (bản 4.1).
+  - Đầy đủ 235/235 zombie (bản 4.0.5.2) và 238/238 zombie (bản 4.1).
+  - Đầy đủ 47/47 cơ chế (bản 4.0.5.2) và 48/48 cơ chế (bản 4.1, bao gồm Đinh ba Biển sâu).
+- **Việt hóa Giao diện:** Toàn bộ menu, nút bấm, bảng kết thúc màn chơi, bảng chọn độ khó, HUD, thông báo trong trận và hệ thống bùa Thám hiểm (Travel Buffs).
+- **Đồ họa:** Thay thế 38+ kết cấu hình ảnh menu sang tiếng Việt.
+- **Giữ file lưu (Keep Save Data):** Cập nhật `unity_app_guid` tự động, cho phép cài đè trực tiếp mà không mất file lưu trữ tiến trình game (`playerData.json`).
 
 ---
 
@@ -29,124 +60,34 @@ root, no mod loader, no PC required.**
 
 ---
 
-## 📥 Download & Install
+## 📱 Installation Guide
 
-1. Go to the **[Releases](../../releases)** page and download the latest
-   `PvZ-Fusion-4.0.5.2-English.apk`.
-2. On your Android phone, allow **"Install unknown apps"** for your browser/file
-   manager (Settings → Apps → your browser → Install unknown apps).
-3. **If you already have any version of this game installed, uninstall it first**
-   (the modified APK is signed with a different key and some changes only apply on
-   a clean install).
-4. Open the downloaded APK and tap **Install**.
+1. Download the desired APK from the **[Releases](../../releases)** table above.
+2. On Android, allow **"Install unknown apps"** for your browser / file manager if prompted.
+3. Tap the APK file and select **Install / Update**.
+4. **Upgrading from previous versions:**
+   - If upgrading from an earlier release signed with our key, simply install over the top (`install -r`). Your save file is automatically preserved!
+   - If switching from a different author's APK (different signature key), backup your `playerData.json` save file first (see **[docs/MIGRATION.md](docs/MIGRATION.md)**).
 
-Requirements: **Android 8+**, **arm64-v8a** device (most phones from ~2018 on).
-Full steps: **[docs/INSTALL.md](docs/INSTALL.md)**.
-
-> **Already playing another version and want to keep your progress?** Switching
-> builds needs a one-time uninstall (different signing key), but you can **back up and
-> restore your save** — see **[docs/MIGRATION.md](docs/MIGRATION.md)**. (Future English
-> updates keep your save automatically.)
-
----
-
-## ✨ What's translated
-
-- **Almanac** — all plant & zombie names, descriptions, and cost/recharge text
-  (including 9 plants the PC translation had left in Chinese).
-- **Mechanics & Modifiers almanac** — mechanic pages and all Odyssey buff / debuff /
-  modifier ("词条") names and descriptions.
-- **Menus & UI** — main menu, mode names, buttons, settings, dialogs (menu graphics
-  swapped for the English textures from the PC translation).
-- **In-game HUD & messages** — "Enemies", "Difficulty", "Adventure Lv.", wave/level
-  banners, notifications, etc.
-- **Odyssey / travel content** — route names, level tips, status messages
-  (~1,300 extra strings translated for this build, since the PC mod didn't cover them).
-
-Description font size is reduced so long entries fit on a phone screen.
-
-### Known limitations
-- A tiny amount of Chinese may remain (one rare zombie, a small "hotkey" label,
-  some dynamically-composed number strings, and any artwork the translation team
-  didn't provide an English version of).
-- The in-game font is the game's **original** font. Swapping to a different font
-  (e.g. Arial) triggered a character-rendering bug in this game engine, so the
-  original font is kept (it renders every character correctly).
+Requirements: **Android 8.0+**, **arm64-v8a** processor.
 
 ---
 
 ## 🙏 Credits & Sources
 
-This build stands entirely on the work of others. **Please visit and support them:**
+This project exists thanks to the dedicated work of the community:
 
-| Role | Who | Link |
+| Role | Contributor | Links |
 |---|---|---|
-| **Original game** (*PvZ Fusion* / 植物大战僵尸融合版) | **LanPiaoPiao (蓝飘飘fly)** & team | https://space.bilibili.com/3546619314178489 |
-| **English translation** (PC mod, the source of all English text/textures) | **PVZF‑Translation team** | https://github.com/Teyliu/PVZF-Translation · Discord: https://discord.gg/DPAC5ZVJ8T |
-| OG translation mod creator | **NaKune** | https://github.com/ArifRios1st/PVZ-Hyper-Fusion-Mod |
-| Coding help / font implementation | **Climeron** | https://github.com/Climeron |
-| Audio changing implementation | **TrevTV** | https://github.com/TrevTV/MelonLoader-AudioTools |
-| Main‑menu music | **Rollerlhite** | https://www.youtube.com/watch?v=aBj1MfvnHPE |
-| Game artist | **机鱼吐司 (Gfishtus)** | (see Discord) |
-| Multi‑language PC package | **Blooms** | (see Discord) |
-
-The English **strings, textures and fonts** come from the **PVZF‑Translation**
-project. Their README explicitly asks that people credit them and download from
-their **official GitHub repo** — so: **do not re‑host their PC translation, and if
-you want the desktop version or the latest translation, get it from
-https://github.com/Teyliu/PVZF-Translation and their Discord.**
-
-Only the **Android packaging + the ~1,300 extra English strings** in
-[`translations/`](translations/) are new to this repository.
-
-See **[CREDITS.md](CREDITS.md)** for details.
+| **Original Game Creator** (*PvZ Fusion* / 植物大战僵尸融合版) | **LanPiaoPiao (蓝飘飘fly)** | [Bilibili](https://space.bilibili.com/3546619314178489) |
+| **English Translation** | **PVZF‑Translation Team** | [GitHub](https://github.com/Teyliu/PVZF-Translation) · [Discord](https://discord.gg/DPAC5ZVJ8T) |
+| **Vietnamese Translation (Bản Việt Hóa)** | **Team CBD & Team Bloom** | [PVZF-Translation / Vietnamese](https://github.com/Teyliu/PVZF-Translation) |
+| **Android Porting & Automation** | **Heagon** | [GitHub Repo](https://github.com/Heagon/pvz-fusion-english-android) |
 
 ---
 
-## ⚖️ Legal / disclaimer
+## ⚖️ License & Disclaimer
 
-- *Plants vs. Zombies* is a trademark of **Electronic Arts / PopCap**. *PvZ Fusion*
-  is an unofficial fan game; this English build is an unofficial fan port. This
-  project is **not affiliated with EA, PopCap, the fan‑game developer, or the
-  translation team.**
-- Provided **free of charge, non‑commercial, "as is", with no warranty.** Do not
-  sell it or put it behind ads/paywalls.
-- If any original author asks for this to be taken down, it will be removed.
-- You install and use this at your own risk.
-
----
-
-## 🔒 Security notes
-
-- The APK is signed with an **auto‑generated debug key** (standard for community
-  builds). It is **not** signed with the original developer's key. Only download it
-  from **this repo's Releases** — a debug‑signed APK can be re‑signed by anyone, so
-  don't trust copies from random sites.
-- This repository contains **no keystores, keys, or personal data** — only build
-  scripts and translation JSON.
-- The original Chinese APK and the PC translation files are **not** included here
-  (they belong to their creators — get them from the links above).
-
----
-
-## 🛠️ How it was built (reproduce)
-
-The APK is produced by statically patching the original Chinese APK with the English
-content — no runtime mod loader. Pipeline:
-
-1. Extract `data.unity3d` (Unity IL2CPP asset bundle) and `global-metadata.dat`.
-2. **Translate assets** (`tools/patch_bundle_v2.py`, uses [UnityPy](https://github.com/K0lb3/UnityPy)):
-   replace almanac TextAssets, splice UI strings into MonoBehaviours, swap English
-   menu textures.
-3. **Translate code strings** (`tools/patch_metadata_v2.py`): rebuild the IL2CPP
-   metadata string‑literal table so English of any length fits.
-4. **Repack** (`tools/repack.py`) keeping 4‑byte alignment, then **sign**
-   (v1+v2+v3) with [uber-apk-signer](https://github.com/patrickfav/uber-apk-signer).
-
-Reproducing requires: Python 3 + UnityPy, Java 8+, the **original Chinese APK**, and
-the **PC translation folder** (`PvZ_Fusion_Translator`) — both from the sources
-above. See **[tools/README.md](tools/README.md)**.
-
----
-
-*Made for the community. Big thanks to everyone credited above. 🌻*
+- *Plants vs. Zombies* is a registered trademark of **Electronic Arts / PopCap Games**.
+- This project is an unofficial fan port, non-commercial, and free of charge. No monetisation or ads.
+- Distributed "as is" with no warranty.
