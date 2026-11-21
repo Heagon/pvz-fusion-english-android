@@ -1,71 +1,115 @@
-# Keep your save when switching to this English build
+# Sao Lưu & Chuyển Dữ Liệu Save / Save Data Migration / 存档备份与迁移指南
 
-Switching **from another build** (e.g. the original Chinese APK) **to this English
-build** needs a one-time uninstall, because the two are signed with different keys —
-and uninstalling deletes the save. But the save is a **single file in normal storage**,
-so you can just back it up and put it back. **No root needed** (tested on Android 13).
+<p align="center">
+  <a href="#-tiếng-việt"><b>🇻🇳 Tiếng Việt</b></a> •
+  <a href="#-english"><b>🇬🇧 English</b></a> •
+  <a href="#-简体中文"><b>🇨🇳 简体中文</b></a>
+</p>
 
-Good news:
-- The save is fully compatible (same game), so your Chinese-version progress works here.
-- This is **one-time**. Future **English → English** updates (e.g. 3.8.1 → 3.9) are signed
-  with the same key, so they install over the top and **keep your save automatically**.
+---
 
-Package name (same for all builds): `com.LanPiaoPiao.PlantsVsZombiesRH`
+## 🇻🇳 Tiếng Việt
 
-## Where the save is  ✅ verified
+Khi bạn chuyển từ một file APK của nguồn khác (bị xung đột chữ ký số) sang bộ cài đặt này, hệ điều hành Android sẽ yêu cầu gỡ bản cũ. Vì vậy, bạn cần sao lưu file save trước khi gỡ.
+
+### Vị trí file save trên điện thoại
 ```
 /sdcard/Android/data/com.LanPiaoPiao.PlantsVsZombiesRH/files/playerData.json
 ```
-(`playerData.json` is your whole profile: progress, coins, unlocks. If the folder also
-has a `LevelData` folder, back that up too. The `il2cpp` folder is just cache — ignore it.)
+*(Nếu trong thư mục có thêm thư mục `LevelData`, hãy sao lưu cả thư mục đó. Thư mục `il2cpp` chỉ là bộ nhớ đệm, có thể bỏ qua).*
+
+### Cách sao lưu & Khôi phục
+
+#### Cách 1: Thao tác trực tiếp trên điện thoại (Không cần máy tính)
+1. Dùng ứng dụng quản lý tệp có quyền truy cập thư mục hệ thống (như **ZArchiver**, **MT Manager**, hoặc Trình quản lý tệp gốc của máy).
+2. Tìm đến đường dẫn `Android/data/com.LanPiaoPiao.PlantsVsZombiesRH/files/`.
+3. Sao chép tệp `playerData.json` (và thư mục `LevelData` nếu có) ra thư mục an toàn khác (ví dụ `Download/` hoặc thẻ nhớ).
+4. Gỡ cài đặt bản cũ, cài đặt file APK mới từ kho này.
+5. Mở game mới lên 1 lần để hệ thống tự tạo thư mục dữ liệu, sau đó thoát game hoàn toàn.
+6. Sao chép tệp `playerData.json` đã lưu ở bước 3 dán đè lại vào đường dẫn `Android/data/com.LanPiaoPiao.PlantsVsZombiesRH/files/`.
+7. Mở lại game: Toàn bộ thành quả cày cuốc đã trở lại đầy đủ!
+
+#### Cách 2: Dùng máy tính qua cáp USB (ADB)
+```bash
+# 1. Kéo file save về máy tính
+adb pull /sdcard/Android/data/com.LanPiaoPiao.PlantsVsZombiesRH/files/playerData.json
+
+# 2. Gỡ bản cũ và cài bản mới
+adb uninstall com.LanPiaoPiao.PlantsVsZombiesRH
+adb install PvZ-Fusion-4.0.5.2-Vietnamese.apk
+
+# 3. Mở game 1 lần rồi đóng, sau đó khôi phục save
+adb push playerData.json /sdcard/Android/data/com.LanPiaoPiao.PlantsVsZombiesRH/files/playerData.json
+```
 
 ---
 
-## Method A — With a PC (adb)  ✅ easiest & reliable, works on Android 11–14, no root
+## 🇬🇧 English
 
-1. On the phone: **Developer options → USB debugging → ON**, plug into the PC, install
-   [platform-tools](https://developer.android.com/tools/releases/platform-tools) so you have `adb`.
-2. **Back up your save (do this BEFORE uninstalling):**
-   ```
-   adb pull /sdcard/Android/data/com.LanPiaoPiao.PlantsVsZombiesRH/files/playerData.json
-   ```
-   (optional, if it exists:)
-   ```
-   adb pull /sdcard/Android/data/com.LanPiaoPiao.PlantsVsZombiesRH/files/LevelData
-   ```
-3. **Switch builds:**
-   ```
-   adb uninstall com.LanPiaoPiao.PlantsVsZombiesRH
-   adb install PvZ-Fusion-3.8.1-English.apk
-   ```
-4. **Launch the game once**, let it reach the menu, then fully close it (this creates the
-   `files` folder).
-5. **Restore your save:**
-   ```
-   adb push playerData.json /sdcard/Android/data/com.LanPiaoPiao.PlantsVsZombiesRH/files/playerData.json
-   ```
-   (and `adb push LevelData /sdcard/Android/data/com.LanPiaoPiao.PlantsVsZombiesRH/files/` if you backed it up)
-6. Open the game — your progress is back. 🎉  *(Verified: profile, coins and level progress carry over.)*
+When switching from a third-party build signed with a different key, Android requires uninstalling the existing package. Because uninstalling wipes app storage, you must back up your save file first.
 
----
+### Save File Location
+```
+/sdcard/Android/data/com.LanPiaoPiao.PlantsVsZombiesRH/files/playerData.json
+```
+*(If a `LevelData` folder is present, back it up as well. The `il2cpp` folder is temporary cache and can be ignored).*
 
-## Method B — Phone only (file manager)  ⚠️ easy on Android ≤10, needs a capable file manager on 11+
+### Backup & Restore Procedure
 
-1. In a file manager, open
-   `Android/data/com.LanPiaoPiao.PlantsVsZombiesRH/files/` and **copy `playerData.json`**
-   (and the `LevelData` folder if present) somewhere safe, e.g. `Download/`.
-2. Uninstall the old game, install `PvZ-Fusion-3.8.1-English.apk`, launch it once, then close it.
-3. **Copy `playerData.json` back** into
-   `Android/data/com.LanPiaoPiao.PlantsVsZombiesRH/files/`, overwriting.
+#### Method 1: On-Device (Using File Manager)
+1. Use a capable file explorer that can access Android 11+ app data (e.g. **ZArchiver**, **MT Manager**, or your device's built-in File Manager).
+2. Navigate to `Android/data/com.LanPiaoPiao.PlantsVsZombiesRH/files/`.
+3. Copy `playerData.json` (and `LevelData` if available) to a safe location such as `Download/`.
+4. Uninstall the third-party APK, then install the new APK from this repository.
+5. Launch the newly installed game once to let it initialize the `files/` directory, then close it completely.
+6. Copy your backed-up `playerData.json` back into `Android/data/com.LanPiaoPiao.PlantsVsZombiesRH/files/`.
+7. Relaunch the game — all progress is fully restored!
 
-On **Android 11+**, the built-in Files app usually can't open other apps' `Android/data`
-folders. Use one that can (**MT Manager**, **ZArchiver**, **MiXplorer**, or your phone
-maker's own Files app), or use Method A. Rooted phones can copy it freely.
+#### Method 2: Via PC (ADB)
+```bash
+# 1. Pull save to computer
+adb pull /sdcard/Android/data/com.LanPiaoPiao.PlantsVsZombiesRH/files/playerData.json
+
+# 2. Reinstall
+adb uninstall com.LanPiaoPiao.PlantsVsZombiesRH
+adb install PvZ-Fusion-4.0.5.2-English.apk
+
+# 3. Restore save
+adb push playerData.json /sdcard/Android/data/com.LanPiaoPiao.PlantsVsZombiesRH/files/playerData.json
+```
 
 ---
 
-## Notes
-- Always back up **before** uninstalling — uninstalling is what deletes the save.
-- Keep a copy of `playerData.json` somewhere safe; there is **no cloud save**.
-- If the game ever won't launch after restoring, delete the `il2cpp` cache folder in the
-  same `files/` directory (it's regenerated on next launch) and try again.
+## 🇨🇳 简体中文
+
+当从非本项目的其他第三方安装包（签名不一致）切换到本项目时，安卓系统会要求先卸载旧版本。由于卸载会清除应用数据目录，因此在卸载前备份存档至关重要。
+
+### 存档文件存储路径
+```
+/sdcard/Android/data/com.LanPiaoPiao.PlantsVsZombiesRH/files/playerData.json
+```
+*(若该目录下存在 `LevelData` 文件夹，也请一同备份。`il2cpp` 文件夹为运行时缓存，无需备份)。*
+
+### 备份与恢复步骤
+
+#### 方法一：手机端直接操作（免电脑）
+1. 使用具备 Android 11+ Data 目录访问权限的文件管理器（如 **MT 管理器**、**ZArchiver** 或手机自带文件管理应用）。
+2. 进入路径：`Android/data/com.LanPiaoPiao.PlantsVsZombiesRH/files/`。
+3. 将 `playerData.json`（及可能存在的 `LevelData` 文件夹）复制备份到安全路径（如 `Download/` 目录）。
+4. 卸载旧版游戏，安装本仓库发布的对应版本 APK。
+5. 启动一次新安装的游戏以生成数据目录，随后彻底关闭游戏后台。
+6. 将备份好的 `playerData.json` 覆盖复制回 `Android/data/com.LanPiaoPiao.PlantsVsZombiesRH/files/` 目录下。
+7. 重新进入游戏，存档与通关进度即可全部恢复！
+
+#### 方法二：电脑端 ADB 命令行
+```bash
+# 1. 导出存档到电脑
+adb pull /sdcard/Android/data/com.LanPiaoPiao.PlantsVsZombiesRH/files/playerData.json
+
+# 2. 卸载旧版并安装新版
+adb uninstall com.LanPiaoPiao.PlantsVsZombiesRH
+adb install PvZ-Fusion-4.0.5.2-Chinese-Raw.apk
+
+# 3. 恢复存档文件
+adb push playerData.json /sdcard/Android/data/com.LanPiaoPiao.PlantsVsZombiesRH/files/playerData.json
+```

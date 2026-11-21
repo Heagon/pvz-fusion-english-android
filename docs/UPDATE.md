@@ -1,82 +1,58 @@
-# Updating without losing your save
+# Cập Nhật Không Mất Save / Updating Without Losing Save / 无损更新与存档保留指南
 
-**Short version:** once you are on an English build from this repo, every later English
-update **installs over the top and keeps your save automatically** — do **not** uninstall.
+<p align="center">
+  <a href="#-tiếng-việt"><b>🇻🇳 Tiếng Việt</b></a> •
+  <a href="#-english"><b>🇬🇧 English</b></a> •
+  <a href="#-简体中文"><b>🇨🇳 简体中文</b></a>
+</p>
 
-Your save lives in the app's own data folder:
+---
+
+## 🇻🇳 Tiếng Việt
+
+**Quy tắc vàng:** Luôn luôn **cài đặt đè (Install / Update), tuyệt đối không gỡ cài đặt**.
+
+File save của bạn nằm tại đường dẫn:
 ```
 /sdcard/Android/data/com.LanPiaoPiao.PlantsVsZombiesRH/files/playerData.json
 ```
-Uninstalling is the *only* thing that deletes it. So the rule is simple: **update in
-place, never uninstall.**
+Thao tác gỡ cài đặt (Uninstall) là nguyên nhân duy nhất làm hệ điều hành Android xóa thư mục dữ liệu trên.
+
+### Cơ chế hoạt động trong bộ cài đặt này
+- Tất cả các bản APK (**Bản Việt Hóa**, **English**, **Trung gốc**) trong kho đều được ký cùng một **Release Keystore duy nhất**.
+- Mỗi lần có bản dịch mới hoặc cập nhật tài nguyên, hệ thống tự động sinh mã định danh nội bộ mới (`unity_app_guid`). Khi bạn cài đè, game sẽ tự động giải nén dữ liệu ngôn ngữ mới mà không cần xóa ứng dụng.
+- **Để đổi ngôn ngữ:** Bạn chỉ cần tải file APK của ngôn ngữ muốn đổi (ví dụ đang ở English muốn qua Bản Việt Hóa) và bấm **Cài đặt cập nhật đè**. Save game được bảo toàn 100%!
 
 ---
 
-## Which situation are you in?
+## 🇬🇧 English
 
-### A) You already have an English build from this repo → future English update
-*(e.g. this 3.8.1 → a newer 3.8.1 build, or 3.8.1 → 3.9)*
+**The Golden Rule:** Always **install over the top (in-place update); NEVER uninstall**.
 
-Just install the new APK over the old one. **Your save is kept.** No PC needed.
+Your save game file is located at:
+```
+/sdcard/Android/data/com.LanPiaoPiao.PlantsVsZombiesRH/files/playerData.json
+```
+Uninstalling the app is the *only* action that causes Android to wipe this data directory.
 
-- **Phone only:** download the new `PvZ-Fusion-…-English.apk`, open it, tap **Update/Install**
-  (Android installs it over the existing app). Launch — progress and the new English text
-  are both there.
-- Every build from this repo is signed with the **same key**, so Android allows the
-  in-place update; and the APK carries a fresh internal id (`unity_app_guid`), which makes the
-  game refresh its English code-strings on the next launch — **no uninstall, no cleared save.**
-
-> Don't tap "uninstall" out of habit. In-place update = save kept. Uninstall = save gone.
-
-### B) First time switching *to* this English build
-*(you currently have the original **Chinese** APK, or the very first v3.8.1 English release
-that was signed with a different key)*
-
-This one time only, Android can't install over the top (different signing key), so you must
-uninstall first — which deletes the save unless you back it up. It's a single file, so this
-is easy and **no root is needed**. Follow **[MIGRATION.md](MIGRATION.md)** (back up →
-uninstall → install → restore). After this, you're in situation A forever.
+### How It Works in This Suite
+- All APK builds (**Việt Hóa**, **English**, and **Chinese Raw**) in this repository share the exact same official **Release Keystore**.
+- Whenever a translation is updated, the internal `unity_app_guid` is dynamically updated. Android detects the update and cleanly extracts new localization assets on first launch.
+- **To switch language:** Simply download your desired language APK (e.g. switching from English to Việt Hóa) and tap **Update / Install** over the top. All coins, unlocked plants, and stage progress remain 100% intact!
 
 ---
 
-## Easiest safe update with a PC (one command)
+## 🇨🇳 简体中文
 
-If you have a PC with `adb`, the included **[../tools/update.ps1](../tools/update.ps1)**
-backs up your save, installs the update, and restores the save if anything goes wrong:
+**核心原则：** 始终直接**覆盖安装更新，切勿卸载游戏**。
 
-```powershell
-# normal update (English -> English): keeps the save, refreshes the text
-powershell -ExecutionPolicy Bypass -File tools\update.ps1 -Apk PvZ-Fusion-3.8.1-English.apk
-
-# first switch from a differently-signed build (situation B): safe uninstall+restore
-powershell -ExecutionPolicy Bypass -File tools\update.ps1 -Apk PvZ-Fusion-3.8.1-English.apk -Clean
+您的游戏本地存档路径为：
 ```
-(USB debugging must be ON. Put `adb.exe` next to the script or have platform-tools on PATH.)
-
-## Manual update with a PC (adb)
-
+/sdcard/Android/data/com.LanPiaoPiao.PlantsVsZombiesRH/files/playerData.json
 ```
-# situation A — keep save automatically:
-adb install -r PvZ-Fusion-3.8.1-English.apk
+在安卓系统中，**只有点击“卸载”操作才会导致系统清空该目录下的存档**。
 
-# always safe — back up first, then update:
-adb pull /sdcard/Android/data/com.LanPiaoPiao.PlantsVsZombiesRH/files/playerData.json
-adb install -r PvZ-Fusion-3.8.1-English.apk
-# (only if the save ever disappears:)
-adb push playerData.json /sdcard/Android/data/com.LanPiaoPiao.PlantsVsZombiesRH/files/playerData.json
-```
-
----
-
-## FAQ
-
-- **Do I need to clear the `il2cpp` cache anymore?** No. Older notes said metadata only
-  updated after a clean install; the build now changes an internal id (`unity_app_guid`) each
-  release, so the game re-extracts the English metadata by itself on the next launch after an
-  in-place update. (Verified on Android 13: install over the top → save kept and text updated.)
-- **Will my coins/levels survive?** Yes — they're all in `playerData.json`, which an
-  in-place update never touches. (Verified on Android 13.)
-- **Is there a cloud save?** No. Keep a copy of `playerData.json` somewhere safe if it matters
-  to you.
-- **"App not installed" when updating?** You're likely in situation B (different signing key)
-  — use `-Clean` / MIGRATION.md this one time.
+### 本项目的技术保障机制
+- 本仓库发布的所有 APK（**Việt Hóa 越化版**、**English 英文版**、**中文原版**）均采用相同的**官方签名证书 (Release Keystore)**。
+- 每次版本更新与资源注入均会动态更新内部版本标识（`unity_app_guid`），游戏启动时会自动重新加载最新本地化文本，无需清理缓存或重置应用。
+- **无损切换语言：** 当你想从英文版切换到越化版或中文原版时，只需下载对应 APK 直接点击“更新”，关卡进度、植物图鉴与金币数据 100% 完整继承！
