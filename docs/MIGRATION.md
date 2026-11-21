@@ -1,14 +1,14 @@
 # Sao Lưu & Chuyển Dữ Liệu Save / Save Data Migration / 存档备份与迁移指南
 
 <p align="center">
-  <a href="#-tiếng-việt"><b>🇻🇳 Tiếng Việt</b></a> •
-  <a href="#-english"><b>🇬🇧 English</b></a> •
-  <a href="#-简体中文"><b>🇨🇳 简体中文</b></a>
+  <a href="#vi-bản-việt-hóa"><b>[VI] Bản Việt Hóa</b></a> •
+  <a href="#en-english"><b>[EN] English</b></a> •
+  <a href="#zh-简体中文"><b>[ZH] 简体中文</b></a>
 </p>
 
 ---
 
-## 🇻🇳 Tiếng Việt
+## [VI] Bản Việt Hóa
 
 Khi bạn chuyển từ một file APK của nguồn khác (bị xung đột chữ ký số) sang bộ cài đặt này, hệ điều hành Android sẽ yêu cầu gỡ bản cũ. Vì vậy, bạn cần sao lưu file save trước khi gỡ.
 
@@ -44,7 +44,7 @@ adb push playerData.json /sdcard/Android/data/com.LanPiaoPiao.PlantsVsZombiesRH/
 
 ---
 
-## 🇬🇧 English
+## [EN] English
 
 When switching from a third-party build signed with a different key, Android requires uninstalling the existing package. Because uninstalling wipes app storage, you must back up your save file first.
 
@@ -80,7 +80,7 @@ adb push playerData.json /sdcard/Android/data/com.LanPiaoPiao.PlantsVsZombiesRH/
 
 ---
 
-## 🇨🇳 简体中文
+## [ZH] 简体中文
 
 当从非本项目的其他第三方安装包（签名不一致）切换到本项目时，安卓系统会要求先卸载旧版本。由于卸载会清除应用数据目录，因此在卸载前备份存档至关重要。
 

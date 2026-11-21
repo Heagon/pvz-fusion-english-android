@@ -2,9 +2,9 @@
 ### 植物大战僵尸融合版 安卓全语言整合包 · Bộ Cài Đặt Đa Ngôn Ngữ PvZ Fusion Android
 
 <p align="center">
-  <a href="#-tiếng-việt"><b>🇻🇳 Tiếng Việt</b></a> •
-  <a href="#-english"><b>🇬🇧 English</b></a> •
-  <a href="#-简体中文"><b>🇨🇳 简体中文</b></a>
+  <a href="#-bản-việt-hóa"><b>[VI] Bản Việt Hóa</b></a> •
+  <a href="#-english"><b>[EN] English</b></a> •
+  <a href="#-简体中文"><b>[ZH] 简体中文</b></a>
 </p>
 
 ---
@@ -21,8 +21,8 @@ All APK builds are signed with the project's official **Release Keystore**, ensu
 
 | Phiên bản / Version / 版本 | Trạng thái / Status / 状态 | Ngôn ngữ hỗ trợ / Languages / 语言 | Khuyến nghị / Recommendation / 建议 |
 | :--- | :--- | :--- | :--- |
-| **v4.0.5.2** | 🟢 **Latest Stable** | 🇻🇳 Bản Việt Hóa · 🇬🇧 English · 🇨🇳 中文原版 | **Khuyên dùng cho mọi người chơi.** Bản ổn định nhất, đã dịch và kiểm thử hoàn chỉnh 100%. / Recommended for all players. / **全员推荐。** 最稳定版本，全文本完整翻译。 |
-| **v4.1 Preview** | 🟡 **Half-Translate** | 🇻🇳 Bản Việt Hóa · 🇬🇧 English · 🇨🇳 中文原版 | Dành cho người muốn trải nghiệm sớm AutoChess và cây mới. Dịch tự động từ tiếng Trung. / Early preview for Odyssey AutoChess. Machine-translated. / 尝鲜体验自走棋远征与新植物，新内容机翻。 |
+| **v4.0.5.2** | 🟢 **Latest Stable** | [VI] Bản Việt Hóa · [EN] English · [ZH] 中文原版 | **Khuyên dùng cho mọi người chơi.** Bản ổn định nhất, đã dịch và kiểm thử hoàn chỉnh 100%. / Recommended for all players. / **全员推荐。** 最稳定版本，全文本完整翻译。 |
+| **v4.1 Preview** | 🟡 **Half-Translate** | [VI] Bản Việt Hóa · [EN] English · [ZH] 中文原版 | Dành cho người muốn trải nghiệm sớm AutoChess và cây mới. Dịch tự động từ tiếng Trung. / Early preview for Odyssey AutoChess. Machine-translated. / 尝鲜体验自走棋远征与新植物，新内容机翻。 |
 
 ---
 
@@ -31,9 +31,9 @@ All APK builds are signed with the project's official **Release Keystore**, ensu
 
 | Ngôn ngữ / Language / 语言 | Tải về / APK Download / 下载 | Dung lượng / Size | Ghi chú / Notes / 说明 |
 | :--- | :--- | :--- | :--- |
-| 🇻🇳 **Bản Việt Hóa** | [Tải APK Bản Việt Hóa](../../releases/download/v4.0.5.2/PvZ-Fusion-4.0.5.2-Vietnamese.apk) | 597.5 MB | Bản Việt Hóa hoàn chỉnh (dịch chuẩn từ tiếng Trung, font tiếng Việt 100%) |
-| 🇬🇧 **English** | [Download APK (English)](../../releases/download/v4.0.5.2/PvZ-Fusion-4.0.5.2-English.apk) | 599.5 MB | Complete English build (translated from Chinese, uGUI font) |
-| 🇨🇳 **中文原版 (Chinese Raw)** | [下载原版 APK (Chinese)](../../releases/download/v4.0.5.2/PvZ-Fusion-4.0.5.2-Chinese-Raw.apk) | 591.1 MB | 蓝飘飘fly 原版中文（官方签名，可与各语言版相互覆盖不丢存档） |
+| [VI] **Bản Việt Hóa** | [Tải APK Bản Việt Hóa](../../releases/download/v4.0.5.2/PvZ-Fusion-4.0.5.2-Vietnamese.apk) | 597.5 MB | Bản Việt Hóa hoàn chỉnh (dịch chuẩn từ tiếng Trung, font tiếng Việt 100%) |
+| [EN] **English** | [Download APK (English)](../../releases/download/v4.0.5.2/PvZ-Fusion-4.0.5.2-English.apk) | 599.5 MB | Complete English build (translated from Chinese, uGUI font) |
+| [ZH] **中文原版 (Chinese Raw)** | [下载原版 APK (Chinese)](../../releases/download/v4.0.5.2/PvZ-Fusion-4.0.5.2-Chinese-Raw.apk) | 591.1 MB | 蓝飘飘fly 原版中文（官方签名，可与各语言版相互覆盖不丢存档） |
 
 ---
 
@@ -45,9 +45,9 @@ All APK builds are signed with the project's official **Release Keystore**, ensu
 
 | Ngôn ngữ / Language / 语言 | Tải về / APK Download / 下载 | Dung lượng / Size | Ghi chú / Notes / 说明 |
 | :--- | :--- | :--- | :--- |
-| 🇻🇳 **Bản Việt Hóa** | [Tải APK Bản Việt Hóa](../../releases/download/v4.1-half-translate/PvZ-Fusion-4.1-Vietnamese-HalfTranslate.apk) | 626.7 MB | Bản Việt Hóa 4.1 Preview (Half-Translate, dịch từ tiếng Trung) |
-| 🇬🇧 **English** | [Download APK (English)](../../releases/download/v4.1-half-translate/PvZ-Fusion-4.1-English-HalfTranslate.apk) | 628.6 MB | English 4.1 Preview build (Half-Translate, translated from Chinese) |
-| 🇨🇳 **中文原版 (Chinese Raw)** | [下载原版 APK (Chinese)](../../releases/download/v4.1-half-translate/PvZ-Fusion-4.1-Chinese-Raw.apk) | 620.2 MB | 蓝飘飘fly 原版 4.1 中文（官方签名，可与各语言版相互覆盖不丢存档） |
+| [VI] **Bản Việt Hóa** | [Tải APK Bản Việt Hóa](../../releases/download/v4.1-half-translate/PvZ-Fusion-4.1-Vietnamese-HalfTranslate.apk) | 626.7 MB | Bản Việt Hóa 4.1 Preview (Half-Translate, dịch từ tiếng Trung) |
+| [EN] **English** | [Download APK (English)](../../releases/download/v4.1-half-translate/PvZ-Fusion-4.1-English-HalfTranslate.apk) | 628.6 MB | English 4.1 Preview build (Half-Translate, translated from Chinese) |
+| [ZH] **中文原版 (Chinese Raw)** | [下载原版 APK (Chinese)](../../releases/download/v4.1-half-translate/PvZ-Fusion-4.1-Chinese-Raw.apk) | 620.2 MB | 蓝飘飘fly 原版 4.1 中文（官方签名，可与各语言版相互覆盖不丢存档） |
 
 <details>
 <summary>🔍 Mã kiểm tra tính toàn vẹn (SHA-256 Checksums)</summary>
@@ -55,20 +55,20 @@ All APK builds are signed with the project's official **Release Keystore**, ensu
 Dành cho người dùng kỹ thuật muốn đối chiếu tính toàn vẹn của tệp đã tải về:
 
 **v4.0.5.2:**
-- `Bản Việt Hóa (PvZ-Fusion-4.0.5.2-Vietnamese.apk)`: `57d17659fff4147bd2f88458fe98f8c1f8065ed60a073fdc1fbd7fcba55039d5`
-- `English (PvZ-Fusion-4.0.5.2-English.apk)`: `aba29a346a6ecca587ce748b18568a12cfdbc4c990246d4ff35f7a4add4fb99c`
-- `Chinese Raw (PvZ-Fusion-4.0.5.2-Chinese-Raw.apk)`: `51a084faf0eac1a8d633f7e4f0749441655a3d909df8befb71cc70d82fe0739a`
+- `[VI] Bản Việt Hóa (PvZ-Fusion-4.0.5.2-Vietnamese.apk)`: `57d17659fff4147bd2f88458fe98f8c1f8065ed60a073fdc1fbd7fcba55039d5`
+- `[EN] English (PvZ-Fusion-4.0.5.2-English.apk)`: `aba29a346a6ecca587ce748b18568a12cfdbc4c990246d4ff35f7a4add4fb99c`
+- `[ZH] Chinese Raw (PvZ-Fusion-4.0.5.2-Chinese-Raw.apk)`: `51a084faf0eac1a8d633f7e4f0749441655a3d909df8befb71cc70d82fe0739a`
 
 **v4.1 Preview:**
-- `Bản Việt Hóa (PvZ-Fusion-4.1-Vietnamese-HalfTranslate.apk)`: `83fad03cf196195727c6eaf540f299be9f2133cc41e778016c99dd420d0b6dd6`
-- `English (PvZ-Fusion-4.1-English-HalfTranslate.apk)`: `f9fd984f1647a442756a5021cdcddaa2bcf8fe9db8785a0ce9581e6768a865b2`
-- `Chinese Raw (PvZ-Fusion-4.1-Chinese-Raw.apk)`: `3144746c552455b88db28eedfa20777099ecdb9736ac679bbbe70cd4113cb5fd`
+- `[VI] Bản Việt Hóa (PvZ-Fusion-4.1-Vietnamese-HalfTranslate.apk)`: `83fad03cf196195727c6eaf540f299be9f2133cc41e778016c99dd420d0b6dd6`
+- `[EN] English (PvZ-Fusion-4.1-English-HalfTranslate.apk)`: `f9fd984f1647a442756a5021cdcddaa2bcf8fe9db8785a0ce9581e6768a865b2`
+- `[ZH] Chinese Raw (PvZ-Fusion-4.1-Chinese-Raw.apk)`: `3144746c552455b88db28eedfa20777099ecdb9736ac679bbbe70cd4113cb5fd`
 
 </details>
 
 ---
 
-## 🇻🇳 Tiếng Việt
+## [VI] Bản Việt Hóa
 
 ### Giới thiệu dự án
 Đây là bộ cài đặt đa ngôn ngữ không chính thức dành cho game **Plants vs. Zombies: Fusion (植物大战僵尸融合版)** trên hệ điều hành Android. Dự án thực hiện đóng gói tĩnh tài nguyên dịch thuật vào file APK gốc — **hoạt động ngay trên mọi điện thoại Android, không cần root, không cần máy tính, không cần cài đặt mod loader phức tạp.**
@@ -90,7 +90,7 @@ Tất cả các bản APK trong bộ sưu tập (**Bản Việt Hóa**, **Englis
 
 ---
 
-## 🇬🇧 English
+## [EN] English
 
 ### Project Overview
 An **unofficial Android localization and multi-language suite** for *Plants vs. Zombies: Fusion* (植物大战僵尸融合版), created by statically applying community translations to the original Android APK — **no root, no PC, no runtime mod loader required.**
@@ -108,7 +108,7 @@ All APK builds (**Việt Hóa**, **English**, and **Original Chinese**) share th
 
 ---
 
-## 🇨🇳 简体中文
+## [ZH] 简体中文
 
 ### 项目简介
 本项目是《植物大战僵尸融合版》（植物大战僵尸 RH）的**安卓非官方多语言整合移植版本**。通过对原版 APK 进行静态本地化编译与资源注入，实现**免 Root、免电脑、无需任何额外 Mod 加载器，直接安装即可畅玩**。

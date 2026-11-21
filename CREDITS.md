@@ -1,14 +1,14 @@
 # Credits & Sources / 致谢与来源 / Đội Ngũ Thực Hiện
 
 <p align="center">
-  <a href="#-tiếng-việt"><b>🇻🇳 Tiếng Việt</b></a> •
-  <a href="#-english"><b>🇬🇧 English</b></a> •
-  <a href="#-简体中文"><b>🇨🇳 简体中文</b></a>
+  <a href="#vi-bản-việt-hóa"><b>[VI] Bản Việt Hóa</b></a> •
+  <a href="#en-english"><b>[EN] English</b></a> •
+  <a href="#zh-简体中文"><b>[ZH] 简体中文</b></a>
 </p>
 
 ---
 
-## 🇻🇳 Tiếng Việt
+## [VI] Bản Việt Hóa
 
 Bộ cài đặt đa ngôn ngữ cho Android này được tạo nên nhờ đóng góp của cộng đồng và các tác giả sau:
 
@@ -38,7 +38,7 @@ Bộ cài đặt đa ngôn ngữ cho Android này được tạo nên nhờ đó
 
 ---
 
-## 🇬🇧 English
+## [EN] English
 
 This multi-language Android suite would not exist without the dedication of the community:
 
@@ -67,7 +67,7 @@ This multi-language Android suite would not exist without the dedication of the 
 
 ---
 
-## 🇨🇳 简体中文
+## [ZH] 简体中文
 
 本项目安卓多语言整合版本的发布离不开以下作者与社区开源项目的无私奉献：
 
