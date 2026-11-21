@@ -49,23 +49,6 @@ All APK builds are signed with the project's official **Release Keystore**, ensu
 | [EN] **English** | [Download APK (English)](../../releases/download/v4.1-half-translate/PvZ-Fusion-4.1-English-HalfTranslate.apk) | 628.6 MB | English 4.1 Preview build (Half-Translate, translated from Chinese) |
 | [CN] **中文原版 (Chinese Raw)** | [下载原版 APK (Chinese)](../../releases/download/v4.1-half-translate/PvZ-Fusion-4.1-Chinese-Raw.apk) | 620.2 MB | 蓝飘飘fly 原版 4.1 中文（官方签名，可与各语言版相互覆盖不丢存档） |
 
-<details>
-<summary>🔍 Mã kiểm tra tính toàn vẹn (SHA-256 Checksums)</summary>
-
-Dành cho người dùng kỹ thuật muốn đối chiếu tính toàn vẹn của tệp đã tải về:
-
-**v4.0.5.2:**
-- `[VI] Bản Việt Hóa (PvZ-Fusion-4.0.5.2-Vietnamese.apk)`: `57d17659fff4147bd2f88458fe98f8c1f8065ed60a073fdc1fbd7fcba55039d5`
-- `[EN] English (PvZ-Fusion-4.0.5.2-English.apk)`: `aba29a346a6ecca587ce748b18568a12cfdbc4c990246d4ff35f7a4add4fb99c`
-- `[CN] Chinese Raw (PvZ-Fusion-4.0.5.2-Chinese-Raw.apk)`: `51a084faf0eac1a8d633f7e4f0749441655a3d909df8befb71cc70d82fe0739a`
-
-**v4.1 Preview:**
-- `[VI] Bản Việt Hóa (PvZ-Fusion-4.1-Vietnamese-HalfTranslate.apk)`: `83fad03cf196195727c6eaf540f299be9f2133cc41e778016c99dd420d0b6dd6`
-- `[EN] English (PvZ-Fusion-4.1-English-HalfTranslate.apk)`: `f9fd984f1647a442756a5021cdcddaa2bcf8fe9db8785a0ce9581e6768a865b2`
-- `[CN] Chinese Raw (PvZ-Fusion-4.1-Chinese-Raw.apk)`: `3144746c552455b88db28eedfa20777099ecdb9736ac679bbbe70cd4113cb5fd`
-
-</details>
-
 ---
 
 ## [VI] Bản Việt Hóa
