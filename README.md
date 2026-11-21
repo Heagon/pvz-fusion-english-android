@@ -11,6 +11,12 @@ root, no mod loader, no PC required.**
 > respective creators — see **[Credits & Sources](#-credits--sources)**. Please
 > support the original creators and get the translation from their official channels.
 
+> ⚡ **Latest Preview: v4.1 (Half-Translated / Work-in-Progress):**
+> An experimental pre-release build `PvZ-Fusion-4.1-English-HalfTranslate.apk` based on game v4.1 is now available on the **[Releases](../../releases)** page.
+> - **Translation Status:** Partial / Half-Translated (Đang dịch dở).
+> - **What is translated:** Almanac (742/742 plants, 238/238 zombies, 48/48 mechanics entries), 48 English UI textures, v4.1 changelog popup, and the new Travel Roguelike/AutoChess points, gear, and investment buffs.
+> - **What may remain untranslated:** Deep level creator nodes, custom community minigames, and newly introduced 4.1 dialogues while the community translation team is actively finalizing the full 4.1 translation.
+
 ---
 
 ## 📸 Screenshots
