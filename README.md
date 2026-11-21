@@ -12,35 +12,42 @@ Offering **Chinese (Raw/Gốc)**, **Tiếng Việt**, and **English** builds for
 
 ## 📥 Releases & Downloads
 
-Tất cả các bản APK đều được ký bằng chữ ký số bảo mật, đảm bảo an toàn tuyệt đối và **giữ nguyên toàn bộ dữ liệu chơi (save game)** khi bạn cập nhật hoặc chuyển đổi qua lại giữa các ngôn ngữ.
+Dưới đây là toàn cảnh các phiên bản PvZ Fusion Android được phát hành. Tất cả các bản APK đều được ký bằng cùng một **Release Keystore chính thức**, đảm bảo **không bao giờ bị mất dữ liệu chơi (save game)** khi bạn cập nhật hoặc chuyển đổi qua lại giữa các ngôn ngữ.
 
-### 🌟 v4.0.5.2 (Bản ổn định mới nhất / Latest Stable)
-👉 **[Xem chi tiết Release v4.0.5.2](../../releases/tag/v4.0.5.2)** | **[Bản riêng Tiếng Việt v4.0.5.2-vi](../../releases/tag/v4.0.5.2-vi)**
-
-| Ngôn ngữ / Language | Tải về / APK Download | Dung lượng / Size | Ghi chú / Notes |
+| Phiên bản / Version | Trạng thái / Status | Ngôn ngữ hỗ trợ | Khuyến nghị / Recommendation |
 | :--- | :--- | :--- | :--- |
-| 🇻🇳 **Tiếng Việt** | [Tải APK (Vietnamese)](../../releases/download/v4.0.5.2/PvZ-Fusion-4.0.5.2-Vietnamese.apk) | 597.5 MB | Bản Việt Hóa hoàn chỉnh (dịch từ tiếng Trung, font tiếng Việt 100%) |
-| 🇬🇧 **English** | [Download APK (English)](../../releases/download/v4.0.5.2/PvZ-Fusion-4.0.5.2-English.apk) | 599.5 MB | Complete English build (translated from Chinese) |
-| 🇨🇳 **Chinese (Gốc / Raw)** | [Tải APK (Chinese)](../../releases/download/v4.0.5.2/PvZ-Fusion-4.0.5.2-Chinese-Raw.apk) | 591.1 MB | Bản gốc tiếng Trung của LanPiaoPiaofly (ký cùng key để đổi qua lại không mất save) |
+| **v4.0.5.2** | 🟢 **Latest Stable** | 🇻🇳 Tiếng Việt · 🇬🇧 English · 🇨🇳 Tiếng Trung | **Khuyên dùng cho mọi người chơi.** Bản ổn định nhất, đã dịch và kiểm thử hoàn chỉnh 100%. |
+| **v4.1 Preview** | 🟡 **Half-Translate** | 🇻🇳 Tiếng Việt · 🇬🇧 English · 🇨🇳 Tiếng Trung | Dành cho người muốn chơi trước tính năng mới (AutoChess, cây mới). Dịch tự động từ tiếng Trung. |
 
 ---
 
-### ⚡ v4.1 Preview (Thử nghiệm / Đang dịch)
-👉 **[Xem chi tiết Release v4.1](../../releases/tag/v4.1-half-translate)** | **[Bản riêng Tiếng Việt v4.1-vi](../../releases/tag/v4.1-vi-half-translate)**
-
-> [!WARNING]
-> **Half-Translate / Đang dịch dở:** Bản thử nghiệm sớm cho PvZ Fusion 4.1. Các nội dung mới (AutoChess Thám hiểm Tiến Hóa, thực vật Tối Thượng mới, bùa chú) đang được dịch từ tiếng Trung gốc; các chuỗi chưa hoàn thiện sẽ tạm hiển thị tiếng Anh/bản dịch nháp để đảm bảo game không bị lỗi.
+### 🟢 v4.0.5.2 (Bản chính thức — Đã dịch hoàn thiện)
+👉 **[Xem trang Release v4.0.5.2 trên GitHub](../../releases/tag/v4.0.5.2)**
 
 | Ngôn ngữ / Language | Tải về / APK Download | Dung lượng / Size | Ghi chú / Notes |
 | :--- | :--- | :--- | :--- |
-| 🇻🇳 **Tiếng Việt** | [Tải APK (Vietnamese)](../../releases/download/v4.1-half-translate/PvZ-Fusion-4.1-Vietnamese-HalfTranslate.apk) | 626.7 MB | Bản Việt Hóa 4.1 Preview (Half-Translate, dịch từ tiếng Trung) |
-| 🇬🇧 **English** | [Download APK (English)](../../releases/download/v4.1-half-translate/PvZ-Fusion-4.1-English-HalfTranslate.apk) | 628.6 MB | English 4.1 Preview build (Half-Translate, translated from Chinese) |
-| 🇨🇳 **Chinese (Gốc / Raw)** | [Tải APK (Chinese)](../../releases/download/v4.1-half-translate/PvZ-Fusion-4.1-Chinese-Raw.apk) | 620.2 MB | Bản gốc tiếng Trung 4.1 của LanPiaoPiaofly (ký cùng key để đổi qua lại không mất save) |
+| 🇻🇳 **Tiếng Việt** | [PvZ-Fusion-4.0.5.2-Vietnamese.apk](../../releases/download/v4.0.5.2/PvZ-Fusion-4.0.5.2-Vietnamese.apk) | 597.5 MB | Bản Việt Hóa hoàn chỉnh (dịch chuẩn từ tiếng Trung, font tiếng Việt 100%) |
+| 🇬🇧 **English** | [PvZ-Fusion-4.0.5.2-English.apk](../../releases/download/v4.0.5.2/PvZ-Fusion-4.0.5.2-English.apk) | 599.5 MB | Complete English build (translated from Chinese) |
+| 🇨🇳 **Chinese (Gốc / Raw)** | [PvZ-Fusion-4.0.5.2-Chinese-Raw.apk](../../releases/download/v4.0.5.2/PvZ-Fusion-4.0.5.2-Chinese-Raw.apk) | 591.1 MB | Bản gốc tiếng Trung của LanPiaoPiaofly (ký cùng key để đổi qua lại không mất save) |
+
+---
+
+### 🟡 v4.1 Preview (Bản thử nghiệm — Dịch tự động / Đang hoàn thiện)
+👉 **[Xem trang Release v4.1 Preview trên GitHub](../../releases/tag/v4.1-half-translate)**
+
+> [!NOTE]
+> **Half-Translate / Dịch tự động:** Phiên bản thử nghiệm sớm dành cho PvZ Fusion 4.1 (chế độ Thám hiểm Tiến Hóa AutoChess, cây Tối Thượng mới). Các nội dung mới đang được dịch tự động từ tiếng Trung gốc; các chuỗi chưa hoàn thiện sẽ tạm hiển thị tiếng Anh/bản dịch nháp để đảm bảo game vận hành ổn định không bị văng lỗi.
+
+| Ngôn ngữ / Language | Tải về / APK Download | Dung lượng / Size | Ghi chú / Notes |
+| :--- | :--- | :--- | :--- |
+| 🇻🇳 **Tiếng Việt** | [PvZ-Fusion-4.1-Vietnamese-HalfTranslate.apk](../../releases/download/v4.1-half-translate/PvZ-Fusion-4.1-Vietnamese-HalfTranslate.apk) | 626.7 MB | Bản Việt Hóa 4.1 Preview (Half-Translate, dịch từ tiếng Trung) |
+| 🇬🇧 **English** | [PvZ-Fusion-4.1-English-HalfTranslate.apk](../../releases/download/v4.1-half-translate/PvZ-Fusion-4.1-English-HalfTranslate.apk) | 628.6 MB | English 4.1 Preview build (Half-Translate, translated from Chinese) |
+| 🇨🇳 **Chinese (Gốc / Raw)** | [PvZ-Fusion-4.1-Chinese-Raw.apk](../../releases/download/v4.1-half-translate/PvZ-Fusion-4.1-Chinese-Raw.apk) | 620.2 MB | Bản gốc tiếng Trung 4.1 của LanPiaoPiaofly (ký cùng key để đổi qua lại không mất save) |
 
 <details>
 <summary>🔍 Mã kiểm tra tính toàn vẹn (SHA-256 Checksums)</summary>
 
-Dành cho người dùng muốn đối chiếu tính toàn vẹn của tệp đã tải về:
+Dành cho người dùng kỹ thuật muốn đối chiếu tính toàn vẹn của tệp đã tải về:
 
 **v4.0.5.2:**
 - `PvZ-Fusion-4.0.5.2-Vietnamese.apk`: `57d17659fff4147bd2f88458fe98f8c1f8065ed60a073fdc1fbd7fcba55039d5`
