@@ -3,7 +3,7 @@
 <p align="center">
   <a href="#vi-bản-việt-hóa"><b>[VI] Bản Việt Hóa</b></a> •
   <a href="#en-english"><b>[EN] English</b></a> •
-  <a href="#zh-简体中文"><b>[ZH] 简体中文</b></a>
+  <a href="#cn-简体中文"><b>[CN] 简体中文</b></a>
 </p>
 
 ---
@@ -67,7 +67,7 @@ This multi-language Android suite would not exist without the dedication of the 
 
 ---
 
-## [ZH] 简体中文
+## [CN] 简体中文
 
 本项目安卓多语言整合版本的发布离不开以下作者与社区开源项目的无私奉献：
 

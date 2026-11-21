@@ -3,7 +3,7 @@
 <p align="center">
   <a href="#vi-bản-việt-hóa"><b>[VI] Bản Việt Hóa</b></a> •
   <a href="#en-english"><b>[EN] English</b></a> •
-  <a href="#zh-简体中文"><b>[ZH] 简体中文</b></a>
+  <a href="#cn-简体中文"><b>[CN] 简体中文</b></a>
 </p>
 
 ---
@@ -80,7 +80,7 @@ adb push playerData.json /sdcard/Android/data/com.LanPiaoPiao.PlantsVsZombiesRH/
 
 ---
 
-## [ZH] 简体中文
+## [CN] 简体中文
 
 当从非本项目的其他第三方安装包（签名不一致）切换到本项目时，安卓系统会要求先卸载旧版本。由于卸载会清除应用数据目录，因此在卸载前备份存档至关重要。
 
