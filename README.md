@@ -45,8 +45,8 @@ All APK builds are signed with the project's official **Release Keystore**, ensu
 
 | Ngôn ngữ / Language / 语言 | Tải về / APK Download / 下载 | Dung lượng / Size | Ghi chú / Notes / 说明 |
 | :--- | :--- | :--- | :--- |
-| [VI] **Bản Việt Hóa** | [Tải APK Bản Việt Hóa](../../releases/download/v4.1-half-translate/PvZ-Fusion-4.1-Vietnamese-HalfTranslate.apk) | 626.7 MB | Bản Việt Hóa 4.1 Preview (Half-Translate, dịch từ tiếng Trung) |
-| [EN] **English** | [Download APK (English)](../../releases/download/v4.1-half-translate/PvZ-Fusion-4.1-English-HalfTranslate.apk) | 628.6 MB | English 4.1 Preview build (Half-Translate, translated from Chinese) |
+| [VI] **Bản Việt Hóa** | [Tải APK Bản Việt Hóa](../../releases/download/v4.1-half-translate/PvZ-Fusion-4.1-Vietnamese-HalfTranslate.apk) | 628.8 MB | Bản Việt Hóa 4.1 Preview (Half-Translate, dịch đúng ngữ cảnh AutoChess/Tycoon/Bút Thần, đã kiểm thử trên Android) |
+| [EN] **English** | [Download APK (English)](../../releases/download/v4.1-half-translate/PvZ-Fusion-4.1-English-HalfTranslate.apk) | 628.8 MB | English 4.1 Preview build (Half-Translate, contextual AutoChess/Tycoon/Magic Brush UI verified on Android) |
 | [CN] **中文原版 (Chinese Raw)** | [下载原版 APK (Chinese)](../../releases/download/v4.1-half-translate/PvZ-Fusion-4.1-Chinese-Raw.apk) | 620.2 MB | 蓝飘飘fly 原版 4.1 中文（官方签名，可与各语言版相互覆盖不丢存档） |
 
 ---
@@ -104,7 +104,7 @@ All APK builds (**Việt Hóa**, **English**, and **Original Chinese**) share th
 
 ### ✨ 版本特性说明
 - **[CN] 中文原版 (Chinese Raw)：** 完整保留作者蓝飘飘fly的原版代码、纹理与数值，采用相同签名打包，便于随时切回原版体验。
-- **[VI] Việt Hóa 越化版：** 基于原版中文深度翻译，集成 LiberationSans 字体，完美支持全部越南语重音字符，涵盖图鉴全植物、僵尸与全新 38 张界面贴图。
+- **[VI] Việt Hóa 越化版：** 基于原版中文深度翻译，集成 LiberationSans 字体，完美支持全部越南语重音字符，涵盖图鉴全植物、僵尸与全新 48 张界面贴图。
 - **[EN] English 英文版：** 完整移植 PVZF-Translation 英文汉化项目成果，优化手机端排版，全英文界面与图鉴。
 
 ---
@@ -157,6 +157,24 @@ Real Android device screenshots (**v4.0.5.2**) audited across all game modes for
 | ![VI Seeds](screenshots/vi_4052_12_adventure_seeds.png) | ![EN Seeds](screenshots/en_4052_12_adventure_seeds.png) |
 | **Trong Trận Đấu / In-Game HUD / 战斗画面** | **Trong Trận Đấu / In-Game HUD / 战斗画面** |
 | ![VI Battle](screenshots/vi_4052_13_battle_hud.png) | ![EN Battle](screenshots/en_4052_13_battle_hud.png) |
+
+</details>
+
+<details>
+<summary><b>🧪 Xem ảnh chụp v4.1 Preview (AutoChess) / v4.1 Preview Screenshots / 查看 4.1 尝鲜版自走棋实机截图</b></summary>
+
+| [VI] Bản Việt Hóa (v4.1 Preview) | [EN] English (v4.1 Preview) |
+| :---: | :---: |
+| **Màn Gợi Ý v4.1 / Recommended Levels / 推荐关卡** | **Màn Gợi Ý v4.1 / Recommended Levels / 推荐关卡** |
+| ![VI 4.1 Recommended](screenshots/vi_41_03_recommended.png) | ![EN 4.1 Recommended](screenshots/en_41_03_recommended.png) |
+| **Chọn File Save / Save Picker / 选择存档** | **Chọn File Save / Save Picker / 选择存档** |
+| ![VI 4.1 Save Picker](screenshots/vi_41_04_save_picker.png) | ![EN 4.1 Save Picker](screenshots/en_41_04_save_picker.png) |
+| **Chọn Độ Khó AutoChess / AutoChess Difficulty / 远征进化难度** | **Chọn Độ Khó AutoChess / AutoChess Difficulty / 远征进化难度** |
+| ![VI 4.1 Difficulty](screenshots/vi_41_05_autochess_diff.png) | ![EN 4.1 Difficulty](screenshots/en_41_05_autochess_diff.png) |
+| **Xem Trước Thủ Lĩnh / Boss Preview / 首领预览** | **Xem Trước Thủ Lĩnh / Boss Preview / 首领预览** |
+| ![VI 4.1 Boss Preview](screenshots/vi_41_06_autochess_bosses.png) | ![EN 4.1 Boss Preview](screenshots/en_41_06_autochess_bosses.png) |
+| **Cửa Hàng Giữa Vòng / Intermission Shop / 回合商店** | **Cửa Hàng Giữa Vòng / Intermission Shop / 回合商店** |
+| ![VI 4.1 AutoChess Shop](screenshots/vi_41_07_autochess_shop.png) | ![EN 4.1 AutoChess Shop](screenshots/en_41_07_autochess_shop.png) |
 
 </details>
 
