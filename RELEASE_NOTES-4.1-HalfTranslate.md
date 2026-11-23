@@ -77,10 +77,10 @@ All APK builds are signed with the project's official **Release Keystore**, ensu
 3. **Launch the Game:** The new language will take effect immediately, and **100% of your progress, unlocked plants, coins, and levels (`playerData.json`) are completely preserved!**
 
 ### ✨ Highlights
-- **Contextual Translations for New 4.1 Modes (+652 English strings):**
-  - **Odyssey: Evolved (AutoChess):** Full UI coverage for Difficulty Selection, Boss Preview, Intermission Shop, Bench, Shop Upgrades, Hex Augments, Odds, and Round Settlement.
-  - **Sunflower Breeding (Tycoon) & Magic Brush:** Complete menus, actions, and status prompts.
-  - **4.1 Recommended Levels & Save Picker:** Fixed pill/card labels so zero text overflows on mobile screens.
+- **Contextual Translations for New 4.1 Modes (+994 English strings — complete UI coverage):**
+  - **Odyssey: Evolved (AutoChess):** Full UI coverage for Difficulty Selection, Boss Preview, Intermission Shop, Shop Refresh Odds, Bench, Shop Upgrades, all Hex Augments, Odds, Round Settlement, and Test Console.
+  - **Sunflower Breeding (Tycoon) & Magic Brush:** Complete menus, Wave Research, Exploration Rewards, Plant Blacklist, Plant Inventory, Emergency Aid, How to Play, and appraisal prompts.
+  - **Almanac, Level Editor & Fixes:** Complete 4.1 Level Creator Help, Shooting Almanac Trials, Talent Nodes, Recipe 11 fix, and mobile pill/card layout adjustments.
 - **Expanded Almanac:** 742 plants, 238 zombies, and 48 mechanics entries.
 - **Textures & UI Polish:** All **48/48 UI textures** replaced (including `FlagMeterLevelProgress`) and verified on a real Android device.
 
@@ -96,7 +96,7 @@ All APK builds are signed with the project's official **Release Keystore**, ensu
 ### ✨ 4.1 版本特性
 - **[CN] 中文原版：** 完整保留作者蓝飘飘fly的原版代码、纹理与数值，采用相同签名打包，便于随时切回原版体验。
 - **[VI] Bản Việt Hóa：** 针对 4.1 自走棋远征进化、向日葵养殖、神笔马良新增 817 条语境越化文本，完整替换 48 张界面贴图，完美支持全部越南语重音字符，已通过真机防溢框校验。
-- **[EN] English：** 新增 652 条 4.1 新模式英文语境翻译，完整替换 48 张界面贴图，全面覆盖自走棋商店、首领预览与存档界面。
+- **[EN] English：** 新增 994 条 4.1 新模式英文语境翻译，完整替换 48 张界面贴图，全面覆盖自走棋商店/刷新概率/全海克斯、向日葵养殖、神笔马良、关卡编辑器帮助与存档界面。
 
 ---
 
@@ -105,7 +105,7 @@ All APK builds are signed with the project's official **Release Keystore**, ensu
 
 ```
 PvZ-Fusion-4.1-Vietnamese-HalfTranslate.apk: 685bbb5c1dc814771f8358c1d5b1dd7344116f61604179a793663af843709932
-PvZ-Fusion-4.1-English-HalfTranslate.apk:    8fdfcd560f003336b7cc7f90fbf4249dc4ca22e0cfd6853c2763d0968323845d
+PvZ-Fusion-4.1-English-HalfTranslate.apk:    04b8de0ba0a45eca878f6eea6a4c7c2d6d92aeae58d737a2916ed95a72b359f9
 PvZ-Fusion-4.1-Chinese-Raw.apk:              3144746c552455b88db28eedfa20777099ecdb9736ac679bbbe70cd4113cb5fd
 ```
 </details>
