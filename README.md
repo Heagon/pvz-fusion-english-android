@@ -45,7 +45,7 @@ All APK builds are signed with the project's official **Release Keystore**, ensu
 
 | Ngôn ngữ / Language / 语言 | Tải về / APK Download / 下载 | Dung lượng / Size | Ghi chú / Notes / 说明 |
 | :--- | :--- | :--- | :--- |
-| [VI] **Bản Việt Hóa** | [Tải APK Bản Việt Hóa](../../releases/download/v4.1-half-translate/PvZ-Fusion-4.1-Vietnamese-HalfTranslate.apk) | 628.8 MB | Bản Việt Hóa 4.1 Preview (Half-Translate, dịch đúng ngữ cảnh AutoChess/Tycoon/Bút Thần, đã kiểm thử trên Android) |
+| [VI] **Bản Việt Hóa** | [Tải APK Bản Việt Hóa](../../releases/download/v4.1-half-translate/PvZ-Fusion-4.1-Vietnamese-HalfTranslate.apk) | 629.1 MB | Bản Việt Hóa 4.1 hoàn chỉnh 100% (trọn vẹn Sổ Tay, Bùa Thám Hiểm, AutoChess/Tycoon/Bút Thần/Bắn Súng, 0 tiếng Anh/Trung thừa, 48/48 texture Việt hóa) |
 | [EN] **English** | [Download APK (English)](../../releases/download/v4.1-half-translate/PvZ-Fusion-4.1-English-HalfTranslate.apk) | 628.8 MB | English 4.1 Preview build (Half-Translate, contextual AutoChess/Tycoon/Magic Brush UI verified on Android) |
 | [CN] **中文原版 (Chinese Raw)** | [下载原版 APK (Chinese)](../../releases/download/v4.1-half-translate/PvZ-Fusion-4.1-Chinese-Raw.apk) | 620.2 MB | 蓝飘飘fly 原版 4.1 中文（官方签名，可与各语言版相互覆盖不丢存档） |
 

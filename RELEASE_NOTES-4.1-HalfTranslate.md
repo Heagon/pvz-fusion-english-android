@@ -11,7 +11,7 @@
 
 > [!WARNING]
 > **Half-Translate / Bản thử nghiệm sớm / 尝鲜体验版:**
-> - **[VI]:** Phiên bản thử nghiệm sớm dành cho PvZ Fusion 4.1 (chế độ Du Lịch: Tiến Hóa AutoChess, Chăn Nuôi Hướng Dương / Tycoon, Bút Thần Vẽ Cây, cây Tối Thượng mới). Toàn bộ giao diện & tính năng 4.1 mới đã được dịch theo ngữ cảnh và rà soát hiển thị thực tế trên máy Android; một số chuỗi phụ sâu bên trong đang tiếp tục hoàn thiện.
+> - **[VI]:** Phiên bản **Việt Hóa hoàn chỉnh 100%** cho PvZ Fusion 4.1 (bao gồm Du Lịch: Tiến Hóa AutoChess, Chăn Nuôi Hướng Dương / Tycoon, Bút Thần Vẽ Cây, Chế Độ Bắn Súng, toàn bộ 742 cây / 238 zombie / 48 cơ chế Sổ Tay, toàn bộ 176 Bùa Thám Hiểm mới, 0 chuỗi rơi về tiếng Anh, 0 chuỗi UI tiếng Trung, và Việt hóa hoàn toàn 7 ảnh bảng gỗ/sóng lớn).
 > - **[EN]:** Early preview build for PvZ Fusion 4.1 (Odyssey: Evolved AutoChess, Sunflower Breeding / Tycoon, Magic Brush, new Odyssey plants). All new 4.1 modes, menus, and AutoChess Shop UI have been contextually translated and verified on a real Android device; minor edge strings continue to be refined.
 > - **[CN]:** 4.1 版本的尝鲜体验包（包含自走棋远征进化、向日葵养殖、神笔马良与新植物）。已针对 4.1 新增界面与自走棋商店完成语境翻译并经过安卓真机校验，部分冷门文本仍在持续完善中。
 
@@ -29,7 +29,7 @@ All APK builds are signed with the project's official **Release Keystore**, ensu
 
 | Ngôn ngữ / Language / 语言 | Tệp APK / File / 安装包 | Dung lượng / Size | Mô tả / Description / 说明 |
 | :--- | :--- | :--- | :--- |
-| **[VI] Bản Việt Hóa** | [PvZ-Fusion-4.1-Vietnamese-HalfTranslate.apk](https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.1-half-translate/PvZ-Fusion-4.1-Vietnamese-HalfTranslate.apk) | 628.8 MB | Bản Việt Hóa 4.1 Preview (Half-Translate, dịch đúng ngữ cảnh AutoChess/Tycoon/Bút Thần, font tiếng Việt 100%, đã kiểm thử UI trên Android) |
+| **[VI] Bản Việt Hóa** | [PvZ-Fusion-4.1-Vietnamese-HalfTranslate.apk](https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.1-half-translate/PvZ-Fusion-4.1-Vietnamese-HalfTranslate.apk) | 629.1 MB | Bản Việt Hóa 4.1 hoàn chỉnh 100% (dịch trọn vẹn Sổ Tay, Bùa Thám Hiểm, AutoChess/Tycoon/Bút Thần/Bắn Súng, 0 tiếng Anh/Trung thừa, Việt hóa 48/48 texture) |
 | **[EN] English** | [PvZ-Fusion-4.1-English-HalfTranslate.apk](https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.1-half-translate/PvZ-Fusion-4.1-English-HalfTranslate.apk) | 628.8 MB | English 4.1 Preview build (Half-Translate, contextual AutoChess/Tycoon/Magic Brush UI & layout verified on Android) |
 | **[CN] 中文原版** | [PvZ-Fusion-4.1-Chinese-Raw.apk](https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.1-half-translate/PvZ-Fusion-4.1-Chinese-Raw.apk) | 620.2 MB | 蓝飘飘fly 原版 4.1 中文（官方签名，可与各语言版相互覆盖不丢存档） |
 
@@ -60,12 +60,12 @@ All APK builds are signed with the project's official **Release Keystore**, ensu
 3. **Mở lại game:** Ngôn ngữ mới sẽ được áp dụng ngay lập tức, và **toàn bộ dữ liệu cày cuốc, cây cối, tiền vàng, màn chơi (`playerData.json`) được giữ nguyên vẹn 100%!**
 
 ### ✨ Nội dung cập nhật 4.1
-- **Dịch mới theo ngữ cảnh cho toàn bộ chế độ 4.1 (+817 chuỗi tiếng Việt):**
-  - **Du Lịch: Tiến Hóa (AutoChess):** Đầy đủ giao diện chọn độ khó, Xem Trước Thủ Lĩnh, Cửa Hàng Giữa Vòng, hàng Dự Bị, nâng cấp cửa hàng, Lõi Công Nghệ (Hex), tỷ lệ thẻ và tổng kết vòng.
-  - **Chăn Nuôi Hướng Dương (Tycoon) & Bút Thần Vẽ Cây:** Giao diện cửa hàng, nâng cấp, nhiệm vụ và nút tương tác.
-  - **Màn Gợi Ý & Chọn File Save 4.1:** Chỉnh căn chỉnh nút bấm gọn gàng, không tràn khung chữ trên màn hình điện thoại.
-- **Thực vật & Zombie mới:** 742/742 thực vật, 238/238 zombie, và 48/48 cơ chế Sổ Tay (bao gồm Đinh ba Biển sâu và các dòng Tối Thượng mới).
-- **Đồ họa & Font chữ:** Thay thế đầy đủ **48/48 kết cấu hình ảnh giao diện** (bao gồm thanh tiến độ màn chơi `FlagMeterLevelProgress`) cùng font `LiberationSans` hiển thị tiếng Việt có dấu 100% sắc nét.
+- **Việt hóa hoàn chỉnh 100% toàn bộ PvZ Fusion 4.1 (+3.837 chuỗi tiếng Việt mới, 5.069 chuỗi hệ thống, 0 chuỗi rơi về tiếng Anh):**
+  - **Du Lịch: Tiến Hóa (AutoChess):** Đầy đủ giao diện chọn độ khó, Xem Trước Thủ Lĩnh, Cửa Hàng Giữa Vòng, Tỷ lệ làm mới, hàng Dự Bị, nâng cấp cửa hàng, toàn bộ Lõi Công Nghệ (Hex), tổng kết vòng và bảng lệnh kiểm thử.
+  - **Chăn Nuôi Hướng Dương (Tycoon), Bút Thần Vẽ Cây & Bắn Súng:** Đầy đủ cửa hàng, nghiên cứu đợt, phần thưởng khám phá, danh sách đen, kho cây, cứu trợ khẩn cấp, nhánh tiến hóa (`PlantEvolutionData`), cửa hàng Vườn (`Goods`), và toàn bộ Sổ Tay Bắn Súng (`ShootingAlmanacIndex`).
+  - **Bùa Thám Hiểm & Mẹo Màn Chơi:** Dịch bổ sung 100% 176 Bùa Thám Hiểm (Travel Buffs) mới và toàn bộ 171 mẹo màn Thử Hợp Thể / CustomIZ.
+  - **Sổ Tay 100% tiếng Việt:** Dịch hoàn thiện toàn bộ 114 thực vật và 35 zombie trước đây còn sót tiếng Anh — đạt **742/742 thực vật**, **238/238 zombie**, và **48/48 cơ chế** (0 chữ Trung, 0 chữ Anh thừa).
+- **Đồ họa & Font chữ:** Thay thế đầy đủ **48/48 kết cấu hình ảnh giao diện** — bổ sung Việt hóa 7 ảnh trước đây còn tiếng Anh (`Màn Gợi Ý`, `Chào Mừng Trở Lại`, `Không Phải Bạn? Bấm Vào Đây`, `Bấm Vào Đây Cập Nhật Game Mới!`, `Thử Hợp Thể`, `Đợt Zombie Lớn Đang Tới!`) cùng font `LiberationSans` hiển thị tiếng Việt có dấu 100% sắc nét.
 
 ---
 
@@ -95,7 +95,7 @@ All APK builds are signed with the project's official **Release Keystore**, ensu
 
 ### ✨ 4.1 版本特性
 - **[CN] 中文原版：** 完整保留作者蓝飘飘fly的原版代码、纹理与数值，采用相同签名打包，便于随时切回原版体验。
-- **[VI] Bản Việt Hóa：** 针对 4.1 自走棋远征进化、向日葵养殖、神笔马良新增 817 条语境越化文本，完整替换 48 张界面贴图，完美支持全部越南语重音字符，已通过真机防溢框校验。
+- **[VI] Bản Việt Hóa：** 已完成 4.1 全部文本 100% 越化（累计新增 3,837 条越化文本，补全 114 种植物与 35 种僵尸图鉴、176 条旅行词条、全部射击图鉴与关卡提示，移除全部英文回退，并完成 48 张全越化界面贴图）。
 - **[EN] English：** 新增 994 条 4.1 新模式英文语境翻译，完整替换 48 张界面贴图，全面覆盖自走棋商店/刷新概率/全海克斯、向日葵养殖、神笔马良、关卡编辑器帮助与存档界面。
 
 ---
@@ -104,7 +104,7 @@ All APK builds are signed with the project's official **Release Keystore**, ensu
 <summary><b>🔍 Technical Checksums / Mã kiểm tra SHA-256 / 校验码</b></summary>
 
 ```
-PvZ-Fusion-4.1-Vietnamese-HalfTranslate.apk: 685bbb5c1dc814771f8358c1d5b1dd7344116f61604179a793663af843709932
+PvZ-Fusion-4.1-Vietnamese-HalfTranslate.apk: 80a98a3b5f4ccee53743b82e915cd317e8faa4987f0ba4ce43a35b38e6ed9974
 PvZ-Fusion-4.1-English-HalfTranslate.apk:    04b8de0ba0a45eca878f6eea6a4c7c2d6d92aeae58d737a2916ed95a72b359f9
 PvZ-Fusion-4.1-Chinese-Raw.apk:              3144746c552455b88db28eedfa20777099ecdb9736ac679bbbe70cd4113cb5fd
 ```
