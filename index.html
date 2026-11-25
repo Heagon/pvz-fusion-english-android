@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Plants vs. Zombies: Fusion (Android) — [VI] Bản Việt Hóa · [EN] English · [CN] 简体中文</title>
+  <meta name="description" content="Unofficial Android Multi-Language Suite for Plants vs. Zombies: Fusion (v4.0.5.2 Stable & v4.1 Preview). No Root, 100% Save-Preserving Updates across VI / EN / CN.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Plants vs. Zombies: Fusion (Android) — Multi-Language Suite">
+  <meta property="og:description" content="[VI] Bản Việt Hóa · [EN] English · [CN] 中文原版 — Cài đè giữ nguyên 100% Save · No Root Required.">
+  <meta property="og:image" content="https://raw.githubusercontent.com/Heagon/pvz-fusion-english-android/main/screenshots/vi_4052_01_main_menu.png">
+  <script>
+    (function () {
+      var BASE = "https://github.com/Heagon/pvz-fusion-english-android";
+      var DEST = {
+        vi: BASE + "/blob/main/README.vi.md",
+        cn: BASE + "/blob/main/README.cn.md",
+        en: BASE + "#readme"
+      };
+
+      try {
+        var q = new URLSearchParams(window.location.search).get("lang");
+        if (q) {
+          q = q.toLowerCase();
+          if (q.indexOf("vi") === 0) { window.location.replace(DEST.vi); return; }
+          if (q.indexOf("zh") === 0 || q === "cn") { window.location.replace(DEST.cn); return; }
+          if (q.indexOf("en") === 0) { window.location.replace(DEST.en); return; }
+        }
+
+        var langs = (navigator.languages && navigator.languages.length)
+          ? navigator.languages
+          : [navigator.language || navigator.userLanguage || ""];
+
+        for (var i = 0; i < langs.length; i++) {
+          var l = String(langs[i] || "").toLowerCase();
+          if (l.indexOf("vi") === 0) { window.location.replace(DEST.vi); return; }
+          if (l.indexOf("zh") === 0) { window.location.replace(DEST.cn); return; }
+        }
+
+        var tz = (Intl.DateTimeFormat().resolvedOptions().timeZone || "").toLowerCase();
+        if (tz === "asia/ho_chi_minh" || tz === "asia/saigon" || tz === "asia/hanoi") {
+          window.location.replace(DEST.vi);
+          return;
+        }
+        if (tz === "asia/shanghai" || tz === "asia/chongqing" || tz === "asia/harbin" || tz === "asia/urumqi") {
+          window.location.replace(DEST.cn);
+          return;
+        }
+      } catch (e) {}
+
+      window.location.replace(DEST.en);
+    })();
+  </script>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background: #0d1117;
+      color: #f0f6fc;
+      font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+      padding: 20px;
+    }
+    .card {
+      max-width: 480px;
+      width: 100%;
+      background: linear-gradient(145deg, #0d2418, #111b24);
+      border: 1px solid rgba(63, 185, 80, 0.45);
+      border-radius: 16px;
+      padding: 28px 24px;
+      text-align: center;
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
+    }
+    h1 { font-size: 20px; margin: 0 0 8px; }
+    p { font-size: 14px; color: #b1bac4; margin: 0 0 20px; }
+    .btns { display: flex; flex-direction: column; gap: 10px; }
+    a {
+      display: block;
+      padding: 12px 16px;
+      border-radius: 10px;
+      background: #21262d;
+      border: 1px solid #3d444d;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 14px;
+    }
+    a.primary { background: #238636; border-color: #56d364; }
+    a:hover { filter: brightness(1.1); }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Plants vs. Zombies: Fusion (Android)</h1>
+    <p>Redirecting to your language on GitHub... / Đang chuyển tới ngôn ngữ của bạn...</p>
+    <div class="btns">
+      <a class="primary" href="https://github.com/Heagon/pvz-fusion-english-android/blob/main/README.vi.md">[VI] Bản Việt Hóa (Tiếng Việt)</a>
+      <a href="https://github.com/Heagon/pvz-fusion-english-android#readme">[EN] English Edition</a>
+      <a href="https://github.com/Heagon/pvz-fusion-english-android/blob/main/README.cn.md">[CN] 简体中文主页</a>
+    </div>
+  </div>
+</body>
+</html>
