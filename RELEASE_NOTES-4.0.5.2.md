@@ -27,6 +27,7 @@ All APK builds are signed with the project's official **Release Keystore**, ensu
 
 ---
 
+<a id="vi-hướng-dẫn--chi-tiết-bản-việt-hóa"></a>
 ## [VI] Hướng Dẫn & Chi Tiết Bản Việt Hóa
 
 ### 🔄 Cách đổi ngôn ngữ không mất Save
@@ -41,6 +42,7 @@ All APK builds are signed with the project's official **Release Keystore**, ensu
 
 ---
 
+<a id="en-guide--english-build-details"></a>
 ## [EN] Guide & English Build Details
 
 ### 🔄 In-Place Update & Language Switching (Preserve All Saves)
@@ -55,6 +57,7 @@ All APK builds are signed with the project's official **Release Keystore**, ensu
 
 ---
 
+<a id="cn-使用指南与版本详情"></a>
 ## [CN] 使用指南与版本详情
 
 ### 🔄 覆盖安装与语言无损切换指南（保留全部存档）
@@ -77,6 +80,16 @@ All APK builds are signed with the project's official **Release Keystore**, ensu
 | ![VI Plants Almanac](https://raw.githubusercontent.com/Heagon/pvz-fusion-english-android/main/screenshots/vi_4052_08_plants_almanac.png) | ![EN Plants Almanac](https://raw.githubusercontent.com/Heagon/pvz-fusion-english-android/main/screenshots/en_4052_08_plants_almanac.png) |
 | ![VI Zen Garden](https://raw.githubusercontent.com/Heagon/pvz-fusion-english-android/main/screenshots/vi_4052_11_zen_garden.png) | ![EN Zen Garden](https://raw.githubusercontent.com/Heagon/pvz-fusion-english-android/main/screenshots/en_4052_11_zen_garden.png) |
 | ![VI Battle & Pause](https://raw.githubusercontent.com/Heagon/pvz-fusion-english-android/main/screenshots/vi_4052_14_pause_menu.png) | ![EN Battle & Pause](https://raw.githubusercontent.com/Heagon/pvz-fusion-english-android/main/screenshots/en_4052_14_pause_menu.png) |
+
+---
+
+## 👥 Credits &amp; Documentation / Đội Ngũ &amp; Tài Liệu / 致谢与文档
+
+- **Pages / Trang ngôn ngữ / 语言主页:** [**`[VI]` Bản Việt Hóa**](https://github.com/Heagon/pvz-fusion-english-android/blob/main/README.vi.md) · [**`[EN]` English**](https://github.com/Heagon/pvz-fusion-english-android#readme) · [**`[CN]` 简体中文**](https://github.com/Heagon/pvz-fusion-english-android/blob/main/README.cn.md) · [**Full Credits (`CREDITS.md`)**](https://github.com/Heagon/pvz-fusion-english-android/blob/main/CREDITS.md)
+- **Original Game (*PvZ: Fusion*):** **LanPiaoPiaofly (蓝飘飘fly)**, **Gfishtus (机鱼吐司)**, **LanDie (蓝蝶)**, **MengLuo (梦珞)** &amp; team ([Bilibili](https://space.bilibili.com/3546619314178489))
+- **Multi-Language Mod &amp; English Localization:** **[PVZF-Translation](https://github.com/Teyliu/PVZF-Translation)** (`Mamoru-kun`, `NaKune`, `Climeron`, `Teyliu`, `Cassidy`, `JustNull`, `Dakosha`, `TrevTV`, `Rollerlhite`, `Roaoming`, `Shel`, `flexyj`, `CarrotD1scord`, `Xabdi`, `The Blooms Community` — [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/))
+- **Vietnamese Localization (`Bản Việt Hóa`):** **Team CBD &amp; Team Bloom** · `Shion`, `Cryda`, `JustNull`
+- **Android Porting &amp; Save-Safe Suite:** **Heagon** ([pvz-fusion-english-android](https://github.com/Heagon/pvz-fusion-english-android))
 
 ---
 

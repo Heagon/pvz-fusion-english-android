@@ -1,198 +1,184 @@
-# Plants vs. Zombies: Fusion (Android) — Multi-Language Suite
-### 植物大战僵尸融合版 安卓全语言整合包 · Bộ Cài Đặt Đa Ngôn Ngữ PvZ Fusion Android
+<p align="center">
+  <img src="assets/hero-en.svg" width="880" alt="Plants vs. Zombies: Fusion — Unofficial Android Multi-Language Suite">
+</p>
 
 <p align="center">
-  <a href="#vi-bản-việt-hóa"><b>[VI] Bản Việt Hóa</b></a> •
-  <a href="#en-english"><b>[EN] English</b></a> •
-  <a href="#cn-简体中文"><b>[CN] 简体中文</b></a>
+  <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/tag/v4.0.5.2"><img src="https://img.shields.io/badge/Stable-v4.0.5.2-238636?style=flat-square&logo=android&logoColor=white" alt="Latest Stable v4.0.5.2"></a>
+  <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/tag/v4.1-half-translate"><img src="https://img.shields.io/badge/Preview-v4.1_AutoChess-b87d04?style=flat-square&logo=android&logoColor=white" alt="Preview v4.1"></a>
+  <a href="docs/INSTALL.md"><img src="https://img.shields.io/badge/Android-8.0%2B_(arm64)-1f6feb?style=flat-square" alt="Android 8.0+ arm64"></a>
+  <a href="docs/UPDATE.md"><img src="https://img.shields.io/badge/Save_Data-100%25_Preserved-2ea043?style=flat-square" alt="100% Save Preserved"></a>
+  <a href="https://discord.gg/DPAC5ZVJ8T"><img src="https://img.shields.io/badge/Discord-PVZF_Community-5865F2?style=flat-square&logo=discord&logoColor=white" alt="PVZF Discord"></a>
+</p>
+
+<p align="center">
+  <a href="README.vi.md"><img src="assets/lang-vi.svg" height="38" alt="[VI] Bản Việt Hóa"></a>&nbsp;&nbsp;
+  <a href="README.md"><img src="assets/lang-en-active.svg" height="38" alt="[EN] English (Active)"></a>&nbsp;&nbsp;
+  <a href="README.cn.md"><img src="assets/lang-cn.svg" height="38" alt="[CN] 简体中文"></a>
+</p>
+
+<p align="center">
+  <sub>🌐 <b>Đổi ngôn ngữ trang / 切换页面语言:</b> Bấm <b><a href="README.vi.md">[VI] Bản Việt Hóa</a></b> để xem Tiếng Việt • 点击 <b><a href="README.cn.md">[CN] 简体中文</a></b> 查看中文说明 • Smart Share Link: <a href="https://heagon.github.io/pvz-fusion-english-android/">Auto-Language Link</a></sub>
+</p>
+
+<p align="center">
+  <a href="#downloads"><b>📥 Downloads</b></a> &nbsp;•&nbsp;
+  <a href="#install"><b>🔄 Install &amp; Switch Language</b></a> &nbsp;•&nbsp;
+  <a href="#highlights"><b>✨ Highlights</b></a> &nbsp;•&nbsp;
+  <a href="#screenshots"><b>📸 Screenshots</b></a> &nbsp;•&nbsp;
+  <a href="#guides"><b>📚 Guides &amp; FAQ</b></a> &nbsp;•&nbsp;
+  <a href="#credits"><b>👥 Credits</b></a>
 </p>
 
 ---
 
-## 📥 Tải Về / Downloads / 下载专区
+<a id="downloads"></a>
+## 📥 APK Downloads
 
-Tất cả các bản APK đều được ký bằng cùng một **Release Keystore chính thức**, đảm bảo **không bao giờ bị mất dữ liệu chơi (save game)** khi bạn cập nhật hoặc chuyển đổi qua lại giữa các ngôn ngữ.
+> [!TIP]
+> **100% Save-Preserving Architecture:** Every APK in this repository (**`[EN] English`**, **`[VI] Bản Việt Hóa`**, and **`[CN] Chinese Raw`**) is signed with the same official **Release Keystore**. Simply **install over your existing app (Update)** — **never uninstall** — to update versions or switch languages anytime without losing progress!
 
-All APK builds are signed with the project's official **Release Keystore**, ensuring **safe in-place updates with 100% save preservation** across languages.
+### Which Version Should You Choose?
 
-所有 APK 均使用统一的**官方发布签名**，支持直接覆盖安装，**跨语言切换与版本更新绝不丢失存档**。
-
-### 📊 Tổng quan các phiên bản / Version Overview / 版本概览
-
-| Phiên bản / Version / 版本 | Trạng thái / Status / 状态 | Ngôn ngữ hỗ trợ / Languages / 语言 | Khuyến nghị / Recommendation / 建议 |
+| Release | Channel | Localization Coverage | Best For |
 | :--- | :--- | :--- | :--- |
-| **v4.0.5.2** | 🟢 **Latest Stable** | [VI] Bản Việt Hóa · [EN] English · [CN] 中文原版 | **Khuyên dùng cho mọi người chơi.** Bản ổn định nhất, đã dịch và kiểm thử hoàn chỉnh 100%. / Recommended for all players. / **全员推荐。** 最稳定版本，全文本完整翻译。 |
-| **v4.1 Preview** | 🟡 **Half-Translate** | [VI] Bản Việt Hóa · [EN] English · [CN] 中文原版 | Dành cho người muốn trải nghiệm sớm AutoChess và cây mới. Dịch tự động từ tiếng Trung. / Early preview for Odyssey AutoChess. Machine-translated. / 尝鲜体验自走棋远征与新植物，新内容机翻。 |
+| **v4.0.5.2** | 🟢 **Latest Stable** | **`[EN]`** 100% · **`[VI]`** 100% · **`[CN]`** Original | **Recommended for most players.** Thoroughly tested across all game modes with complete translations. |
+| **v4.1 Preview** | 🟡 **Early Preview** | **`[EN]`** Contextual UI · **`[VI]`** 100% · **`[CN]`** Original | Players eager to try **Odyssey: Evolved (AutoChess)**, **Sunflower Breeding (Tycoon)**, **Magic Brush**, and **742 plants**. |
 
 ---
 
-### 🟢 v4.0.5.2 — Bản chính thức (Latest Stable / 完整翻译版)
-👉 **[Xem trang Release v4.0.5.2 trên GitHub](../../releases/tag/v4.0.5.2)**
+### 🟢 v4.0.5.2 — Latest Stable *(Recommended)*
+Full release notes & SHA-256 checksums: **[GitHub Release `v4.0.5.2`](https://github.com/Heagon/pvz-fusion-english-android/releases/tag/v4.0.5.2)**
 
-| Ngôn ngữ / Language / 语言 | Tải về / APK Download / 下载 | Dung lượng / Size | Ghi chú / Notes / 说明 |
-| :--- | :--- | :--- | :--- |
-| [VI] **Bản Việt Hóa** | [Tải APK Bản Việt Hóa](../../releases/download/v4.0.5.2/PvZ-Fusion-4.0.5.2-Vietnamese.apk) | 599.6 MB | Bản Việt Hóa hoàn chỉnh (dịch chuẩn từ tiếng Trung, font tiếng Việt 100%, đã kiểm thử UI trên Android) |
-| [EN] **English** | [Download APK (English)](../../releases/download/v4.0.5.2/PvZ-Fusion-4.0.5.2-English.apk) | 599.7 MB | Complete English build (translated from Chinese, mobile uGUI font & layout verified on Android) |
-| [CN] **中文原版 (Chinese Raw)** | [下载原版 APK (Chinese)](../../releases/download/v4.0.5.2/PvZ-Fusion-4.0.5.2-Chinese-Raw.apk) | 591.1 MB | 蓝飘飘fly 原版中文（官方签名，可与各语言版相互覆盖不丢存档） |
+| Edition | Size | Summary | Direct Download |
+| :--- | :---: | :--- | :---: |
+| **`[EN]` English** | `599.7 MB` | Complete English localization (720 plants, 235 zombies, 47 mechanics, 48 UI textures, mobile uGUI layout verified) | <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.0.5.2/PvZ-Fusion-4.0.5.2-English.apk"><img src="assets/btn-dl-en-stable.svg" height="30" alt="Download English APK"></a> |
+| **`[VI]` Bản Việt Hóa** | `599.6 MB` | Complete Vietnamese localization (100% accented `LiberationSans` font, full Almanac & 48 localized UI textures) | <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.0.5.2/PvZ-Fusion-4.0.5.2-Vietnamese.apk"><img src="assets/btn-dl-en-stable.svg" height="30" alt="Download Vietnamese APK"></a> |
+| **`[CN]` 中文原版 (Raw)** | `591.1 MB` | Untouched original Chinese build by **蓝飘飘fly**, re-signed with the unified keystore for seamless switching | <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.0.5.2/PvZ-Fusion-4.0.5.2-Chinese-Raw.apk"><img src="assets/btn-dl-en-stable.svg" height="30" alt="Download Chinese Raw APK"></a> |
 
 ---
 
-### 🟡 v4.1 Preview — Bản thử nghiệm (Half-Translate / 尝鲜版)
-👉 **[Xem trang Release v4.1 Preview trên GitHub](../../releases/tag/v4.1-half-translate)**
+### 🟡 v4.1 Preview — Odyssey: Evolved (AutoChess) &amp; New Content
+Full release notes & SHA-256 checksums: **[GitHub Release `v4.1-half-translate`](https://github.com/Heagon/pvz-fusion-english-android/releases/tag/v4.1-half-translate)**
 
 > [!NOTE]
-> **Half-Translate / Dịch tự động / 自动翻译:** Phiên bản thử nghiệm sớm dành cho PvZ Fusion 4.1 (chế độ Thám hiểm Tiến Hóa AutoChess, cây Tối Thượng mới). Các nội dung mới đang được dịch tự động từ tiếng Trung gốc; các chuỗi chưa hoàn thiện sẽ tạm hiển thị tiếng Anh/bản dịch nháp để đảm bảo game vận hành ổn định không bị văng lỗi.
+> **v4.1 Preview Status:** The **`[EN] English`** build includes full contextual UI translations for all new v4.1 modes (*Odyssey: Evolved AutoChess*, *Intermission Shop*, *Hex Augments*, *Sunflower Breeding / Tycoon*, *Magic Brush*, and *Level Creator Help*) verified on Android, while minor edge Almanac strings continue to be refined. The **`[VI] Bản Việt Hóa`** build is **100% localized**.
 
-| Ngôn ngữ / Language / 语言 | Tải về / APK Download / 下载 | Dung lượng / Size | Ghi chú / Notes / 说明 |
-| :--- | :--- | :--- | :--- |
-| [VI] **Bản Việt Hóa** | [Tải APK Bản Việt Hóa](../../releases/download/v4.1-half-translate/PvZ-Fusion-4.1-Vietnamese-HalfTranslate.apk) | 629.1 MB | Bản Việt Hóa 4.1 hoàn chỉnh 100% (trọn vẹn Sổ Tay, Bùa Thám Hiểm, AutoChess/Tycoon/Bút Thần/Bắn Súng, 0 tiếng Anh/Trung thừa, 48/48 texture Việt hóa) |
-| [EN] **English** | [Download APK (English)](../../releases/download/v4.1-half-translate/PvZ-Fusion-4.1-English-HalfTranslate.apk) | 628.8 MB | English 4.1 Preview build (Half-Translate, contextual AutoChess/Tycoon/Magic Brush UI verified on Android) |
-| [CN] **中文原版 (Chinese Raw)** | [下载原版 APK (Chinese)](../../releases/download/v4.1-half-translate/PvZ-Fusion-4.1-Chinese-Raw.apk) | 620.2 MB | 蓝飘飘fly 原版 4.1 中文（官方签名，可与各语言版相互覆盖不丢存档） |
-
----
-
-## [VI] Bản Việt Hóa
-
-### Giới thiệu dự án
-Đây là bộ cài đặt đa ngôn ngữ không chính thức dành cho game **Plants vs. Zombies: Fusion (植物大战僵尸融合版)** trên hệ điều hành Android. Dự án thực hiện đóng gói tĩnh tài nguyên dịch thuật vào file APK gốc — **hoạt động ngay trên mọi điện thoại Android, không cần root, không cần máy tính, không cần cài đặt mod loader phức tạp.**
-
-### 🔄 Hướng dẫn cài đặt & Đổi ngôn ngữ không mất Save
-Tất cả các bản APK trong bộ sưu tập (**Bản Việt Hóa**, **English**, **Trung gốc**) đều dùng chung **Release Keystore chính thức** của dự án:
-1. **Tải file APK:** Chọn ngôn ngữ bạn muốn chơi ở bảng phía trên rồi tải về máy.
-2. **Cài đè (Install / Update):** Mở file APK vừa tải và bấm **Cập nhật (Install / Update)** đè trực tiếp lên game đang có trên máy (**tuyệt đối không gỡ cài đặt** game cũ).
-3. **Mở lại game:** Ngôn ngữ mới sẽ được áp dụng ngay lập tức, và **toàn bộ dữ liệu cày cuốc, cây cối, tiền vàng, màn chơi (`playerData.json`) được giữ nguyên vẹn 100%!**
-
-### ✨ Chi tiết Bản Việt Hóa
-- **Hỗ trợ 100% tiếng Việt có dấu:** Hệ thống tự động cấu hình font dự phòng `LiberationSans` trong asset bundle `data.unity3d`, giúp toàn bộ các ký tự có dấu (`ừ, ỡ, ệ, ằ, ú, ắ, â, ĩ, ô, ễ...`) hiển thị sắc nét, không bị lỗi mất ký tự hay ô vuông `[]`.
-- **Dịch trực tiếp từ tiếng Trung:**
-  - Đầy đủ 720/720 thực vật (bản 4.0.5.2) và 742/742 thực vật (bản 4.1).
-  - Đầy đủ 235/235 zombie (bản 4.0.5.2) và 238/238 zombie (bản 4.1).
-  - Đầy đủ 47/47 cơ chế (bản 4.0.5.2) và 48/48 cơ chế (bản 4.1, bao gồm Đinh ba Biển sâu).
-- **Việt hóa Giao diện:** Toàn bộ menu, nút bấm, bảng kết thúc màn chơi, bảng chọn độ khó, HUD, thông báo trong trận và hệ thống bùa Thám hiểm (Travel Buffs).
-- **Đồ họa:** Thay thế 48 kết cấu hình ảnh giao diện sang tiếng Việt, đã rà soát chống tràn khung chữ trên thiết bị Android thật.
+| Edition | Size | Summary | Direct Download |
+| :--- | :---: | :--- | :---: |
+| **`[EN]` English (Preview)** | `628.8 MB` | Contextual v4.1 English UI (+994 new strings, AutoChess Shop/Hexes/Tycoon/Magic Brush, 48/48 UI textures) | <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.1-half-translate/PvZ-Fusion-4.1-English-HalfTranslate.apk"><img src="assets/btn-dl-en-preview.svg" height="30" alt="Download English 4.1 APK"></a> |
+| **`[VI]` Bản Việt Hóa (100%)** | `629.1 MB` | 100% complete v4.1 Vietnamese build (742/742 plants, 238/238 zombies, 48/48 mechanics, 176 Travel Buffs, 48/48 VI textures) | <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.1-half-translate/PvZ-Fusion-4.1-Vietnamese-HalfTranslate.apk"><img src="assets/btn-dl-en-preview.svg" height="30" alt="Download Vietnamese 4.1 APK"></a> |
+| **`[CN]` 中文原版 (Raw)** | `620.2 MB` | Untouched v4.1 Chinese build by **蓝飘飘fly**, signed with the unified keystore for lossless switching | <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.1-half-translate/PvZ-Fusion-4.1-Chinese-Raw.apk"><img src="assets/btn-dl-en-preview.svg" height="30" alt="Download Chinese 4.1 APK"></a> |
 
 ---
 
-## [EN] English
+<a id="install"></a>
+## 🔄 3-Step Installation &amp; Language Switching
 
-### Project Overview
-An **unofficial Android localization and multi-language suite** for *Plants vs. Zombies: Fusion* (植物大战僵尸融合版), created by statically applying community translations to the original Android APK — **no root, no PC, no runtime mod loader required.**
+1. **Download APK:** Pick any build (`[EN]`, `[VI]`, or `[CN]`) from the tables above on your Android phone or tablet (**Android 8.0+**, `arm64-v8a`, ~1.5 GB free storage).
+2. **Install Over Existing App:** Open the downloaded APK and tap **Install / Update** directly over your existing installation (**DO NOT uninstall** the previous app).
+3. **Launch &amp; Play:** Your chosen version/language loads immediately, and **100% of your unlocked plants, coins, Zen Garden, and stage progress (`playerData.json`) remain intact!**
 
-### 🔄 Installation & Language Switching Guide (Preserve All Saves)
-All APK builds (**Việt Hóa**, **English**, and **Original Chinese**) share the exact same official **Release Keystore**:
-1. **Download APK:** Select your desired language from the download table above.
-2. **Install Over (Update):** Open the downloaded APK and tap **Update / Install** directly over your existing installation (**do NOT uninstall** the previous version).
-3. **Launch the Game:** The new language will take effect immediately, and **100% of your progress, unlocked plants, coins, and levels (`playerData.json`) are completely preserved!**
+> [!IMPORTANT]
+> **Switching from a third-party APK for the first time?** If Android reports an *"App not installed (package conflicts with an existing package)"* signature mismatch, back up `/sdcard/Android/data/com.LanPiaoPiao.PlantsVsZombiesRH/files/playerData.json` **before** uninstalling the old app. Follow the step-by-step **[Save Data Backup &amp; Migration Guide (`docs/MIGRATION.md`)](docs/MIGRATION.md)**.
 
-### ✨ English Build Details
-- **Comprehensive translation:** Covers the Almanac (742 plants, 238 zombies, 48 mechanics), main menus, stage selection, difficulty settings, Odyssey buffs, HUD, and in-game dialogues.
-- **Font optimization:** Implements optimized uGUI typography to ensure clear rendering and legibility on mobile screens.
-- **Save preservation:** Dynamically updates `unity_app_guid` to ensure UnityIL2CPP metadata automatically reloads without clearing user storage.
+<a id="guides"></a>
+### 📚 Documentation &amp; Troubleshooting Hub
 
----
-
-## [CN] 简体中文
-
-### 项目简介
-本项目是《植物大战僵尸融合版》（植物大战僵尸 RH）的**安卓非官方多语言整合移植版本**。通过对原版 APK 进行静态本地化编译与资源注入，实现**免 Root、免电脑、无需任何额外 Mod 加载器，直接安装即可畅玩**。
-
-### 🔄 覆盖安装与语言无损切换指南（保留全部存档）
-本套件中的所有 APK（**[VI] Việt Hóa 越化版**、**[EN] English 英文版**、**[CN] 中文原版**）均使用统一的**项目官方签名证书 (Release Keystore)**：
-1. **下载 APK 安装包：** 从上方的下载表格中选择所需语言版本的安装包并下载到手机中。
-2. **直接覆盖安装：** 打开下载好的 APK 安装包，直接点击**更新 / 安装**覆盖当前设备上的游戏版本（**切勿卸载旧版本**）。
-3. **重新打开游戏：** 新语言即刻生效，**所有的关卡进度、已解锁植物、金币及存档文件（`playerData.json`）均 100% 完整保留！**
-
-### ✨ 版本特性说明
-- **[CN] 中文原版 (Chinese Raw)：** 完整保留作者蓝飘飘fly的原版代码、纹理与数值，采用相同签名打包，便于随时切回原版体验。
-- **[VI] Việt Hóa 越化版：** 基于原版中文深度翻译，集成 LiberationSans 字体，完美支持全部越南语重音字符，涵盖图鉴全植物、僵尸与全新 48 张界面贴图。
-- **[EN] English 英文版：** 完整移植 PVZF-Translation 英文汉化项目成果，优化手机端排版，全英文界面与图鉴。
+| Guide | What It Covers |
+| :--- | :--- |
+| 📖 **[Installation &amp; Troubleshooting (`docs/INSTALL.md`)](docs/INSTALL.md)** | Device requirements, Unknown Sources setup, Google Play Protect prompt, and fixing black screens / abnormal cooldowns caused by system locale. |
+| 🔄 **[Safe Updates &amp; Language Switching (`docs/UPDATE.md`)](docs/UPDATE.md)** | Golden rule for lossless updates and how `unity_app_guid` refreshes IL2CPP localization cache automatically. |
+| 💾 **[Save Backup &amp; Migration (`docs/MIGRATION.md`)](docs/MIGRATION.md)** | How to back up and restore `playerData.json` on-device (`ZArchiver` / `MT Manager`) or via PC (`adb`) with zero root required. |
+| 🛠️ **[Build Pipeline &amp; Scripts (`tools/README.md`)](tools/README.md)** | Open-source static Unity asset &amp; IL2CPP metadata patching tools for transparency and reproducible builds. |
+| 👥 **[Complete Credits &amp; Sources (`CREDITS.md`)](CREDITS.md)** | Full Hall of Fame honoring the original creators, translators, mod engineers, artists, and open-source tools. |
 
 ---
 
-## 📸 Hình Ảnh Thực Tế / Screenshots / 实机游戏截图
+<a id="highlights"></a>
+## ✨ Project Overview &amp; Technical Highlights
 
-Ảnh chụp thực tế trên thiết bị Android (**v4.0.5.2**) sau khi hoàn tất rà soát hiển thị cho cả **[VI] Bản Việt Hóa** và **[EN] English**:
+This project is an **unofficial static Android localization suite** for *Plants vs. Zombies: Fusion* (*植物大战僵尸融合版*). Unlike PC mods that require runtime loaders (`MelonLoader` / `BepInEx`), translations and textures are compiled directly into the Android asset bundle and IL2CPP metadata:
 
-Real Android device screenshots (**v4.0.5.2**) audited across all game modes for both **[VI] Bản Việt Hóa** and **[EN] English**:
+- **Zero Setup Friction:** Works out of the box on standard Android devices — **no root, no PC, no runtime mod loader, and no external OBB copying**.
+- **Comprehensive Game Coverage:**
+  - **Almanac:** Up to **742 Plants**, **238 Zombies**, and **48 Mechanics** localized with adjusted mobile `<size>` tags so descriptions fit cleanly without clipping.
+  - **UI &amp; Gameplay Modes:** Main menus, settings, Adventure, Survival, Challenges, Puzzles, Zen Garden, Harvest/Mystery Mode, Odyssey Travel Buffs, and v4.1 *Odyssey: Evolved (AutoChess)*, *Tycoon*, &amp; *Magic Brush*.
+  - **Localized Textures:** **48/48 UI textures** replaced (wooden signboards, mode banners, wave progress meters) and verified on real Android hardware.
+- **Mobile Typography &amp; Save Safety:**
+  - Optimized uGUI text bounds to prevent mobile button/card overflow, plus `LiberationSans` fallback injection for crisp diacritic rendering in `[VI]`.
+  - Automatic `unity_app_guid` cache invalidation ensures Unity IL2CPP extracts updated `global-metadata.dat` strings cleanly on `install -r` without wiping user data.
 
-以下为安卓真机实测截图（**v4.0.5.2**），涵盖 **[VI] 越化版** 与 **[EN] 英文版** 全模式界面校验效果：
+---
 
-| [VI] Bản Việt Hóa | [EN] English |
+<a id="screenshots"></a>
+## 📸 Real Android Device Screenshots
+
+Verified on physical Android hardware across all game modes:
+
+| Main Menu (`v4.0.5.2`) | Plants Almanac (`v4.0.5.2`) |
 | :---: | :---: |
-| **Menu Chính / Main Menu / 游戏主菜单** | **Menu Chính / Main Menu / 游戏主菜单** |
-| ![VI Main Menu](screenshots/vi_4052_01_main_menu.png) | ![EN Main Menu](screenshots/en_4052_01_main_menu.png) |
-| **Cài Đặt / Settings / 设置界面** | **Cài Đặt / Settings / 设置界面** |
-| ![VI Settings](screenshots/vi_4052_02_settings.png) | ![EN Settings](screenshots/en_4052_02_settings.png) |
-| **Sổ Tay Cây Trồng / Plants Almanac / 植物图鉴** | **Sổ Tay Cây Trồng / Plants Almanac / 植物图鉴** |
-| ![VI Plants Almanac](screenshots/vi_4052_08_plants_almanac.png) | ![EN Plants Almanac](screenshots/en_4052_08_plants_almanac.png) |
-| **Vườn Thư Thả / Zen Garden / 禅境花园** | **Vườn Thư Thả / Zen Garden / 禅境花园** |
-| ![VI Zen Garden](screenshots/vi_4052_11_zen_garden.png) | ![EN Zen Garden](screenshots/en_4052_11_zen_garden.png) |
-| **Chiến Đấu & Menu Tạm Dừng / Battle HUD & Pause / 战斗与暂停界面** | **Chiến Đấu & Menu Tạm Dừng / Battle HUD & Pause / 战斗与暂停界面** |
-| ![VI Pause Menu](screenshots/vi_4052_14_pause_menu.png) | ![EN Pause Menu](screenshots/en_4052_14_pause_menu.png) |
+| <img src="screenshots/en_4052_01_main_menu.png" width="420" alt="English Main Menu"> | <img src="screenshots/en_4052_08_plants_almanac.png" width="420" alt="English Plants Almanac"> |
+| **Zen Garden (`v4.0.5.2`)** | **Battle HUD &amp; Pause Menu (`v4.0.5.2`)** |
+| <img src="screenshots/en_4052_11_zen_garden.png" width="420" alt="English Zen Garden"> | <img src="screenshots/en_4052_14_pause_menu.png" width="420" alt="English Pause Menu"> |
 
 <details>
-<summary><b>🖼️ Xem thêm ảnh chụp tất cả chế độ chơi / More Game Mode Screenshots / 查看更多游戏模式截图</b></summary>
+<summary><b>🖼️ View All v4.0.5.2 Game Mode Screenshots (11 Additional Screens)</b></summary>
+<br>
 
-| [VI] Bản Việt Hóa | [EN] English |
+| Game Mode | Game Mode |
 | :---: | :---: |
-| **Sinh Tồn / Survival / 生存模式** | **Sinh Tồn / Survival / 生存模式** |
-| ![VI Survival](screenshots/vi_4052_03_survival_mode.png) | ![EN Survival](screenshots/en_4052_03_survival_mode.png) |
-| **Thử Thách / Challenges / 挑战模式** | **Thử Thách / Challenges / 挑战模式** |
-| ![VI Challenges](screenshots/vi_4052_04_challenges.png) | ![EN Challenges](screenshots/en_4052_04_challenges.png) |
-| **Giải Đố / Puzzle Mode / 解谜模式** | **Giải Đố / Puzzle Mode / 解谜模式** |
-| ![VI Puzzles](screenshots/vi_4052_05_puzzles.png) | ![EN Puzzles](screenshots/en_4052_05_puzzles.png) |
-| **Màn Gợi Ý / Recommended Levels / 推荐关卡** | **Màn Gợi Ý / Recommended Levels / 推荐关卡** |
-| ![VI Recommended](screenshots/vi_4052_06_recommended_levels.png) | ![EN Recommended](screenshots/en_4052_06_recommended_levels.png) |
-| **Sổ Tay Zombie / Zombies Almanac / 僵尸图鉴** | **Sổ Tay Zombie / Zombies Almanac / 僵尸图鉴** |
-| ![VI Zombies](screenshots/vi_4052_09_zombies_almanac.png) | ![EN Zombies](screenshots/en_4052_09_zombies_almanac.png) |
-| **Cơ Chế / Mechanics / 机制图鉴** | **Cơ Chế / Mechanics / 机制图鉴** |
-| ![VI Mechanics](screenshots/vi_4052_10b_mechanics.png) | ![EN Mechanics](screenshots/en_4052_10b_mechanics.png) |
-| **Từ Khóa (Buff) / Modifiers / 词条图鉴** | **Từ Khóa (Buff) / Modifiers / 词条图鉴** |
-| ![VI Modifiers](screenshots/vi_4052_10c_modifiers.png) | ![EN Modifiers](screenshots/en_4052_10c_modifiers.png) |
-| **Du Lịch: Thử Thách / Odyssey: Challenges / 旅行挑战** | **Du Lịch: Thử Thách / Odyssey: Challenges / 旅行挑战** |
-| ![VI Odyssey Challenges](screenshots/vi_4052_11c_odyssey_challenges.png) | ![EN Odyssey Challenges](screenshots/en_4052_11c_odyssey_challenges.png) |
-| **Chế Độ Huyền Bí / Harvest Mode / 神秘模式** | **Chế Độ Huyền Bí / Harvest Mode / 神秘模式** |
-| ![VI Mystery Mode](screenshots/vi_4052_11d_mystery_mode.png) | ![EN Mystery Mode](screenshots/en_4052_11d_mystery_mode.png) |
-| **Chọn Cây / Seed Selection / 选卡界面** | **Chọn Cây / Seed Selection / 选卡界面** |
-| ![VI Seeds](screenshots/vi_4052_12_adventure_seeds.png) | ![EN Seeds](screenshots/en_4052_12_adventure_seeds.png) |
-| **Trong Trận Đấu / In-Game HUD / 战斗画面** | **Trong Trận Đấu / In-Game HUD / 战斗画面** |
-| ![VI Battle](screenshots/vi_4052_13_battle_hud.png) | ![EN Battle](screenshots/en_4052_13_battle_hud.png) |
+| **Settings**<br><img src="screenshots/en_4052_02_settings.png" width="410" alt="EN Settings"> | **Survival Mode**<br><img src="screenshots/en_4052_03_survival_mode.png" width="410" alt="EN Survival"> |
+| **Challenge Mode**<br><img src="screenshots/en_4052_04_challenges.png" width="410" alt="EN Challenges"> | **Puzzle Mode**<br><img src="screenshots/en_4052_05_puzzles.png" width="410" alt="EN Puzzles"> |
+| **Recommended Levels**<br><img src="screenshots/en_4052_06_recommended_levels.png" width="410" alt="EN Recommended"> | **Zombies Almanac**<br><img src="screenshots/en_4052_09_zombies_almanac.png" width="410" alt="EN Zombies Almanac"> |
+| **Mechanics Almanac**<br><img src="screenshots/en_4052_10b_mechanics.png" width="410" alt="EN Mechanics"> | **Modifiers / Buffs Almanac**<br><img src="screenshots/en_4052_10c_modifiers.png" width="410" alt="EN Modifiers"> |
+| **Odyssey: Challenges**<br><img src="screenshots/en_4052_11c_odyssey_challenges.png" width="410" alt="EN Odyssey Challenges"> | **Harvest / Mystery Mode**<br><img src="screenshots/en_4052_11d_mystery_mode.png" width="410" alt="EN Mystery Mode"> |
+| **Seed Selection**<br><img src="screenshots/en_4052_12_adventure_seeds.png" width="410" alt="EN Seed Selection"> | **In-Battle HUD**<br><img src="screenshots/en_4052_13_battle_hud.png" width="410" alt="EN Battle HUD"> |
 
 </details>
 
 <details>
-<summary><b>🧪 Xem ảnh chụp v4.1 Preview (AutoChess) / v4.1 Preview Screenshots / 查看 4.1 尝鲜版自走棋实机截图</b></summary>
+<summary><b>🧪 View v4.1 Preview Screenshots (Odyssey: Evolved AutoChess, Boss Preview &amp; Shop)</b></summary>
+<br>
 
-| [VI] Bản Việt Hóa (v4.1 Preview) | [EN] English (v4.1 Preview) |
+| v4.1 Preview Screen | v4.1 Preview Screen |
 | :---: | :---: |
-| **Màn Gợi Ý v4.1 / Recommended Levels / 推荐关卡** | **Màn Gợi Ý v4.1 / Recommended Levels / 推荐关卡** |
-| ![VI 4.1 Recommended](screenshots/vi_41_03_recommended.png) | ![EN 4.1 Recommended](screenshots/en_41_03_recommended.png) |
-| **Chọn File Save / Save Picker / 选择存档** | **Chọn File Save / Save Picker / 选择存档** |
-| ![VI 4.1 Save Picker](screenshots/vi_41_04_save_picker.png) | ![EN 4.1 Save Picker](screenshots/en_41_04_save_picker.png) |
-| **Chọn Độ Khó AutoChess / AutoChess Difficulty / 远征进化难度** | **Chọn Độ Khó AutoChess / AutoChess Difficulty / 远征进化难度** |
-| ![VI 4.1 Difficulty](screenshots/vi_41_05_autochess_diff.png) | ![EN 4.1 Difficulty](screenshots/en_41_05_autochess_diff.png) |
-| **Xem Trước Thủ Lĩnh / Boss Preview / 首领预览** | **Xem Trước Thủ Lĩnh / Boss Preview / 首领预览** |
-| ![VI 4.1 Boss Preview](screenshots/vi_41_06_autochess_bosses.png) | ![EN 4.1 Boss Preview](screenshots/en_41_06_autochess_bosses.png) |
-| **Cửa Hàng Giữa Vòng / Intermission Shop / 回合商店** | **Cửa Hàng Giữa Vòng / Intermission Shop / 回合商店** |
-| ![VI 4.1 AutoChess Shop](screenshots/vi_41_07_autochess_shop.png) | ![EN 4.1 AutoChess Shop](screenshots/en_41_07_autochess_shop.png) |
+| **Recommended Levels (`v4.1`)**<br><img src="screenshots/en_41_03_recommended.png" width="410" alt="EN 4.1 Recommended"> | **Save File Picker (`v4.1`)**<br><img src="screenshots/en_41_04_save_picker.png" width="410" alt="EN 4.1 Save Picker"> |
+| **AutoChess Difficulty Selection**<br><img src="screenshots/en_41_05_autochess_diff.png" width="410" alt="EN 4.1 AutoChess Difficulty"> | **AutoChess Boss Preview**<br><img src="screenshots/en_41_06_autochess_bosses.png" width="410" alt="EN 4.1 Boss Preview"> |
+| **AutoChess Intermission Shop**<br><img src="screenshots/en_41_07_autochess_shop.png" width="410" alt="EN 4.1 AutoChess Shop"> | **Main Menu (`v4.1`)**<br><img src="screenshots/en_41_02_main_menu.png" width="410" alt="EN 4.1 Main Menu"> |
+
+</details>
+
+<details>
+<summary><b>🌏 Preview [VI] Bản Việt Hóa Screenshots (Side-by-Side Sample)</b></summary>
+<br>
+
+| `[VI]` Main Menu (`v4.0.5.2`) | `[VI]` v4.1 AutoChess Shop |
+| :---: | :---: |
+| <img src="screenshots/vi_4052_01_main_menu.png" width="410" alt="VI Main Menu"> | <img src="screenshots/vi_41_07_autochess_shop.png" width="410" alt="VI 4.1 AutoChess Shop"> |
+
+> 👉 See all Vietnamese screenshots on **[`[VI]` Bản Việt Hóa (`README.vi.md`)](README.vi.md)**.
 
 </details>
 
 ---
 
-## 👥 Credits & Sources / 致谢与来源 / Đội Ngũ Thực Hiện
+<a id="credits"></a>
+## 👥 Credits &amp; Acknowledgements
 
-| Vai trò / Role / 角色 | Đơn vị / Contributor / 贡献者 | Liên kết / Links / 链接 |
+This Android suite stands on the creativity and dedication of the original developers and localization communities. Full contributor details are documented in **[CREDITS.md](CREDITS.md)**.
+
+| Category / Role | Creators &amp; Contributors | Official Links &amp; License |
 | :--- | :--- | :--- |
-| **Tác giả trò chơi gốc / Original Game Creator / 原版作者** (*PvZ Fusion* / 植物大战僵尸融合版) | **LanPiaoPiaofly (蓝飘飘fly)** | [Bilibili 个人主页](https://space.bilibili.com/3546619314178489) |
-| **Bản dịch Tiếng Anh / English Translation / 英文翻译** | **PVZF‑Translation Team** | [GitHub](https://github.com/Teyliu/PVZF-Translation) · [Discord](https://discord.gg/DPAC5ZVJ8T) |
-| **Bản Việt Hóa / Vietnamese Localization / 越化制作** | **Team CBD & Team Bloom** | [PVZF-Translation Community](https://github.com/Teyliu/PVZF-Translation) |
-| **Đóng gói Android & Tự động hóa / Porting & Automation / 安卓移植与维护** | **Heagon** | [GitHub Repo](https://github.com/Heagon/pvz-fusion-english-android) |
+| **Original Game**<br>*Plants vs. Zombies: Fusion*<br>(植物大战僵尸融合版) | • **LanPiaoPiaofly (蓝飘飘fly)** — Creator, Producer, Game Design, Programming, Animation &amp; Visual Direction<br>• **Gfishtus / JiYuTuSi (机鱼吐司 / 机鱼)** — Co-Designer, Lead Art &amp; Animation<br>• **LanDie (蓝蝶)** — Animation &amp; Art Assistant<br>• **MengLuo (梦珞)** — Video Production &amp; Editing<br>• **Special Thanks:** 北窗遥望, 略nd, MC-大麦, 潜艇伟伟迷, 熔莹, 射命丸文, 使徒, Tip杨山木雁, 小黄鸡, 云耀yoke, 庄不纯 | [Bilibili Official Space](https://space.bilibili.com/3546619314178489) |
+| **Multi-Language Mod &amp; Core Engineering**<br>(*PVZF-Translation*) | • **Mamoru-kun** — Main English Translator<br>• **NaKune** — Original Translation Mod Creator<br>• **Climeron** — Code Support &amp; Font Changing Implementation<br>• **Teyliu, Cassidy, JustNull, Dakosha** — Mod Programming &amp; Maintenance<br>• **TrevTV** — [MelonLoader-AudioTools](https://github.com/TrevTV/MelonLoader-AudioTools) Audio Engine<br>• **Rollerlhite** — [Custom Main Menu Music](https://www.youtube.com/watch?v=aBj1MfvnHPE)<br>• **Cassidy** — English *PvZ: Fusion* Logo<br>• **Roaoming, Shel, flexyj, CarrotD1scord, Xabdi** — Custom/Translated UI Textures &amp; In-Game Music<br>• **Blooms / The Blooms Community** — Multi-Language PC Packaging &amp; Translation Support | [PVZF-Translation](https://github.com/Teyliu/PVZF-Translation) · [Translator DLL](https://github.com/Teyliu/PVZFusionTranslation) · [Discord](https://discord.gg/DPAC5ZVJ8T) · [Online Almanac](https://carroti4ch.itch.io/almanac)<br>License: **[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)** |
+| **English Translation &amp; Proofreading Team** | • **Translators:** Mamoru-kun, Cassidy, Ungoodapple, JustTer, Invis19<br>• **Proofreading &amp; Correction:** TheXL, QwwYQ, Bertie690, revo<br>• **Past Contributors:** Dyna, Professor Cherry Zaitsev, Dimardan, IzzytehWolf, <code>&#124;&gt;.&lt;&#124;</code>, Diiax, Hetsuko, Metroidsans, Flow | [PVZF-Translation](https://github.com/Teyliu/PVZF-Translation) |
+| **Vietnamese Localization**<br>(`Bản Việt Hóa`) | • **Team CBD &amp; Team Bloom** — PvZ Fusion Vietnam Community<br>• **PVZF-Translation VI Team:** Shion, Cryda, JustNull<br>• **v4.0.5.2 &amp; v4.1 Android Completion:** Heagon (+3,837 v4.1 strings, 48/48 VI textures &amp; `LiberationSans` accented font integration) | [PVZF-Translation](https://github.com/Teyliu/PVZF-Translation) |
+| **Android Porting, v4.1 Suite &amp; Automation** | • **Heagon** — Static Unity bundle &amp; IL2CPP metadata patching pipeline, mobile uGUI layout polish, `unity_app_guid` save-safe updates &amp; unified Release Keystore<br>• **Prior Community Android Porters:** silvershadow ([pvzf-android-translation](https://github.com/silvershadowkat/pvzf-android-translation)), Joseph Franci<br>• **Open-Source Tooling:** [UnityPy](https://github.com/K0lb3/UnityPy), [fontTools](https://github.com/fonttools/fonttools), [Pillow](https://python-pillow.org/), [Liberation Fonts](https://github.com/liberationfonts/liberation-fonts), [uber-apk-signer](https://github.com/patrickfav/uber-apk-signer) | [GitHub Repository](https://github.com/Heagon/pvz-fusion-english-android) |
 
 ---
 
-## ⚖️ License & Disclaimer / 免责声明 / Tuyên Bố Miễn Trừ
+## ⚖️ License &amp; Non-Commercial Disclaimer
 
-- **Tiếng Việt:** *Plants vs. Zombies* là nhãn hiệu đã đăng ký của **Electronic Arts / PopCap Games**. Dự án này là sản phẩm phi thương mại của cộng đồng người hâm mộ, hoàn toàn miễn phí, không gắn quảng cáo, không có bất kỳ hình thức thu lợi nào.
-- **English:** *Plants vs. Zombies* is a registered trademark of **Electronic Arts / PopCap Games**. This project is an unofficial fan port, non-commercial, and free of charge. No monetisation or ads. Distributed "as is" with no warranty.
-- **中文：** 《植物大战僵尸》版权归 **Electronic Arts / PopCap Games** 所有。本项目为粉丝非商业开源整合移植，完全免费，无广告、无盈利行为，仅供交流学习使用。
+- **Franchise Trademark:** *Plants vs. Zombies* is a registered trademark and copyright of **Electronic Arts Inc. (EA) / PopCap Games**.
+- **Translation License:** Upstream community translation files from [PVZF-Translation](https://github.com/Teyliu/PVZF-Translation) are licensed under **[Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/)**. Commercial redistribution, paid mirrors, or ad-monetized repacks are strictly prohibited.
+- **Fan Project Notice:** This repository is a **100% free, non-commercial, ad-free fan localization project** distributed *"as is"* without warranty for community accessibility. All rights to the base fan game belong to **蓝飘飘fly** and team.

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168 38" width="168" height="38" role="img" aria-label="[CN] 简体中文">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#161b22"/>
+      <stop offset="100%" stop-color="#21262d"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="166" height="36" rx="10" fill="url(#g)" stroke="#3d444d" stroke-width="1.5"/>
+  <rect x="10" y="8" width="34" height="22" rx="6" fill="#30363d"/>
+  <text x="27" y="23" text-anchor="middle" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11.5" font-weight="800" fill="#7ee787">CN</text>
+  <text x="54" y="23.5" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13.5" font-weight="700" fill="#e6edf3">简体中文</text>
+  
+</svg>

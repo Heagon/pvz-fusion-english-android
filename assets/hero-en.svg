@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 216" width="880" height="216" role="img" aria-label="Plants vs. Zombies: Fusion">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1f15"/>
+      <stop offset="52%" stop-color="#123122"/>
+      <stop offset="100%" stop-color="#0f202c"/>
+    </linearGradient>
+    <linearGradient id="cardBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3fb950" stop-opacity="0.65"/>
+      <stop offset="50%" stop-color="#2ea043" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#d29922" stop-opacity="0.55"/>
+    </linearGradient>
+    <radialGradient id="sunGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffd33d" stop-opacity="0.32"/>
+      <stop offset="100%" stop-color="#ffd33d" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="leafGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3fb950" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#3fb950" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sunCore" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe066"/>
+      <stop offset="100%" stop-color="#f08c00"/>
+    </linearGradient>
+    <linearGradient id="leafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#56d364"/>
+      <stop offset="100%" stop-color="#1f883d"/>
+    </linearGradient>
+    <pattern id="lawnGrid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#3fb950" stroke-opacity="0.06" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Outer Card -->
+  <rect x="1" y="1" width="878" height="214" rx="18" fill="url(#bgGrad)" stroke="url(#cardBorder)" stroke-width="1.5"/>
+  <rect x="2" y="2" width="876" height="212" rx="17" fill="url(#lawnGrid)"/>
+
+  <!-- Ambient Glows -->
+  <circle cx="96" cy="108" r="95" fill="url(#sunGlow)"/>
+  <circle cx="790" cy="48" r="120" fill="url(#leafGlow)"/>
+
+  <!-- Fusion Emblem Badge -->
+  <g transform="translate(36, 46)">
+    <rect width="120" height="120" rx="28" fill="#0d261a" stroke="#3fb950" stroke-opacity="0.5" stroke-width="1.5"/>
+    <!-- Sunburst rays -->
+    <g transform="translate(60, 58)">
+      <polygon points="0,-42 8,-28 -8,-28" fill="#f59f00" opacity="0.9"/>
+      <polygon points="0,42 8,28 -8,28" fill="#f59f00" opacity="0.9"/>
+      <polygon points="-42,0 -28,8 -28,-8" fill="#f59f00" opacity="0.9"/>
+      <polygon points="42,0 28,8 28,-8" fill="#f59f00" opacity="0.9"/>
+      <polygon points="-30,-30 -16,-24 -24,-16" fill="#fab005" opacity="0.85"/>
+      <polygon points="30,-30 16,-24 24,-16" fill="#fab005" opacity="0.85"/>
+      <polygon points="-30,30 -16,24 -24,16" fill="#fab005" opacity="0.85"/>
+      <polygon points="30,30 16,24 24,16" fill="#fab005" opacity="0.85"/>
+      <!-- Sun Core -->
+      <circle cx="0" cy="0" r="24" fill="url(#sunCore)" stroke="#fff3bf" stroke-width="2"/>
+      <!-- Fusion Leaf Overlay -->
+      <path d="M -2 6 C -2 -14, 22 -22, 30 -8 C 30 12, 10 22, -2 6 Z" fill="url(#leafGrad)" stroke="#d3f9d8" stroke-width="1.5"/>
+      <path d="M 1 5 Q 14 -4 25 -6" fill="none" stroke="#d3f9d8" stroke-width="1.5" stroke-linecap="round"/>
+      <!-- Left Sprout Leaf -->
+      <path d="M -4 10 C -22 8, -28 -8, -16 -16 C -4 -14, 0 -2, -4 10 Z" fill="url(#leafGrad)" opacity="0.92" stroke="#b2f2bb" stroke-width="1.2"/>
+      <!-- Fusion Sparkles -->
+      <circle cx="-22" cy="-26" r="2.2" fill="#fff9db"/>
+      <circle cx="28" cy="22" r="2" fill="#b2f2bb"/>
+    </g>
+    <!-- Mini Android Tag inside Emblem -->
+    <rect x="25" y="96" width="70" height="16" rx="8" fill="#1f883d"/>
+    <text x="60" y="107.5" text-anchor="middle" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="9.5" font-weight="700" letter-spacing="0.8" fill="#ffffff">ANDROID</text>
+  </g>
+
+  <!-- Typography -->
+  <text x="180" y="56" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11.5" font-weight="700" letter-spacing="1.4" fill="#56d364">UNOFFICIAL ANDROID LOCALIZATION &amp; MULTI-LANGUAGE SUITE</text>
+  <text x="180" y="96" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="33" font-weight="800" fill="#f0f6fc">Plants vs. Zombies: Fusion</text>
+  <text x="180" y="126" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="14" font-weight="500" fill="#c9d1d9">No Root  •  No Mod Loader  •  100% Save-Preserving Updates Across VI / EN / CN</text>
+
+  <!-- Subtle Divider -->
+  <line x1="180" y1="145" x2="844" y2="145" stroke="#3fb950" stroke-opacity="0.22" stroke-width="1"/>
+
+  <!-- Feature Pills -->
+  <g transform="translate(180, 162)">
+    <rect width="136" height="28" rx="14" fill="#122d1f" stroke="#56d364" stroke-opacity="0.45" stroke-width="1"/>
+    <circle cx="14" cy="14" r="3.5" fill="#56d364"/>
+    <text x="75.0" y="18.5" text-anchor="middle" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" font-weight="600" fill="#56d364">v4.0.5.2 Stable</text>
+  </g>
+  <g transform="translate(326, 162)">
+    <rect width="118" height="28" rx="14" fill="#2d220e" stroke="#e3b341" stroke-opacity="0.45" stroke-width="1"/>
+    <circle cx="14" cy="14" r="3.5" fill="#e3b341"/>
+    <text x="66.0" y="18.5" text-anchor="middle" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" font-weight="600" fill="#e3b341">v4.1 Preview</text>
+  </g>
+  <g transform="translate(454, 162)">
+    <rect width="156" height="28" rx="14" fill="#102437" stroke="#58a6ff" stroke-opacity="0.45" stroke-width="1"/>
+    <circle cx="14" cy="14" r="3.5" fill="#58a6ff"/>
+    <text x="85.0" y="18.5" text-anchor="middle" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" font-weight="600" fill="#58a6ff">Android 8.0+ arm64</text>
+  </g>
+  <g transform="translate(620, 162)">
+    <rect width="198" height="28" rx="14" fill="#142923" stroke="#7ee787" stroke-opacity="0.45" stroke-width="1"/>
+    <circle cx="14" cy="14" r="3.5" fill="#7ee787"/>
+    <text x="106.0" y="18.5" text-anchor="middle" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" font-weight="600" fill="#7ee787">Unified Save-Safe Keystore</text>
+  </g>
+</svg>

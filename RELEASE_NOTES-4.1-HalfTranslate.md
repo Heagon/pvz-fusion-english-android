@@ -52,6 +52,7 @@ All APK builds are signed with the project's official **Release Keystore**, ensu
 
 ---
 
+<a id="vi-hướng-dẫn--nội-dung-bản-41"></a>
 ## [VI] Hướng Dẫn & Nội Dung Bản 4.1
 
 ### 🔄 Cách đổi ngôn ngữ không mất Save
@@ -69,6 +70,7 @@ All APK builds are signed with the project's official **Release Keystore**, ensu
 
 ---
 
+<a id="en-guide--41-preview-details"></a>
 ## [EN] Guide & 4.1 Preview Details
 
 ### 🔄 In-Place Update & Language Switching (Preserve All Saves)
@@ -86,6 +88,7 @@ All APK builds are signed with the project's official **Release Keystore**, ensu
 
 ---
 
+<a id="cn-使用指南与-41-版本详情"></a>
 ## [CN] 使用指南与 4.1 版本详情
 
 ### 🔄 覆盖安装与语言无损切换指南（保留全部存档）
@@ -97,6 +100,16 @@ All APK builds are signed with the project's official **Release Keystore**, ensu
 - **[CN] 中文原版：** 完整保留作者蓝飘飘fly的原版代码、纹理与数值，采用相同签名打包，便于随时切回原版体验。
 - **[VI] Bản Việt Hóa：** 已完成 4.1 全部文本 100% 越化（累计新增 3,837 条越化文本，补全 114 种植物与 35 种僵尸图鉴、176 条旅行词条、全部射击图鉴与关卡提示，移除全部英文回退，并完成 48 张全越化界面贴图）。
 - **[EN] English：** 新增 994 条 4.1 新模式英文语境翻译，完整替换 48 张界面贴图，全面覆盖自走棋商店/刷新概率/全海克斯、向日葵养殖、神笔马良、关卡编辑器帮助与存档界面。
+
+---
+
+## 👥 Credits &amp; Documentation / Đội Ngũ &amp; Tài Liệu / 致谢与文档
+
+- **Pages / Trang ngôn ngữ / 语言主页:** [**`[VI]` Bản Việt Hóa**](https://github.com/Heagon/pvz-fusion-english-android/blob/main/README.vi.md) · [**`[EN]` English**](https://github.com/Heagon/pvz-fusion-english-android#readme) · [**`[CN]` 简体中文**](https://github.com/Heagon/pvz-fusion-english-android/blob/main/README.cn.md) · [**Full Credits (`CREDITS.md`)**](https://github.com/Heagon/pvz-fusion-english-android/blob/main/CREDITS.md)
+- **Original Game (*PvZ: Fusion*):** **LanPiaoPiaofly (蓝飘飘fly)**, **Gfishtus (机鱼吐司)**, **LanDie (蓝蝶)**, **MengLuo (梦珞)** &amp; team ([Bilibili](https://space.bilibili.com/3546619314178489))
+- **Multi-Language Mod &amp; English Localization:** **[PVZF-Translation](https://github.com/Teyliu/PVZF-Translation)** (`Mamoru-kun`, `NaKune`, `Climeron`, `Teyliu`, `Cassidy`, `JustNull`, `Dakosha`, `TrevTV`, `Rollerlhite`, `Roaoming`, `Shel`, `flexyj`, `CarrotD1scord`, `Xabdi`, `The Blooms Community` — [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/))
+- **Vietnamese Localization (`Bản Việt Hóa`):** **Team CBD &amp; Team Bloom** · `Shion`, `Cryda`, `JustNull` · v4.1 Android Completion: **Heagon**
+- **Android Porting &amp; Save-Safe Suite:** **Heagon** ([pvz-fusion-english-android](https://github.com/Heagon/pvz-fusion-english-android))
 
 ---
 

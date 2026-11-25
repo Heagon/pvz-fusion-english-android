@@ -1,8 +1,13 @@
-# Build tools
+# 🛠️ Static Patching Build Tools
 
-Reference scripts used to produce the English APK. They are provided for
-transparency and reproducibility. **They are not needed to *play*** — just download
-the finished APK from Releases.
+<p>
+  <a href="../README.vi.md"><b>← [VI] Trang Chủ</b></a> &nbsp;•&nbsp;
+  <a href="../README.md"><b>← [EN] Main README</b></a> &nbsp;•&nbsp;
+  <a href="../README.cn.md"><b>← [CN] 返回主页</b></a> &nbsp;•&nbsp;
+  <a href="../CREDITS.md"><b>👥 Credits</b></a>
+</p>
+
+Reference scripts used to statically compile localization assets into the Android APK (`v4.0.5.2` / `v4.1`). They are provided for transparency and reproducibility. **They are not needed to *play*** — players can download ready-to-install APKs directly from [Releases](https://github.com/Heagon/pvz-fusion-english-android/releases).
 
 ## What you need to reproduce
 - **Python 3** with `UnityPy` and `Pillow`:  `pip install UnityPy pillow`
