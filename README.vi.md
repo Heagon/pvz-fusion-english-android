@@ -65,7 +65,7 @@ Chi tiết cập nhật & mã kiểm tra SHA-256: **[Trang Release `v4.1-half-tr
 
 | Phiên bản ngôn ngữ | Dung lượng | Tóm tắt nội dung | Tải trực tiếp |
 | :--- | :---: | :--- | :---: |
-| **`[VI]` Bản Việt Hóa (100%)** | `629.1 MB` | Việt hóa trọn vẹn 100% PvZ Fusion 4.1 (Sổ Tay 742 cây, AutoChess, Lõi Hex, Tycoon, Bút Thần, Bắn Súng, 48/48 texture Việt hóa) | <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.1-half-translate/PvZ-Fusion-4.1-Vietnamese-HalfTranslate.apk"><img src="assets/btn-dl-vi-preview.svg" height="30" alt="Tải APK Bản Việt Hóa 4.1"></a> |
+| **`[VI]` Bản Việt Hóa (100%)** | `629.0 MB` | Việt hóa trọn vẹn 100% PvZ Fusion 4.1 (Sổ Tay 742 cây, AutoChess, Lõi Hex, Tycoon, Bút Thần, Bắn Súng, 48/48 texture Việt hóa) | <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.1-half-translate/PvZ-Fusion-4.1-Vietnamese-HalfTranslate.apk"><img src="assets/btn-dl-vi-preview.svg" height="30" alt="Tải APK Bản Việt Hóa 4.1"></a> |
 | **`[EN]` English (Preview)** | `628.8 MB` | Bản Tiếng Anh 4.1 Preview (+994 chuỗi giao diện AutoChess/Tycoon/Bút Thần theo ngữ cảnh, 48/48 texture Tiếng Anh) | <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.1-half-translate/PvZ-Fusion-4.1-English-HalfTranslate.apk"><img src="assets/btn-dl-vi-preview.svg" height="30" alt="Tải APK Tiếng Anh 4.1"></a> |
 | **`[CN]` 中文原版 (Trung Gốc)** | `620.2 MB` | Bản tiếng Trung 4.1 gốc của **蓝飘飘fly**, ký chung chữ ký số để cài đè giữ nguyên save | <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.1-half-translate/PvZ-Fusion-4.1-Chinese-Raw.apk"><img src="assets/btn-dl-vi-preview.svg" height="30" alt="Tải APK Trung Gốc 4.1"></a> |
 

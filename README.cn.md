@@ -66,7 +66,7 @@
 | 语言版本 | 文件大小 | 版本说明 | 直接下载 |
 | :--- | :---: | :--- | :---: |
 | **`[CN]` 中文原版 (Raw)** | `620.2 MB` | 蓝飘飘fly 原版 4.1 中文包，统一项目官方签名，可直接覆盖旧版或随时切回中文体验 | <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.1-half-translate/PvZ-Fusion-4.1-Chinese-Raw.apk"><img src="assets/btn-dl-cn-preview.svg" height="30" alt="下载中文原版 4.1 APK"></a> |
-| **`[VI]` Bản Việt Hóa (100% 越化版)** | `629.1 MB` | 4.1 完整 100% 越化版（全 742 植物 / 238 僵尸 / 48 机制、176 条新旅行词条、自走棋/养成/神笔/射击全覆盖、48/48 贴图越化） | <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.1-half-translate/PvZ-Fusion-4.1-Vietnamese-HalfTranslate.apk"><img src="assets/btn-dl-cn-preview.svg" height="30" alt="下载越化版 4.1 APK"></a> |
+| **`[VI]` Bản Việt Hóa (100% 越化版)** | `629.0 MB` | 4.1 完整 100% 越化版（全 742 植物 / 238 僵尸 / 48 机制、176 条新旅行词条、自走棋/养成/神笔/射击全覆盖、48/48 贴图越化） | <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.1-half-translate/PvZ-Fusion-4.1-Vietnamese-HalfTranslate.apk"><img src="assets/btn-dl-cn-preview.svg" height="30" alt="下载越化版 4.1 APK"></a> |
 | **`[EN]` English (英文尝鲜版)** | `628.8 MB` | 4.1 英文尝鲜版（新增 994 条自走棋/向日葵养殖/神笔马良语境翻译，48/48 英文界面贴图，安卓真机排版校验） | <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.1-half-translate/PvZ-Fusion-4.1-English-HalfTranslate.apk"><img src="assets/btn-dl-cn-preview.svg" height="30" alt="下载英文版 4.1 APK"></a> |
 
 ---

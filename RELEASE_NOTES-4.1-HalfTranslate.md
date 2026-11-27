@@ -29,7 +29,7 @@ All APK builds are signed with the project's official **Release Keystore**, ensu
 
 | Ngôn ngữ / Language / 语言 | Tệp APK / File / 安装包 | Dung lượng / Size | Mô tả / Description / 说明 |
 | :--- | :--- | :--- | :--- |
-| **[VI] Bản Việt Hóa** | [PvZ-Fusion-4.1-Vietnamese-HalfTranslate.apk](https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.1-half-translate/PvZ-Fusion-4.1-Vietnamese-HalfTranslate.apk) | 629.1 MB | Bản Việt Hóa 4.1 hoàn chỉnh 100% (dịch trọn vẹn Sổ Tay, Bùa Thám Hiểm, AutoChess/Tycoon/Bút Thần/Bắn Súng, 0 tiếng Anh/Trung thừa, Việt hóa 48/48 texture) |
+| **[VI] Bản Việt Hóa** | [PvZ-Fusion-4.1-Vietnamese-HalfTranslate.apk](https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.1-half-translate/PvZ-Fusion-4.1-Vietnamese-HalfTranslate.apk) | 629.0 MB | Bản Việt Hóa 4.1 hoàn chỉnh 100% (dịch trọn vẹn Sổ Tay, Bùa Thám Hiểm, AutoChess/Tycoon/Bút Thần/Bắn Súng, 0 tiếng Anh/Trung thừa, Việt hóa 48/48 texture, đã vá lỗi crash mở game trên Android 13/Nubia) |
 | **[EN] English** | [PvZ-Fusion-4.1-English-HalfTranslate.apk](https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.1-half-translate/PvZ-Fusion-4.1-English-HalfTranslate.apk) | 628.8 MB | English 4.1 Preview build (Half-Translate, contextual AutoChess/Tycoon/Magic Brush UI & layout verified on Android) |
 | **[CN] 中文原版** | [PvZ-Fusion-4.1-Chinese-Raw.apk](https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.1-half-translate/PvZ-Fusion-4.1-Chinese-Raw.apk) | 620.2 MB | 蓝飘飘fly 原版 4.1 中文（官方签名，可与各语言版相互覆盖不丢存档） |
 
@@ -67,6 +67,7 @@ All APK builds are signed with the project's official **Release Keystore**, ensu
   - **Bùa Thám Hiểm & Mẹo Màn Chơi:** Dịch bổ sung 100% 176 Bùa Thám Hiểm (Travel Buffs) mới và toàn bộ 171 mẹo màn Thử Hợp Thể / CustomIZ.
   - **Sổ Tay 100% tiếng Việt:** Dịch hoàn thiện toàn bộ 114 thực vật và 35 zombie trước đây còn sót tiếng Anh — đạt **742/742 thực vật**, **238/238 zombie**, và **48/48 cơ chế** (0 chữ Trung, 0 chữ Anh thừa).
 - **Đồ họa & Font chữ:** Thay thế đầy đủ **48/48 kết cấu hình ảnh giao diện** — bổ sung Việt hóa 7 ảnh trước đây còn tiếng Anh (`Màn Gợi Ý`, `Chào Mừng Trở Lại`, `Không Phải Bạn? Bấm Vào Đây`, `Bấm Vào Đây Cập Nhật Game Mới!`, `Thử Hợp Thể`, `Đợt Zombie Lớn Đang Tới!`) cùng font `LiberationSans` hiển thị tiếng Việt có dấu 100% sắc nét.
+- **Sửa lỗi crash khi khởi động (27/11/2026):** Loại bỏ 9 khóa nhị phân chứa byte `NUL` trong bảng dịch gây hỏng cấu trúc `TalentNode` và tràn bộ cấp phát Unity (`SIGTRAP`) trên Android 13 (Nubia và các máy có allocator nghiêm ngặt), đồng thời gia cố bộ vá chuỗi/asset và bổ sung mô tả tiếng Việt chuẩn cho nhánh kỹ năng *Hút Máu*.
 
 ---
 
@@ -85,6 +86,7 @@ All APK builds are signed with the project's official **Release Keystore**, ensu
   - **Almanac, Level Editor & Fixes:** Complete 4.1 Level Creator Help, Shooting Almanac Trials, Talent Nodes, Recipe 11 fix, and mobile pill/card layout adjustments.
 - **Expanded Almanac:** 742 plants, 238 zombies, and 48 mechanics entries.
 - **Textures & UI Polish:** All **48/48 UI textures** replaced (including `FlagMeterLevelProgress`) and verified on a real Android device.
+- **Hotfix (2026-11-27, `[VI]` build):** Fixed an Android startup crash (`SIGTRAP` / Unity allocator overflow on Android 13 / Nubia devices) caused by 9 binary NUL-corrupted `TalentNode` translation keys and hardened the binary asset splicer.
 
 ---
 
@@ -98,7 +100,7 @@ All APK builds are signed with the project's official **Release Keystore**, ensu
 
 ### ✨ 4.1 版本特性
 - **[CN] 中文原版：** 完整保留作者蓝飘飘fly的原版代码、纹理与数值，采用相同签名打包，便于随时切回原版体验。
-- **[VI] Bản Việt Hóa：** 已完成 4.1 全部文本 100% 越化（累计新增 3,837 条越化文本，补全 114 种植物与 35 种僵尸图鉴、176 条旅行词条、全部射击图鉴与关卡提示，移除全部英文回退，并完成 48 张全越化界面贴图）。
+- **[VI] Bản Việt Hóa：** 已完成 4.1 全部文本 100% 越化（累计新增 3,837 条越化文本，补全 114 种植物与 35 种僵尸图鉴、176 条旅行词条、全部射击图鉴与关卡提示，移除全部英文回退，并完成 48 张全越化界面贴图；2026-11-27 热修复：移除导致 Android 13/Nubia 启动崩溃的 9 条 `TalentNode` 异常 NUL 键并加固打包器）。
 - **[EN] English：** 新增 994 条 4.1 新模式英文语境翻译，完整替换 48 张界面贴图，全面覆盖自走棋商店/刷新概率/全海克斯、向日葵养殖、神笔马良、关卡编辑器帮助与存档界面。
 
 ---
@@ -117,7 +119,7 @@ All APK builds are signed with the project's official **Release Keystore**, ensu
 <summary><b>🔍 Technical Checksums / Mã kiểm tra SHA-256 / 校验码</b></summary>
 
 ```
-PvZ-Fusion-4.1-Vietnamese-HalfTranslate.apk: 80a98a3b5f4ccee53743b82e915cd317e8faa4987f0ba4ce43a35b38e6ed9974
+PvZ-Fusion-4.1-Vietnamese-HalfTranslate.apk: 81606687f29b864e7a01de6510ae036c3aed30a3871cc3c27bb81c10ee23a2cb
 PvZ-Fusion-4.1-English-HalfTranslate.apk:    04b8de0ba0a45eca878f6eea6a4c7c2d6d92aeae58d737a2916ed95a72b359f9
 PvZ-Fusion-4.1-Chinese-Raw.apk:              3144746c552455b88db28eedfa20777099ecdb9736ac679bbbe70cd4113cb5fd
 ```

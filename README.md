@@ -66,7 +66,7 @@ Full release notes & SHA-256 checksums: **[GitHub Release `v4.1-half-translate`]
 | Edition | Size | Summary | Direct Download |
 | :--- | :---: | :--- | :---: |
 | **`[EN]` English (Preview)** | `628.8 MB` | Contextual v4.1 English UI (+994 new strings, AutoChess Shop/Hexes/Tycoon/Magic Brush, 48/48 UI textures) | <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.1-half-translate/PvZ-Fusion-4.1-English-HalfTranslate.apk"><img src="assets/btn-dl-en-preview.svg" height="30" alt="Download English 4.1 APK"></a> |
-| **`[VI]` Bản Việt Hóa (100%)** | `629.1 MB` | 100% complete v4.1 Vietnamese build (742/742 plants, 238/238 zombies, 48/48 mechanics, 176 Travel Buffs, 48/48 VI textures) | <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.1-half-translate/PvZ-Fusion-4.1-Vietnamese-HalfTranslate.apk"><img src="assets/btn-dl-en-preview.svg" height="30" alt="Download Vietnamese 4.1 APK"></a> |
+| **`[VI]` Bản Việt Hóa (100%)** | `629.0 MB` | 100% complete v4.1 Vietnamese build (742/742 plants, 238/238 zombies, 48/48 mechanics, 176 Travel Buffs, 48/48 VI textures) | <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.1-half-translate/PvZ-Fusion-4.1-Vietnamese-HalfTranslate.apk"><img src="assets/btn-dl-en-preview.svg" height="30" alt="Download Vietnamese 4.1 APK"></a> |
 | **`[CN]` 中文原版 (Raw)** | `620.2 MB` | Untouched v4.1 Chinese build by **蓝飘飘fly**, signed with the unified keystore for lossless switching | <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.1-half-translate/PvZ-Fusion-4.1-Chinese-Raw.apk"><img src="assets/btn-dl-en-preview.svg" height="30" alt="Download Chinese 4.1 APK"></a> |
 
 ---
