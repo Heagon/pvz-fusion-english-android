@@ -58,17 +58,17 @@ Full release notes & SHA-256 checksums: **[GitHub Release `v4.0.5.2-B.0.1`](http
 
 ---
 
-### 🟡 v4.1 Preview (`B.0.3` / `B.0.2`) — Odyssey: Evolved (AutoChess) &amp; New Content
-Full release notes & SHA-256 checksums: **[GitHub Release `v4.1-half-translate-B.0.3`](https://github.com/Heagon/pvz-fusion-english-android/releases/tag/v4.1-half-translate-B.0.3)** · **[`B.0.2` (`EN`)](https://github.com/Heagon/pvz-fusion-english-android/releases/tag/v4.1-half-translate-B.0.2)** · Build history: **[`CHANGELOG.md`](CHANGELOG.md)**
+### 🟡 v4.1 Preview (`B.0.3`) — Odyssey: Evolved (AutoChess) &amp; New Content
+Full release notes & SHA-256 checksums: **[GitHub Release `v4.1-half-translate-B.0.3`](https://github.com/Heagon/pvz-fusion-english-android/releases/tag/v4.1-half-translate-B.0.3)** · Build history &amp; previous builds: **[`CHANGELOG.md`](CHANGELOG.md)**
 
 > [!NOTE]
-> **v4.1 Preview Status:** The **`[EN] English`** build (`B.0.2`) includes full contextual UI translations for all new v4.1 modes (*Odyssey: Evolved AutoChess*, *Intermission Shop*, *Hex Augments*, *Sunflower Breeding / Tycoon*, *Magic Brush*, and *Level Creator Help*) verified on Android, while minor edge Almanac strings continue to be refined. The **`[VI] Bản Việt Hóa`** build (`B.0.3`) is **100% localized** and includes the Android 13 / Nubia `TalentNode` startup crash fix.
+> **v4.1 Preview Status:** The **`[EN] English`** build includes full contextual UI translations for all new v4.1 modes (*Odyssey: Evolved AutoChess*, *Intermission Shop*, *Hex Augments*, *Sunflower Breeding / Tycoon*, *Magic Brush*, and *Level Creator Help*) verified on Android, while minor edge Almanac strings continue to be refined. The **`[VI] Bản Việt Hóa`** build is **100% localized** and includes the Android 13 / Nubia `TalentNode` startup crash fix.
 
 | Edition | Size | Summary | Direct Download |
 | :--- | :---: | :--- | :---: |
-| **`[EN]` English (`B.0.2`)** | `628.8 MB` | Contextual v4.1 English UI (+994 new strings, AutoChess Shop/Hexes/Tycoon/Magic Brush, 48/48 UI textures) | <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.1-half-translate-B.0.2/PvZ-Fusion-4.1-English-HalfTranslate-B.0.2.apk"><img src="assets/btn-dl-en-preview.svg" height="30" alt="Download English 4.1 APK"></a> |
+| **`[EN]` English (`B.0.3`)** | `628.8 MB` | Contextual v4.1 English UI (+994 new strings, AutoChess Shop/Hexes/Tycoon/Magic Brush, 48/48 UI textures) | <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.1-half-translate-B.0.3/PvZ-Fusion-4.1-English-HalfTranslate-B.0.3.apk"><img src="assets/btn-dl-en-preview.svg" height="30" alt="Download English 4.1 APK"></a> |
 | **`[VI]` Bản Việt Hóa (`B.0.3`)** | `629.0 MB` | 100% complete v4.1 Vietnamese build (742/742 plants, 238/238 zombies, 48/48 mechanics, 176 Travel Buffs, 48/48 VI textures, Android 13 crash fix) | <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.1-half-translate-B.0.3/PvZ-Fusion-4.1-Vietnamese-HalfTranslate-B.0.3.apk"><img src="assets/btn-dl-en-preview.svg" height="30" alt="Download Vietnamese 4.1 APK"></a> |
-| **`[CN]` 中文原版 (`B.0.1`)** | `620.2 MB` | Untouched v4.1 Chinese build by **蓝飘飘fly**, signed with the unified keystore for lossless switching | <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.1-half-translate-B.0.1/PvZ-Fusion-4.1-Chinese-Raw-B.0.1.apk"><img src="assets/btn-dl-en-preview.svg" height="30" alt="Download Chinese 4.1 APK"></a> |
+| **`[CN]` 中文原版 (`B.0.3`)** | `620.2 MB` | Untouched v4.1 Chinese build by **蓝飘飘fly**, signed with the unified keystore for lossless switching | <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.1-half-translate-B.0.3/PvZ-Fusion-4.1-Chinese-Raw-B.0.3.apk"><img src="assets/btn-dl-en-preview.svg" height="30" alt="Download Chinese 4.1 APK"></a> |
 
 ---
 
