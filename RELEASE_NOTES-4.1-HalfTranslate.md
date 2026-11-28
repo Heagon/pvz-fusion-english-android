@@ -1,5 +1,5 @@
-# Plants vs. Zombies: Fusion (Android) v4.1 Preview `[B.0.1]` — Multi-Language Suite
-### 植物大战僵尸融合版 4.1 尝鲜版 安卓全语言整合包 · Bộ Cài Đặt Đa Ngôn Ngữ PvZ Fusion Android 4.1 Preview
+# Plants vs. Zombies: Fusion (Android) v4.1 Preview `[B.0.3]` — Multi-Language Suite
+### 植物大战僵尸融合版 4.1 尝鲜版 安卓全语言整合包 · Bộ Cài Đặt Đa Ngôn Ngữ PvZ Fusion Android 4.1 Preview (`B.0.3`)
 
 <p align="center">
   <a href="#vi-hướng-dẫn--nội-dung-bản-41"><b>[VI] Bản Việt Hóa</b></a> •
@@ -29,9 +29,9 @@ All APK builds are signed with the project's official **Release Keystore**, ensu
 
 | Ngôn ngữ / Language / 语言 | Tệp APK / File / 安装包 | Dung lượng / Size | Mô tả / Description / 说明 |
 | :--- | :--- | :--- | :--- |
-| **[VI] Bản Việt Hóa** | [PvZ-Fusion-4.1-Vietnamese-HalfTranslate-B.0.1.apk](https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.1-half-translate-B.0.1/PvZ-Fusion-4.1-Vietnamese-HalfTranslate-B.0.1.apk) | 629.0 MB | Bản Việt Hóa 4.1 hoàn chỉnh 100% (dịch trọn vẹn Sổ Tay, Bùa Thám Hiểm, AutoChess/Tycoon/Bút Thần/Bắn Súng, 0 tiếng Anh/Trung thừa, Việt hóa 48/48 texture, đã vá lỗi crash mở game trên Android 13/Nubia) |
-| **[EN] English** | [PvZ-Fusion-4.1-English-HalfTranslate-B.0.1.apk](https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.1-half-translate-B.0.1/PvZ-Fusion-4.1-English-HalfTranslate-B.0.1.apk) | 628.8 MB | English 4.1 Preview build (Half-Translate, contextual AutoChess/Tycoon/Magic Brush UI & layout verified on Android) |
-| **[CN] 中文原版** | [PvZ-Fusion-4.1-Chinese-Raw-B.0.1.apk](https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.1-half-translate-B.0.1/PvZ-Fusion-4.1-Chinese-Raw-B.0.1.apk) | 620.2 MB | 蓝飘飘fly 原版 4.1 中文（官方签名，可与各语言版相互覆盖不丢存档） |
+| **[VI] Bản Việt Hóa (`B.0.3` — Mới nhất)** | [PvZ-Fusion-4.1-Vietnamese-HalfTranslate-B.0.3.apk](https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.1-half-translate-B.0.3/PvZ-Fusion-4.1-Vietnamese-HalfTranslate-B.0.3.apk) | 629.0 MB | Bản Việt Hóa 4.1 hoàn chỉnh 100% (dịch trọn vẹn Sổ Tay, Bùa Thám Hiểm, AutoChess/Tycoon/Bút Thần/Bắn Súng, 0 tiếng Anh/Trung thừa, Việt hóa 48/48 texture, **đã vá lỗi crash mở game trên Android 13/Nubia**) |
+| **[EN] English (`B.0.2` — Latest EN)** | [PvZ-Fusion-4.1-English-HalfTranslate-B.0.2.apk](https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.1-half-translate-B.0.2/PvZ-Fusion-4.1-English-HalfTranslate-B.0.2.apk) | 628.8 MB | English 4.1 Preview build (Half-Translate, contextual AutoChess/Tycoon/Magic Brush UI & layout verified on Android) |
+| **[CN] 中文原版 (`B.0.1`)** | [PvZ-Fusion-4.1-Chinese-Raw-B.0.1.apk](https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.1-half-translate-B.0.1/PvZ-Fusion-4.1-Chinese-Raw-B.0.1.apk) | 620.2 MB | 蓝飘飘fly 原版 4.1 中文（官方签名，可与各语言版相互覆盖不丢存档） |
 
 ---
 
@@ -117,14 +117,14 @@ All APK builds are signed with the project's official **Release Keystore**, ensu
 
 ---
 
-- **Build ID:** `B.0.1` · **Tag:** `v4.1-half-translate-B.0.1` · **Build History:** [`CHANGELOG.md`](https://github.com/Heagon/pvz-fusion-english-android/blob/main/CHANGELOG.md)
+- **Build ID:** `B.0.3` · **Tag:** `v4.1-half-translate-B.0.3` · **Previous Builds:** [`B.0.2`](https://github.com/Heagon/pvz-fusion-english-android/releases/tag/v4.1-half-translate-B.0.2) · [`B.0.1`](https://github.com/Heagon/pvz-fusion-english-android/releases/tag/v4.1-half-translate-B.0.1) · **Build History:** [`CHANGELOG.md`](https://github.com/Heagon/pvz-fusion-english-android/blob/main/CHANGELOG.md)
 
 <details>
 <summary><b>🔍 Technical Checksums / Mã kiểm tra SHA-256 / 校验码</b></summary>
 
 ```
-PvZ-Fusion-4.1-Vietnamese-HalfTranslate-B.0.1.apk: 81606687f29b864e7a01de6510ae036c3aed30a3871cc3c27bb81c10ee23a2cb
-PvZ-Fusion-4.1-English-HalfTranslate-B.0.1.apk:    04b8de0ba0a45eca878f6eea6a4c7c2d6d92aeae58d737a2916ed95a72b359f9
+PvZ-Fusion-4.1-Vietnamese-HalfTranslate-B.0.3.apk: 81606687f29b864e7a01de6510ae036c3aed30a3871cc3c27bb81c10ee23a2cb
+PvZ-Fusion-4.1-English-HalfTranslate-B.0.2.apk:    04b8de0ba0a45eca878f6eea6a4c7c2d6d92aeae58d737a2916ed95a72b359f9
 PvZ-Fusion-4.1-Chinese-Raw-B.0.1.apk:              3144746c552455b88db28eedfa20777099ecdb9736ac679bbbe70cd4113cb5fd
 ```
 </details>

@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/tag/v4.0.5.2-B.0.1"><img src="https://img.shields.io/badge/%E6%AD%A3%E5%BC%8F%E7%A8%B3%E5%AE%9A%E7%89%88-v4.0.5.2--B.0.1-238636?style=flat-square&logo=android&logoColor=white" alt="稳定版 v4.0.5.2-B.0.1"></a>
-  <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/tag/v4.1-half-translate-B.0.1"><img src="https://img.shields.io/badge/%E5%B0%9D%E9%B2%9C%E9%A2%84%E8%A7%88%E7%89%88-v4.1--B.0.1_%E8%87%AA%E8%B5%B0%E6%A3%8B-b87d04?style=flat-square&logo=android&logoColor=white" alt="尝鲜版 v4.1-B.0.1"></a>
+  <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/tag/v4.1-half-translate-B.0.3"><img src="https://img.shields.io/badge/%E5%B0%9D%E9%B2%9C%E9%A2%84%E8%A7%88%E7%89%88-v4.1--B.0.3_%E8%87%AA%E8%B5%B0%E6%A3%8B-b87d04?style=flat-square&logo=android&logoColor=white" alt="尝鲜版 v4.1-B.0.3"></a>
   <a href="CHANGELOG.md"><img src="https://img.shields.io/badge/%E6%9E%84%E5%BB%BA%E5%8E%86%E5%8F%B2-CHANGELOG-0969da?style=flat-square" alt="构建历史 CHANGELOG"></a>
   <a href="docs/INSTALL.md"><img src="https://img.shields.io/badge/Android-8.0%2B_(arm64)-1f6feb?style=flat-square" alt="Android 8.0+ arm64"></a>
   <a href="docs/UPDATE.md"><img src="https://img.shields.io/badge/%E6%9C%AC%E5%9C%B0%E5%AD%98%E6%A1%A3-100%25_%E6%97%A0%E6%8D%9F%E4%BF%9D%E7%95%99-2ea043?style=flat-square" alt="100% 保留存档"></a>
@@ -58,17 +58,17 @@
 
 ---
 
-### 🟡 v4.1 Preview (`B.0.1`) — 自走棋远征与新内容尝鲜版
-完整更新日志与 SHA-256 校验码：**[查看 GitHub Release `v4.1-half-translate-B.0.1`](https://github.com/Heagon/pvz-fusion-english-android/releases/tag/v4.1-half-translate-B.0.1)** · 构建历史：**[`CHANGELOG.md`](CHANGELOG.md)**
+### 🟡 v4.1 Preview (`B.0.3` / `B.0.2`) — 自走棋远征与新内容尝鲜版
+完整更新日志与 SHA-256 校验码：**[查看 GitHub Release `v4.1-half-translate-B.0.3`](https://github.com/Heagon/pvz-fusion-english-android/releases/tag/v4.1-half-translate-B.0.3)** · **[`B.0.2` (`EN`)](https://github.com/Heagon/pvz-fusion-english-android/releases/tag/v4.1-half-translate-B.0.2)** · 构建历史：**[`CHANGELOG.md`](CHANGELOG.md)**
 
 > [!NOTE]
-> **v4.1 翻译进度说明：** **`[CN] 中文原版`** 为蓝飘飘fly 4.1 完整原版；**`[VI] 越化版`** 已完成 4.1 全量文本与贴图的 **100% 本地化**（新增 3,837 条文本与 48/48 张越化贴图）；**`[EN] 英文版`** 已完成 4.1 全部新增玩法界面（自走棋商店、刷新概率、全海克斯、向日葵养殖、神笔马良、编辑器帮助）的语境翻译，少量边缘图鉴条目仍在持续润色。
+> **v4.1 翻译进度说明：** **`[CN] 中文原版`** (`B.0.1`) 为蓝飘飘fly 4.1 完整原版；**`[VI] 越化版`** (`B.0.3`) 已完成 4.1 全量文本与贴图的 **100% 本地化**（新增 3,837 条文本、48/48 张越化贴图及 Android 13 / Nubia 启动崩溃热修复）；**`[EN] 英文版`** (`B.0.2`) 已完成 4.1 全部新增玩法界面（自走棋商店、刷新概率、全海克斯、向日葵养殖、神笔马良、编辑器帮助）的语境翻译，少量边缘图鉴条目仍在持续润色。
 
 | 语言版本 | 文件大小 | 版本说明 | 直接下载 |
 | :--- | :---: | :--- | :---: |
-| **`[CN]` 中文原版 (Raw)** | `620.2 MB` | 蓝飘飘fly 原版 4.1 中文包，统一项目官方签名，可直接覆盖旧版或随时切回中文体验 | <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.1-half-translate-B.0.1/PvZ-Fusion-4.1-Chinese-Raw-B.0.1.apk"><img src="assets/btn-dl-cn-preview.svg" height="30" alt="下载中文原版 4.1 APK"></a> |
-| **`[VI]` Bản Việt Hóa (100% 越化版)** | `629.0 MB` | 4.1 完整 100% 越化版（全 742 植物 / 238 僵尸 / 48 机制、176 条新旅行词条、自走棋/养成/神笔/射击全覆盖、48/48 贴图越化） | <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.1-half-translate-B.0.1/PvZ-Fusion-4.1-Vietnamese-HalfTranslate-B.0.1.apk"><img src="assets/btn-dl-cn-preview.svg" height="30" alt="下载越化版 4.1 APK"></a> |
-| **`[EN]` English (英文尝鲜版)** | `628.8 MB` | 4.1 英文尝鲜版（新增 994 条自走棋/向日葵养殖/神笔马良语境翻译，48/48 英文界面贴图，安卓真机排版校验） | <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.1-half-translate-B.0.1/PvZ-Fusion-4.1-English-HalfTranslate-B.0.1.apk"><img src="assets/btn-dl-cn-preview.svg" height="30" alt="下载英文版 4.1 APK"></a> |
+| **`[CN]` 中文原版 (`B.0.1`)** | `620.2 MB` | 蓝飘飘fly 原版 4.1 中文包，统一项目官方签名，可直接覆盖旧版或随时切回中文体验 | <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.1-half-translate-B.0.1/PvZ-Fusion-4.1-Chinese-Raw-B.0.1.apk"><img src="assets/btn-dl-cn-preview.svg" height="30" alt="下载中文原版 4.1 APK"></a> |
+| **`[VI]` Bản Việt Hóa (`B.0.3`)** | `629.0 MB` | 4.1 完整 100% 越化版（全 742 植物 / 238 僵尸 / 48 机制、176 条新旅行词条、自走棋/养成/神笔/射击全覆盖、48/48 贴图越化、修复 Android 13 崩溃） | <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.1-half-translate-B.0.3/PvZ-Fusion-4.1-Vietnamese-HalfTranslate-B.0.3.apk"><img src="assets/btn-dl-cn-preview.svg" height="30" alt="下载越化版 4.1 APK"></a> |
+| **`[EN]` English (`B.0.2`)** | `628.8 MB` | 4.1 英文尝鲜版（新增 994 条自走棋/向日葵养殖/神笔马良语境翻译，48/48 英文界面贴图，安卓真机排版校验） | <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.1-half-translate-B.0.2/PvZ-Fusion-4.1-English-HalfTranslate-B.0.2.apk"><img src="assets/btn-dl-cn-preview.svg" height="30" alt="下载英文版 4.1 APK"></a> |
 
 ---
 
