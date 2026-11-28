@@ -15,8 +15,8 @@
   Re-run with  -Clean  to do a safe uninstall -> install -> restore-save instead.
 
   Usage (PowerShell):
-    powershell -ExecutionPolicy Bypass -File update.ps1 -Apk PvZ-Fusion-3.8.1-English.apk
-    powershell -ExecutionPolicy Bypass -File update.ps1 -Apk PvZ-Fusion-3.8.1-English.apk -Clean
+    powershell -ExecutionPolicy Bypass -File update.ps1 -Apk PvZ-Fusion-3.8.1-English-B.0.1.apk
+    powershell -ExecutionPolicy Bypass -File update.ps1 -Apk PvZ-Fusion-3.8.1-English-B.0.1.apk -Clean
 
   Needs: Android platform-tools (adb) on PATH, or put adb.exe next to this script,
   or pass -Adb "C:\path\to\adb.exe". USB debugging must be ON.

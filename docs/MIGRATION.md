@@ -47,7 +47,7 @@ adb pull /sdcard/Android/data/com.LanPiaoPiao.PlantsVsZombiesRH/files/playerData
 
 # 2. Gỡ bản cũ và cài bản mới từ kho này
 adb uninstall com.LanPiaoPiao.PlantsVsZombiesRH
-adb install PvZ-Fusion-4.0.5.2-Vietnamese.apk
+adb install PvZ-Fusion-4.0.5.2-Vietnamese-B.0.1.apk
 
 # 3. Mở game trên điện thoại 1 lần tới Menu rồi đóng hẳn, sau đó đẩy lại file save
 adb push playerData.json /sdcard/Android/data/com.LanPiaoPiao.PlantsVsZombiesRH/files/playerData.json
@@ -82,7 +82,7 @@ adb pull /sdcard/Android/data/com.LanPiaoPiao.PlantsVsZombiesRH/files/playerData
 
 # 2. Replace the differently-signed package
 adb uninstall com.LanPiaoPiao.PlantsVsZombiesRH
-adb install PvZ-Fusion-4.0.5.2-English.apk
+adb install PvZ-Fusion-4.0.5.2-English-B.0.1.apk
 
 # 3. Launch the game once to the Main Menu, close it, then restore your save
 adb push playerData.json /sdcard/Android/data/com.LanPiaoPiao.PlantsVsZombiesRH/files/playerData.json
@@ -117,7 +117,7 @@ adb pull /sdcard/Android/data/com.LanPiaoPiao.PlantsVsZombiesRH/files/playerData
 
 # 2. 卸载旧签名包并安装本仓库 APK
 adb uninstall com.LanPiaoPiao.PlantsVsZombiesRH
-adb install PvZ-Fusion-4.0.5.2-Chinese-Raw.apk
+adb install PvZ-Fusion-4.0.5.2-Chinese-Raw-B.0.1.apk
 
 # 3. 手机上启动一次游戏至主菜单后关闭，再推回存档
 adb push playerData.json /sdcard/Android/data/com.LanPiaoPiao.PlantsVsZombiesRH/files/playerData.json

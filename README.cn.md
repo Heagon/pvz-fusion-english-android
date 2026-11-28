@@ -3,8 +3,9 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/tag/v4.0.5.2"><img src="https://img.shields.io/badge/%E6%AD%A3%E5%BC%8F%E7%A8%B3%E5%AE%9A%E7%89%88-v4.0.5.2-238636?style=flat-square&logo=android&logoColor=white" alt="稳定版 v4.0.5.2"></a>
-  <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/tag/v4.1-half-translate"><img src="https://img.shields.io/badge/%E5%B0%9D%E9%B2%9C%E9%A2%84%E8%A7%88%E7%89%88-v4.1_%E8%87%AA%E8%B5%B0%E6%A3%8B-b87d04?style=flat-square&logo=android&logoColor=white" alt="尝鲜版 v4.1"></a>
+  <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/tag/v4.0.5.2-B.0.1"><img src="https://img.shields.io/badge/%E6%AD%A3%E5%BC%8F%E7%A8%B3%E5%AE%9A%E7%89%88-v4.0.5.2--B.0.1-238636?style=flat-square&logo=android&logoColor=white" alt="稳定版 v4.0.5.2-B.0.1"></a>
+  <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/tag/v4.1-half-translate-B.0.1"><img src="https://img.shields.io/badge/%E5%B0%9D%E9%B2%9C%E9%A2%84%E8%A7%88%E7%89%88-v4.1--B.0.1_%E8%87%AA%E8%B5%B0%E6%A3%8B-b87d04?style=flat-square&logo=android&logoColor=white" alt="尝鲜版 v4.1-B.0.1"></a>
+  <a href="CHANGELOG.md"><img src="https://img.shields.io/badge/%E6%9E%84%E5%BB%BA%E5%8E%86%E5%8F%B2-CHANGELOG-0969da?style=flat-square" alt="构建历史 CHANGELOG"></a>
   <a href="docs/INSTALL.md"><img src="https://img.shields.io/badge/Android-8.0%2B_(arm64)-1f6feb?style=flat-square" alt="Android 8.0+ arm64"></a>
   <a href="docs/UPDATE.md"><img src="https://img.shields.io/badge/%E6%9C%AC%E5%9C%B0%E5%AD%98%E6%A1%A3-100%25_%E6%97%A0%E6%8D%9F%E4%BF%9D%E7%95%99-2ea043?style=flat-square" alt="100% 保留存档"></a>
   <a href="https://discord.gg/DPAC5ZVJ8T"><img src="https://img.shields.io/badge/Discord-PVZF_%E7%A4%BE%E5%8C%BA-5865F2?style=flat-square&logo=discord&logoColor=white" alt="PVZF Discord"></a>
@@ -46,28 +47,28 @@
 
 ---
 
-### 🟢 v4.0.5.2 — 正式稳定版 *(全员推荐)*
-完整更新日志与 SHA-256 校验码：**[查看 GitHub Release `v4.0.5.2`](https://github.com/Heagon/pvz-fusion-english-android/releases/tag/v4.0.5.2)**
+### 🟢 v4.0.5.2 (`B.0.1`) — 正式稳定版 *(全员推荐)*
+完整更新日志与 SHA-256 校验码：**[查看 GitHub Release `v4.0.5.2-B.0.1`](https://github.com/Heagon/pvz-fusion-english-android/releases/tag/v4.0.5.2-B.0.1)** · 构建历史与回退存档：**[`CHANGELOG.md`](CHANGELOG.md)**
 
 | 语言版本 | 文件大小 | 版本说明 | 直接下载 |
 | :--- | :---: | :--- | :---: |
-| **`[CN]` 中文原版 (Raw)** | `591.1 MB` | 完整保留原作者 **蓝飘飘fly** 的原版代码、贴图与平衡性数值，采用统一签名打包，支持与越/英版本自由互切不丢档 | <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.0.5.2/PvZ-Fusion-4.0.5.2-Chinese-Raw.apk"><img src="assets/btn-dl-cn-stable.svg" height="30" alt="下载中文原版 4.0.5.2 APK"></a> |
-| **`[VI]` Bản Việt Hóa (越化版)** | `599.6 MB` | 100% 完整越南语本地化（720 植物 / 235 僵尸 / 47 机制图鉴、48 张越化界面贴图、内置 `LiberationSans` 音调字体） | <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.0.5.2/PvZ-Fusion-4.0.5.2-Vietnamese.apk"><img src="assets/btn-dl-cn-stable.svg" height="30" alt="下载越化版 4.0.5.2 APK"></a> |
-| **`[EN]` English (英文版)** | `599.7 MB` | 100% 完整英文本地化（涵盖全部图鉴、关卡词条与 48 张英文界面贴图，针对手机端 uGUI 深度排版优化） | <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.0.5.2/PvZ-Fusion-4.0.5.2-English.apk"><img src="assets/btn-dl-cn-stable.svg" height="30" alt="下载英文版 4.0.5.2 APK"></a> |
+| **`[CN]` 中文原版 (Raw)** | `591.1 MB` | 完整保留原作者 **蓝飘飘fly** 的原版代码、贴图与平衡性数值，采用统一签名打包，支持与越/英版本自由互切不丢档 | <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.0.5.2-B.0.1/PvZ-Fusion-4.0.5.2-Chinese-Raw-B.0.1.apk"><img src="assets/btn-dl-cn-stable.svg" height="30" alt="下载中文原版 4.0.5.2 APK"></a> |
+| **`[VI]` Bản Việt Hóa (越化版)** | `599.6 MB` | 100% 完整越南语本地化（720 植物 / 235 僵尸 / 47 机制图鉴、48 张越化界面贴图、内置 `LiberationSans` 音调字体） | <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.0.5.2-B.0.1/PvZ-Fusion-4.0.5.2-Vietnamese-B.0.1.apk"><img src="assets/btn-dl-cn-stable.svg" height="30" alt="下载越化版 4.0.5.2 APK"></a> |
+| **`[EN]` English (英文版)** | `599.7 MB` | 100% 完整英文本地化（涵盖全部图鉴、关卡词条与 48 张英文界面贴图，针对手机端 uGUI 深度排版优化） | <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.0.5.2-B.0.1/PvZ-Fusion-4.0.5.2-English-B.0.1.apk"><img src="assets/btn-dl-cn-stable.svg" height="30" alt="下载英文版 4.0.5.2 APK"></a> |
 
 ---
 
-### 🟡 v4.1 Preview — 自走棋远征与新内容尝鲜版
-完整更新日志与 SHA-256 校验码：**[查看 GitHub Release `v4.1-half-translate`](https://github.com/Heagon/pvz-fusion-english-android/releases/tag/v4.1-half-translate)**
+### 🟡 v4.1 Preview (`B.0.1`) — 自走棋远征与新内容尝鲜版
+完整更新日志与 SHA-256 校验码：**[查看 GitHub Release `v4.1-half-translate-B.0.1`](https://github.com/Heagon/pvz-fusion-english-android/releases/tag/v4.1-half-translate-B.0.1)** · 构建历史：**[`CHANGELOG.md`](CHANGELOG.md)**
 
 > [!NOTE]
 > **v4.1 翻译进度说明：** **`[CN] 中文原版`** 为蓝飘飘fly 4.1 完整原版；**`[VI] 越化版`** 已完成 4.1 全量文本与贴图的 **100% 本地化**（新增 3,837 条文本与 48/48 张越化贴图）；**`[EN] 英文版`** 已完成 4.1 全部新增玩法界面（自走棋商店、刷新概率、全海克斯、向日葵养殖、神笔马良、编辑器帮助）的语境翻译，少量边缘图鉴条目仍在持续润色。
 
 | 语言版本 | 文件大小 | 版本说明 | 直接下载 |
 | :--- | :---: | :--- | :---: |
-| **`[CN]` 中文原版 (Raw)** | `620.2 MB` | 蓝飘飘fly 原版 4.1 中文包，统一项目官方签名，可直接覆盖旧版或随时切回中文体验 | <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.1-half-translate/PvZ-Fusion-4.1-Chinese-Raw.apk"><img src="assets/btn-dl-cn-preview.svg" height="30" alt="下载中文原版 4.1 APK"></a> |
-| **`[VI]` Bản Việt Hóa (100% 越化版)** | `629.0 MB` | 4.1 完整 100% 越化版（全 742 植物 / 238 僵尸 / 48 机制、176 条新旅行词条、自走棋/养成/神笔/射击全覆盖、48/48 贴图越化） | <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.1-half-translate/PvZ-Fusion-4.1-Vietnamese-HalfTranslate.apk"><img src="assets/btn-dl-cn-preview.svg" height="30" alt="下载越化版 4.1 APK"></a> |
-| **`[EN]` English (英文尝鲜版)** | `628.8 MB` | 4.1 英文尝鲜版（新增 994 条自走棋/向日葵养殖/神笔马良语境翻译，48/48 英文界面贴图，安卓真机排版校验） | <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.1-half-translate/PvZ-Fusion-4.1-English-HalfTranslate.apk"><img src="assets/btn-dl-cn-preview.svg" height="30" alt="下载英文版 4.1 APK"></a> |
+| **`[CN]` 中文原版 (Raw)** | `620.2 MB` | 蓝飘飘fly 原版 4.1 中文包，统一项目官方签名，可直接覆盖旧版或随时切回中文体验 | <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.1-half-translate-B.0.1/PvZ-Fusion-4.1-Chinese-Raw-B.0.1.apk"><img src="assets/btn-dl-cn-preview.svg" height="30" alt="下载中文原版 4.1 APK"></a> |
+| **`[VI]` Bản Việt Hóa (100% 越化版)** | `629.0 MB` | 4.1 完整 100% 越化版（全 742 植物 / 238 僵尸 / 48 机制、176 条新旅行词条、自走棋/养成/神笔/射击全覆盖、48/48 贴图越化） | <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.1-half-translate-B.0.1/PvZ-Fusion-4.1-Vietnamese-HalfTranslate-B.0.1.apk"><img src="assets/btn-dl-cn-preview.svg" height="30" alt="下载越化版 4.1 APK"></a> |
+| **`[EN]` English (英文尝鲜版)** | `628.8 MB` | 4.1 英文尝鲜版（新增 994 条自走棋/向日葵养殖/神笔马良语境翻译，48/48 英文界面贴图，安卓真机排版校验） | <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.1-half-translate-B.0.1/PvZ-Fusion-4.1-English-HalfTranslate-B.0.1.apk"><img src="assets/btn-dl-cn-preview.svg" height="30" alt="下载英文版 4.1 APK"></a> |
 
 ---
 
@@ -88,6 +89,7 @@
 | :--- | :--- |
 | 📖 **[安装指南与常见问题 (`docs/INSTALL.md`)](docs/INSTALL.md#cn-简体中文)** | 设备配置要求、未知来源应用授权、Play Protect / 手机管家提示说明，以及黑屏或植物冷却异常的系统区域排查方法。 |
 | 🔄 **[无损更新与语言切换原理 (`docs/UPDATE.md`)](docs/UPDATE.md#cn-简体中文)** | 覆盖安装核心原则，以及动态更新 `unity_app_guid` 自动刷新 IL2CPP 元数据缓存的技术机制。 |
+| 📋 **[构建历史与修复记录 (`CHANGELOG.md`)](CHANGELOG.md)** | 完整的 `B.<major>.<minor>` 独立构建时间线、各版本修复清单、SHA-256 校验码与旧版回退链接。 |
 | 💾 **[存档备份与跨包迁移 (`docs/MIGRATION.md`)](docs/MIGRATION.md#cn-简体中文)** | 免 Root 在手机端（`MT 管理器` / `ZArchiver`）或电脑端（`adb`）备份与恢复 `playerData.json` 的完整教程。 |
 | 🛠️ **[静态注入构建脚本 (`tools/README.md`)](tools/README.md)** | 公开透明的 Python 构建工具链（`UnityPy` 资源重打包、IL2CPP 字符串重构与 4 字节对齐重签名脚本）。 |
 | 👥 **[完整致谢与来源 (`CREDITS.md`)](CREDITS.md#cn-简体中文)** | 致敬原版开发团队、多语言翻译社区、模组开发者、美术配乐作者及开源工具链。 |
@@ -115,10 +117,10 @@
 
 | `[VI]` 越化版实机画面 | `[EN]` 英文版实机画面 |
 | :---: | :---: |
-| **游戏主菜单 (`v4.0.5.2`)**<br><img src="screenshots/vi_4052_01_main_menu.png" width="420" alt="VI Main Menu"> | **游戏主菜单 (`v4.0.5.2`)**<br><img src="screenshots/en_4052_01_main_menu.png" width="420" alt="EN Main Menu"> |
-| **植物图鉴 (`v4.0.5.2`)**<br><img src="screenshots/vi_4052_08_plants_almanac.png" width="420" alt="VI Plants Almanac"> | **植物图鉴 (`v4.0.5.2`)**<br><img src="screenshots/en_4052_08_plants_almanac.png" width="420" alt="EN Plants Almanac"> |
-| **禅境花园 (`v4.0.5.2`)**<br><img src="screenshots/vi_4052_11_zen_garden.png" width="420" alt="VI Zen Garden"> | **禅境花园 (`v4.0.5.2`)**<br><img src="screenshots/en_4052_11_zen_garden.png" width="420" alt="EN Zen Garden"> |
-| **战斗与暂停菜单 (`v4.0.5.2`)**<br><img src="screenshots/vi_4052_14_pause_menu.png" width="420" alt="VI Pause Menu"> | **战斗与暂停菜单 (`v4.0.5.2`)**<br><img src="screenshots/en_4052_14_pause_menu.png" width="420" alt="EN Pause Menu"> |
+| **游戏主菜单 (`v4.0.5.2-B.0.1`)**<br><img src="screenshots/vi_4052_01_main_menu.png" width="420" alt="VI Main Menu"> | **游戏主菜单 (`v4.0.5.2-B.0.1`)**<br><img src="screenshots/en_4052_01_main_menu.png" width="420" alt="EN Main Menu"> |
+| **植物图鉴 (`v4.0.5.2-B.0.1`)**<br><img src="screenshots/vi_4052_08_plants_almanac.png" width="420" alt="VI Plants Almanac"> | **植物图鉴 (`v4.0.5.2-B.0.1`)**<br><img src="screenshots/en_4052_08_plants_almanac.png" width="420" alt="EN Plants Almanac"> |
+| **禅境花园 (`v4.0.5.2-B.0.1`)**<br><img src="screenshots/vi_4052_11_zen_garden.png" width="420" alt="VI Zen Garden"> | **禅境花园 (`v4.0.5.2-B.0.1`)**<br><img src="screenshots/en_4052_11_zen_garden.png" width="420" alt="EN Zen Garden"> |
+| **战斗与暂停菜单 (`v4.0.5.2-B.0.1`)**<br><img src="screenshots/vi_4052_14_pause_menu.png" width="420" alt="VI Pause Menu"> | **战斗与暂停菜单 (`v4.0.5.2-B.0.1`)**<br><img src="screenshots/en_4052_14_pause_menu.png" width="420" alt="EN Pause Menu"> |
 
 <details>
 <summary><b>🧪 查看 v4.1 尝鲜版自走棋远征真机截图（VI / EN 对比）</b></summary>

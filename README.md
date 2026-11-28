@@ -3,8 +3,9 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/tag/v4.0.5.2"><img src="https://img.shields.io/badge/Stable-v4.0.5.2-238636?style=flat-square&logo=android&logoColor=white" alt="Latest Stable v4.0.5.2"></a>
-  <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/tag/v4.1-half-translate"><img src="https://img.shields.io/badge/Preview-v4.1_AutoChess-b87d04?style=flat-square&logo=android&logoColor=white" alt="Preview v4.1"></a>
+  <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/tag/v4.0.5.2-B.0.1"><img src="https://img.shields.io/badge/Stable-v4.0.5.2--B.0.1-238636?style=flat-square&logo=android&logoColor=white" alt="Latest Stable v4.0.5.2-B.0.1"></a>
+  <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/tag/v4.1-half-translate-B.0.1"><img src="https://img.shields.io/badge/Preview-v4.1--B.0.1_AutoChess-b87d04?style=flat-square&logo=android&logoColor=white" alt="Preview v4.1-B.0.1"></a>
+  <a href="CHANGELOG.md"><img src="https://img.shields.io/badge/Build_History-CHANGELOG-0969da?style=flat-square" alt="Build History CHANGELOG"></a>
   <a href="docs/INSTALL.md"><img src="https://img.shields.io/badge/Android-8.0%2B_(arm64)-1f6feb?style=flat-square" alt="Android 8.0+ arm64"></a>
   <a href="docs/UPDATE.md"><img src="https://img.shields.io/badge/Save_Data-100%25_Preserved-2ea043?style=flat-square" alt="100% Save Preserved"></a>
   <a href="https://discord.gg/DPAC5ZVJ8T"><img src="https://img.shields.io/badge/Discord-PVZF_Community-5865F2?style=flat-square&logo=discord&logoColor=white" alt="PVZF Discord"></a>
@@ -46,28 +47,28 @@
 
 ---
 
-### 🟢 v4.0.5.2 — Latest Stable *(Recommended)*
-Full release notes & SHA-256 checksums: **[GitHub Release `v4.0.5.2`](https://github.com/Heagon/pvz-fusion-english-android/releases/tag/v4.0.5.2)**
+### 🟢 v4.0.5.2 (`B.0.1`) — Latest Stable *(Recommended)*
+Full release notes & SHA-256 checksums: **[GitHub Release `v4.0.5.2-B.0.1`](https://github.com/Heagon/pvz-fusion-english-android/releases/tag/v4.0.5.2-B.0.1)** · Build history &amp; rollback archive: **[`CHANGELOG.md`](CHANGELOG.md)**
 
 | Edition | Size | Summary | Direct Download |
 | :--- | :---: | :--- | :---: |
-| **`[EN]` English** | `599.7 MB` | Complete English localization (720 plants, 235 zombies, 47 mechanics, 48 UI textures, mobile uGUI layout verified) | <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.0.5.2/PvZ-Fusion-4.0.5.2-English.apk"><img src="assets/btn-dl-en-stable.svg" height="30" alt="Download English APK"></a> |
-| **`[VI]` Bản Việt Hóa** | `599.6 MB` | Complete Vietnamese localization (100% accented `LiberationSans` font, full Almanac & 48 localized UI textures) | <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.0.5.2/PvZ-Fusion-4.0.5.2-Vietnamese.apk"><img src="assets/btn-dl-en-stable.svg" height="30" alt="Download Vietnamese APK"></a> |
-| **`[CN]` 中文原版 (Raw)** | `591.1 MB` | Untouched original Chinese build by **蓝飘飘fly**, re-signed with the unified keystore for seamless switching | <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.0.5.2/PvZ-Fusion-4.0.5.2-Chinese-Raw.apk"><img src="assets/btn-dl-en-stable.svg" height="30" alt="Download Chinese Raw APK"></a> |
+| **`[EN]` English** | `599.7 MB` | Complete English localization (720 plants, 235 zombies, 47 mechanics, 48 UI textures, mobile uGUI layout verified) | <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.0.5.2-B.0.1/PvZ-Fusion-4.0.5.2-English-B.0.1.apk"><img src="assets/btn-dl-en-stable.svg" height="30" alt="Download English APK"></a> |
+| **`[VI]` Bản Việt Hóa** | `599.6 MB` | Complete Vietnamese localization (100% accented `LiberationSans` font, full Almanac & 48 localized UI textures) | <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.0.5.2-B.0.1/PvZ-Fusion-4.0.5.2-Vietnamese-B.0.1.apk"><img src="assets/btn-dl-en-stable.svg" height="30" alt="Download Vietnamese APK"></a> |
+| **`[CN]` 中文原版 (Raw)** | `591.1 MB` | Untouched original Chinese build by **蓝飘飘fly**, re-signed with the unified keystore for seamless switching | <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.0.5.2-B.0.1/PvZ-Fusion-4.0.5.2-Chinese-Raw-B.0.1.apk"><img src="assets/btn-dl-en-stable.svg" height="30" alt="Download Chinese Raw APK"></a> |
 
 ---
 
-### 🟡 v4.1 Preview — Odyssey: Evolved (AutoChess) &amp; New Content
-Full release notes & SHA-256 checksums: **[GitHub Release `v4.1-half-translate`](https://github.com/Heagon/pvz-fusion-english-android/releases/tag/v4.1-half-translate)**
+### 🟡 v4.1 Preview (`B.0.1`) — Odyssey: Evolved (AutoChess) &amp; New Content
+Full release notes & SHA-256 checksums: **[GitHub Release `v4.1-half-translate-B.0.1`](https://github.com/Heagon/pvz-fusion-english-android/releases/tag/v4.1-half-translate-B.0.1)** · Build history: **[`CHANGELOG.md`](CHANGELOG.md)**
 
 > [!NOTE]
 > **v4.1 Preview Status:** The **`[EN] English`** build includes full contextual UI translations for all new v4.1 modes (*Odyssey: Evolved AutoChess*, *Intermission Shop*, *Hex Augments*, *Sunflower Breeding / Tycoon*, *Magic Brush*, and *Level Creator Help*) verified on Android, while minor edge Almanac strings continue to be refined. The **`[VI] Bản Việt Hóa`** build is **100% localized**.
 
 | Edition | Size | Summary | Direct Download |
 | :--- | :---: | :--- | :---: |
-| **`[EN]` English (Preview)** | `628.8 MB` | Contextual v4.1 English UI (+994 new strings, AutoChess Shop/Hexes/Tycoon/Magic Brush, 48/48 UI textures) | <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.1-half-translate/PvZ-Fusion-4.1-English-HalfTranslate.apk"><img src="assets/btn-dl-en-preview.svg" height="30" alt="Download English 4.1 APK"></a> |
-| **`[VI]` Bản Việt Hóa (100%)** | `629.0 MB` | 100% complete v4.1 Vietnamese build (742/742 plants, 238/238 zombies, 48/48 mechanics, 176 Travel Buffs, 48/48 VI textures) | <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.1-half-translate/PvZ-Fusion-4.1-Vietnamese-HalfTranslate.apk"><img src="assets/btn-dl-en-preview.svg" height="30" alt="Download Vietnamese 4.1 APK"></a> |
-| **`[CN]` 中文原版 (Raw)** | `620.2 MB` | Untouched v4.1 Chinese build by **蓝飘飘fly**, signed with the unified keystore for lossless switching | <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.1-half-translate/PvZ-Fusion-4.1-Chinese-Raw.apk"><img src="assets/btn-dl-en-preview.svg" height="30" alt="Download Chinese 4.1 APK"></a> |
+| **`[EN]` English (Preview)** | `628.8 MB` | Contextual v4.1 English UI (+994 new strings, AutoChess Shop/Hexes/Tycoon/Magic Brush, 48/48 UI textures) | <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.1-half-translate-B.0.1/PvZ-Fusion-4.1-English-HalfTranslate-B.0.1.apk"><img src="assets/btn-dl-en-preview.svg" height="30" alt="Download English 4.1 APK"></a> |
+| **`[VI]` Bản Việt Hóa (100%)** | `629.0 MB` | 100% complete v4.1 Vietnamese build (742/742 plants, 238/238 zombies, 48/48 mechanics, 176 Travel Buffs, 48/48 VI textures) | <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.1-half-translate-B.0.1/PvZ-Fusion-4.1-Vietnamese-HalfTranslate-B.0.1.apk"><img src="assets/btn-dl-en-preview.svg" height="30" alt="Download Vietnamese 4.1 APK"></a> |
+| **`[CN]` 中文原版 (Raw)** | `620.2 MB` | Untouched v4.1 Chinese build by **蓝飘飘fly**, signed with the unified keystore for lossless switching | <a href="https://github.com/Heagon/pvz-fusion-english-android/releases/download/v4.1-half-translate-B.0.1/PvZ-Fusion-4.1-Chinese-Raw-B.0.1.apk"><img src="assets/btn-dl-en-preview.svg" height="30" alt="Download Chinese 4.1 APK"></a> |
 
 ---
 
@@ -88,6 +89,7 @@ Full release notes & SHA-256 checksums: **[GitHub Release `v4.1-half-translate`]
 | :--- | :--- |
 | 📖 **[Installation &amp; Troubleshooting (`docs/INSTALL.md`)](docs/INSTALL.md)** | Device requirements, Unknown Sources setup, Google Play Protect prompt, and fixing black screens / abnormal cooldowns caused by system locale. |
 | 🔄 **[Safe Updates &amp; Language Switching (`docs/UPDATE.md`)](docs/UPDATE.md)** | Golden rule for lossless updates and how `unity_app_guid` refreshes IL2CPP localization cache automatically. |
+| 📋 **[Build History &amp; Release Changelog (`CHANGELOG.md`)](CHANGELOG.md)** | Complete `B.<major>.<minor>` build timeline, exact fixes per build, SHA-256 checksums, and immutable rollback links. |
 | 💾 **[Save Backup &amp; Migration (`docs/MIGRATION.md`)](docs/MIGRATION.md)** | How to back up and restore `playerData.json` on-device (`ZArchiver` / `MT Manager`) or via PC (`adb`) with zero root required. |
 | 🛠️ **[Build Pipeline &amp; Scripts (`tools/README.md`)](tools/README.md)** | Open-source static Unity asset &amp; IL2CPP metadata patching tools for transparency and reproducible builds. |
 | 👥 **[Complete Credits &amp; Sources (`CREDITS.md`)](CREDITS.md)** | Full Hall of Fame honoring the original creators, translators, mod engineers, artists, and open-source tools. |
@@ -115,10 +117,10 @@ This project is an **unofficial static Android localization suite** for *Plants 
 
 Verified on physical Android hardware across all game modes:
 
-| Main Menu (`v4.0.5.2`) | Plants Almanac (`v4.0.5.2`) |
+| Main Menu (`v4.0.5.2-B.0.1`) | Plants Almanac (`v4.0.5.2-B.0.1`) |
 | :---: | :---: |
 | <img src="screenshots/en_4052_01_main_menu.png" width="420" alt="English Main Menu"> | <img src="screenshots/en_4052_08_plants_almanac.png" width="420" alt="English Plants Almanac"> |
-| **Zen Garden (`v4.0.5.2`)** | **Battle HUD &amp; Pause Menu (`v4.0.5.2`)** |
+| **Zen Garden (`v4.0.5.2-B.0.1`)** | **Battle HUD &amp; Pause Menu (`v4.0.5.2-B.0.1`)** |
 | <img src="screenshots/en_4052_11_zen_garden.png" width="420" alt="English Zen Garden"> | <img src="screenshots/en_4052_14_pause_menu.png" width="420" alt="English Pause Menu"> |
 
 <details>
@@ -152,7 +154,7 @@ Verified on physical Android hardware across all game modes:
 <summary><b>🌏 Preview [VI] Bản Việt Hóa Screenshots (Side-by-Side Sample)</b></summary>
 <br>
 
-| `[VI]` Main Menu (`v4.0.5.2`) | `[VI]` v4.1 AutoChess Shop |
+| `[VI]` Main Menu (`v4.0.5.2-B.0.1`) | `[VI]` v4.1 AutoChess Shop |
 | :---: | :---: |
 | <img src="screenshots/vi_4052_01_main_menu.png" width="410" alt="VI Main Menu"> | <img src="screenshots/vi_41_07_autochess_shop.png" width="410" alt="VI 4.1 AutoChess Shop"> |
 

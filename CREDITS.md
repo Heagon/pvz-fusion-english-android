@@ -3,7 +3,8 @@
 <p align="center">
   <a href="README.vi.md"><b>← [VI] Trang Chủ Tiếng Việt</b></a> &nbsp;•&nbsp;
   <a href="README.md"><b>← [EN] English Home</b></a> &nbsp;•&nbsp;
-  <a href="README.cn.md"><b>← [CN] 返回中文主页</b></a>
+  <a href="README.cn.md"><b>← [CN] 返回中文主页</b></a> &nbsp;•&nbsp;
+  <a href="CHANGELOG.md"><b>📋 Build History (`CHANGELOG.md`)</b></a>
 </p>
 
 <p align="center">
@@ -61,7 +62,7 @@ Bộ cài đặt đa ngôn ngữ **Plants vs. Zombies: Fusion (Android)** đư�
 - **Phát triển &amp; bảo trì bộ cài đặt Android:** **Heagon** (https://github.com/Heagon/pvz-fusion-english-android) — Xây dựng pipeline đóng gói tĩnh Unity AssetBundle &amp; biên dịch lại IL2CPP `global-metadata.dat`, tối ưu khung chữ uGUI điện thoại, cơ chế `unity_app_guid` tự làm mới bộ nhớ đệm không mất save và ký đồng bộ Release Keystore.
 - **Ghi nhận các bản port Android cộng đồng tiền nhiệm:** **silvershadow** ([pvzf-android-translation](https://github.com/silvershadowkat/pvzf-android-translation)) và **Joseph Franci** (các bản port Tiếng Anh thế hệ v3.6.1 – v3.9).
 - **Thư viện &amp; công cụ mã nguồn mở sử dụng:** [UnityPy](https://github.com/K0lb3/UnityPy) · [fontTools](https://github.com/fonttools/fonttools) · [Pillow](https://python-pillow.org/) · [Liberation Fonts (`LiberationSans`)](https://github.com/liberationfonts/liberation-fonts) · [uber-apk-signer](https://github.com/patrickfav/uber-apk-signer).
-- **Thương hiệu gốc:** *Plants vs. Zombies* là nhãn hiệu đã đăng ký của **Electronic Arts Inc. (EA) / PopCap Games**. Dự án hoàn toàn miễn phí, phi thương mại, không quảng cáo.
+- **Thương hiệu gốc:** *Plants vs. Zombies* là nhãn hiệu đã đăng ký của **Electronic Arts Inc. (EA) / PopCap Games** (https://www.ea.com/games/plants-vs-zombies). Dự án hoàn toàn miễn phí, phi thương mại, không quảng cáo.
 
 ---
 
@@ -112,7 +113,7 @@ This unofficial multi-language Android suite is made possible by the generosity 
 - **Maintained by:** **Heagon** (https://github.com/Heagon/pvz-fusion-english-android) — Static Unity bundle &amp; IL2CPP `global-metadata.dat` rebuild pipeline, mobile uGUI overflow fixes, dynamic `unity_app_guid` save-safe update architecture, and unified Release Keystore signing.
 - **Prior Community Android Port Pioneers:** **silvershadow** ([pvzf-android-translation](https://github.com/silvershadowkat/pvzf-android-translation)) and **Joseph Franci** (earlier English Android community releases).
 - **Open-Source Tools &amp; Fonts Used:** [UnityPy](https://github.com/K0lb3/UnityPy) · [fontTools](https://github.com/fonttools/fonttools) · [Pillow](https://python-pillow.org/) · [Liberation Fonts (`LiberationSans`)](https://github.com/liberationfonts/liberation-fonts) · [uber-apk-signer](https://github.com/patrickfav/uber-apk-signer).
-- **Franchise Trademark:** *Plants vs. Zombies* is a registered trademark of **Electronic Arts Inc. (EA) / PopCap Games**. Free, non-commercial, ad-free community project.
+- **Franchise Trademark:** *Plants vs. Zombies* is a registered trademark of **Electronic Arts Inc. (EA) / PopCap Games** (https://www.ea.com/games/plants-vs-zombies). Free, non-commercial, ad-free community project.
 
 ---
 
@@ -163,4 +164,4 @@ This unofficial multi-language Android suite is made possible by the generosity 
 - **项目维护者：** **Heagon** (https://github.com/Heagon/pvz-fusion-english-android) — 负责 Unity 资源包与 IL2CPP `global-metadata.dat` 静态重编译管线、移动端 uGUI 排版调优、`unity_app_guid` 覆盖安装自动刷新机制及统一 Release Keystore 签名维护。
 - **早期社区安卓移植致谢：** **silvershadow** ([pvzf-android-translation](https://github.com/silvershadowkat/pvzf-android-translation)) 与 **Joseph Franci**。
 - **使用的开源工具与字体库：** [UnityPy](https://github.com/K0lb3/UnityPy) · [fontTools](https://github.com/fonttools/fonttools) · [Pillow](https://python-pillow.org/) · [Liberation Fonts (`LiberationSans`)](https://github.com/liberationfonts/liberation-fonts) · [uber-apk-signer](https://github.com/patrickfav/uber-apk-signer)。
-- **商标声明：** 《植物大战僵尸》（*Plants vs. Zombies*）版权归 **Electronic Arts Inc. (EA) / PopCap Games** 所有。本项目完全免费、无广告、禁止任何商业用途。
+- **商标声明：** 《植物大战僵尸》（*Plants vs. Zombies*）版权归 **Electronic Arts Inc. (EA) / PopCap Games** (https://www.ea.com/games/plants-vs-zombies) 所有。本项目完全免费、无广告、禁止任何商业用途。

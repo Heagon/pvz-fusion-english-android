@@ -33,7 +33,7 @@ Tệp lưu tiến trình chơi của bạn nằm tại:
 Trên Android, chỉ có thao tác **Gỡ cài đặt (Uninstall)** mới khiến hệ điều hành xóa sạch thư mục dữ liệu trên.
 
 ### Cơ chế bảo toàn Save trong bộ cài đặt này
-- **Đồng nhất chữ ký số (Unified Release Keystore):** Cả 3 bản APK (**`[VI] Bản Việt Hóa`**, **`[EN] English`**, **`[CN] Trung Gốc`**) ở mọi phiên bản (`v4.0.5.2`, `v4.1`...) đều được ký bằng cùng một khóa phát hành chính thức.
+- **Đồng nhất chữ ký số (Unified Release Keystore):** Cả 3 bản APK (**`[VI] Bản Việt Hóa`**, **`[EN] English`**, **`[CN] Trung Gốc`**) ở mọi phiên bản (`v4.0.5.2-B.0.1`, `v4.1`...) đều được ký bằng cùng một khóa phát hành chính thức.
 - **Tự động làm mới bộ nhớ đệm ngôn ngữ (`unity_app_guid`):** Mỗi bản phát hành được tự động gán mã định danh `unity_app_guid` riêng theo mã băm dữ liệu dịch thuật. Khi bạn cài đè, game tự nhận biết bản mới và giải nén lại văn bản ngôn ngữ mới ngay lần mở đầu tiên mà không đụng chạm tới `playerData.json`.
 - **Đổi ngôn ngữ bất kỳ lúc nào:** Đang chơi `[EN]` muốn sang `[VI]` (hoặc về `[CN]` gốc)? Chỉ cần tải APK ngôn ngữ muốn đổi và bấm **Cập nhật đè** — xong trong 10 giây, giữ nguyên 100% cây cối và tiền vàng!
 
@@ -52,7 +52,7 @@ Your entire profile and progress live at:
 Uninstalling the app is the *only* action that causes Android to delete this external app-data folder.
 
 ### How Lossless Switching Works
-- **Unified Release Keystore:** Every build in this repository (**`[EN] English`**, **`[VI] Bản Việt Hóa`**, and **`[CN] Chinese Raw`**) across all versions (`v4.0.5.2`, `v4.1`, and future releases) shares the exact same signing key.
+- **Unified Release Keystore:** Every build in this repository (**`[EN] English`**, **`[VI] Bản Việt Hóa`**, and **`[CN] Chinese Raw`**) across all versions (`v4.0.5.2-B.0.1`, `v4.1`, and future releases) shares the exact same signing key.
 - **Automatic Metadata Cache Refresh (`unity_app_guid`):** Unity IL2CPP caches `global-metadata.dat` inside `files/il2cpp/` keyed by `unity_app_guid`. Our build pipeline updates `unity_app_guid` automatically whenever strings change, forcing a clean metadata re-extraction on first launch while leaving `playerData.json` completely untouched.
 - **Instant Language Switching:** Simply download another edition's APK (e.g., `[EN]` → `[VI]` or `[CN]`) and tap **Update / Install** over your existing installation.
 
